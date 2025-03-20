@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "5ZcnIiwwBbZp87sLZadY7a/mS54FO2MgZ/QGfp/z/bI=",
+  "Source": "LanguageLearningApp.API",
+  "BasePath": "_content/LanguageLearningApp.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

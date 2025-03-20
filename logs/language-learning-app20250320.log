@@ -1,0 +1,380 @@
+2025-03-20 15:27:17.491 +03:00 [INF] Starting Language Learning API
+2025-03-20 15:27:17.630 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-20 15:27:17.633 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-20 15:27:17.634 +03:00 [INF] Hosting environment: Development
+2025-03-20 15:27:17.634 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-20 15:27:20.426 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-03-20 15:27:51.715 +03:00 [ERR] Error during registration
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'http://www.w3.org/2001/04/xmldsig-more#hmac-sha512', the key size must be greater than: '512' bits, key has '448' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at LanguageLearningApp.API.Infrastructure.Services.TokenService.CreateToken(User user) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\TokenService.cs:line 43
+   at LanguageLearningApp.API.Application.Services.AuthService.RegisterAsync(RegisterDto registerDto) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\AuthService.cs:line 80
+   at LanguageLearningApp.API.Controllers.AuthController.Register(RegisterDto registerDto) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Controllers\AuthController.cs:line 28
+2025-03-20 15:28:28.789 +03:00 [INF] Application is shutting down...
+2025-03-20 15:28:33.229 +03:00 [INF] Starting Language Learning API
+2025-03-20 15:28:33.290 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-20 15:28:33.293 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-20 15:28:33.294 +03:00 [INF] Hosting environment: Development
+2025-03-20 15:28:33.295 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-20 15:28:59.227 +03:00 [ERR] Error during registration
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'http://www.w3.org/2001/04/xmldsig-more#hmac-sha512', the key size must be greater than: '512' bits, key has '448' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at LanguageLearningApp.API.Infrastructure.Services.TokenService.CreateToken(User user) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\TokenService.cs:line 43
+   at LanguageLearningApp.API.Application.Services.AuthService.RegisterAsync(RegisterDto registerDto) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\AuthService.cs:line 80
+   at LanguageLearningApp.API.Controllers.AuthController.Register(RegisterDto registerDto) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Controllers\AuthController.cs:line 28
+2025-03-20 15:31:31.372 +03:00 [INF] Application is shutting down...
+2025-03-20 15:31:35.698 +03:00 [INF] Starting Language Learning API
+2025-03-20 15:31:35.764 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-20 15:31:35.768 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-20 15:31:35.769 +03:00 [INF] Hosting environment: Development
+2025-03-20 15:31:35.769 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-20 15:38:56.724 +03:00 [INF] Application is shutting down...
+2025-03-20 15:39:00.825 +03:00 [INF] Starting Language Learning API
+2025-03-20 15:39:00.885 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-20 15:39:00.888 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-20 15:39:00.889 +03:00 [INF] Hosting environment: Development
+2025-03-20 15:39:00.890 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-20 15:40:48.439 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'LanguageLearningApp.API.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'ErrorAnalysis', table 'LanguageLearningApp.dbo.Messages'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:948e49cf-723a-4bc5-86a8-ec2550fe2017
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'ErrorAnalysis', table 'LanguageLearningApp.dbo.Messages'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:948e49cf-723a-4bc5-86a8-ec2550fe2017
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-03-20 15:40:48.450 +03:00 [ERR] Error creating conversation
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'ErrorAnalysis', table 'LanguageLearningApp.dbo.Messages'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:948e49cf-723a-4bc5-86a8-ec2550fe2017
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at LanguageLearningApp.API.Infrastructure.Data.Repositories.RepositoryBase`1.SaveChangesAsync() in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Data\Repositories\RepositoryBase.cs:line 62
+   at LanguageLearningApp.API.Application.Services.ConversationService.CreateConversationAsync(Int32 userId, CreateConversationDto dto) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\ConversationService.cs:line 113
+   at LanguageLearningApp.API.Controllers.ConversationController.CreateConversation(CreateConversationDto dto) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Controllers\ConversationController.cs:line 71
+2025-03-20 15:41:54.581 +03:00 [INF] Application is shutting down...
+2025-03-20 15:42:01.865 +03:00 [INF] Starting Language Learning API
+2025-03-20 15:42:01.922 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-20 15:42:01.925 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-20 15:42:01.925 +03:00 [INF] Hosting environment: Development
+2025-03-20 15:42:01.926 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-20 15:42:04.617 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'LanguageLearningApp.API.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'ErrorAnalysis', table 'LanguageLearningApp.dbo.Messages'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a51a6cb7-e86f-4a09-ae8a-ce2115d36076
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'ErrorAnalysis', table 'LanguageLearningApp.dbo.Messages'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a51a6cb7-e86f-4a09-ae8a-ce2115d36076
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-03-20 15:42:04.625 +03:00 [ERR] Error creating conversation
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'ErrorAnalysis', table 'LanguageLearningApp.dbo.Messages'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a51a6cb7-e86f-4a09-ae8a-ce2115d36076
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at LanguageLearningApp.API.Infrastructure.Data.Repositories.RepositoryBase`1.SaveChangesAsync() in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Data\Repositories\RepositoryBase.cs:line 62
+   at LanguageLearningApp.API.Application.Services.ConversationService.CreateConversationAsync(Int32 userId, CreateConversationDto dto) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\ConversationService.cs:line 113
+   at LanguageLearningApp.API.Controllers.ConversationController.CreateConversation(CreateConversationDto dto) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Controllers\ConversationController.cs:line 71
+2025-03-20 15:45:20.709 +03:00 [INF] Application is shutting down...
+2025-03-20 15:45:45.049 +03:00 [INF] Starting Language Learning API
+2025-03-20 15:45:45.120 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-20 15:45:45.125 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-20 15:45:45.126 +03:00 [INF] Hosting environment: Development
+2025-03-20 15:45:45.128 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-20 15:46:33.052 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:46:33.056 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:46:35.143 +03:00 [INF] Received HTTP response headers after 2084.3749ms - 404
+2025-03-20 15:46:35.146 +03:00 [INF] End processing HTTP request after 2095.8955ms - 404
+2025-03-20 15:46:35.149 +03:00 [ERR] Error analyzing text for errors
+System.Exception: Ollama API error: NotFound, {"error":"model 'gemma:3-4b' not found"}
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.CallOllamaApiAsync(String prompt) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 225
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.AnalyzeErrorsAsync(String userMessage) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 62
+2025-03-20 15:46:35.185 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:46:35.186 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:46:35.190 +03:00 [INF] Received HTTP response headers after 2.9363ms - 404
+2025-03-20 15:46:35.192 +03:00 [INF] End processing HTTP request after 7.8687ms - 404
+2025-03-20 15:46:35.195 +03:00 [ERR] Error extracting vocabulary
+System.Exception: Ollama API error: NotFound, {"error":"model 'gemma:3-4b' not found"}
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.CallOllamaApiAsync(String prompt) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 225
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.ExtractVocabularyAsync(String userMessage) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 95
+2025-03-20 15:46:35.199 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:46:35.200 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:46:35.206 +03:00 [INF] Received HTTP response headers after 4.6233ms - 404
+2025-03-20 15:46:35.208 +03:00 [INF] End processing HTTP request after 9.295ms - 404
+2025-03-20 15:46:35.210 +03:00 [ERR] Error getting LLM response
+System.Exception: Ollama API error: NotFound, {"error":"model 'gemma:3-4b' not found"}
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.CallOllamaApiAsync(String prompt) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 225
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.GetResponseAsync(String userMessage, List`1 conversationHistory) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 38
+2025-03-20 15:46:35.303 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-20 15:49:31.459 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:49:31.460 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:49:33.525 +03:00 [INF] Received HTTP response headers after 2063.4895ms - 404
+2025-03-20 15:49:33.526 +03:00 [INF] End processing HTTP request after 2067.8593ms - 404
+2025-03-20 15:49:33.527 +03:00 [ERR] Error analyzing text for errors
+System.Exception: Ollama API error: NotFound, {"error":"model 'gemma:3-4b' not found"}
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.CallOllamaApiAsync(String prompt) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 225
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.AnalyzeErrorsAsync(String userMessage) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 62
+2025-03-20 15:49:33.547 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:49:33.548 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:49:33.553 +03:00 [INF] Received HTTP response headers after 4.8766ms - 404
+2025-03-20 15:49:33.555 +03:00 [INF] End processing HTTP request after 8.0056ms - 404
+2025-03-20 15:49:33.556 +03:00 [ERR] Error extracting vocabulary
+System.Exception: Ollama API error: NotFound, {"error":"model 'gemma:3-4b' not found"}
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.CallOllamaApiAsync(String prompt) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 225
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.ExtractVocabularyAsync(String userMessage) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 95
+2025-03-20 15:49:33.558 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:49:33.559 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:49:33.565 +03:00 [INF] Received HTTP response headers after 6.3173ms - 404
+2025-03-20 15:49:33.567 +03:00 [INF] End processing HTTP request after 8.8303ms - 404
+2025-03-20 15:49:33.568 +03:00 [ERR] Error getting LLM response
+System.Exception: Ollama API error: NotFound, {"error":"model 'gemma:3-4b' not found"}
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.CallOllamaApiAsync(String prompt) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 225
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.GetResponseAsync(String userMessage, List`1 conversationHistory) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 38
+2025-03-20 15:50:11.883 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:50:11.884 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:50:11.889 +03:00 [INF] Received HTTP response headers after 4.8317ms - 404
+2025-03-20 15:50:11.890 +03:00 [INF] End processing HTTP request after 7.2481ms - 404
+2025-03-20 15:50:11.891 +03:00 [ERR] Error analyzing text for errors
+System.Exception: Ollama API error: NotFound, {"error":"model 'gemma:3-4b' not found"}
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.CallOllamaApiAsync(String prompt) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 225
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.AnalyzeErrorsAsync(String userMessage) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 62
+2025-03-20 15:50:11.894 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:50:11.895 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:50:11.901 +03:00 [INF] Received HTTP response headers after 5.0501ms - 404
+2025-03-20 15:50:11.901 +03:00 [INF] End processing HTTP request after 7.0501ms - 404
+2025-03-20 15:50:11.902 +03:00 [ERR] Error extracting vocabulary
+System.Exception: Ollama API error: NotFound, {"error":"model 'gemma:3-4b' not found"}
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.CallOllamaApiAsync(String prompt) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 225
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.ExtractVocabularyAsync(String userMessage) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 95
+2025-03-20 15:50:11.903 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:50:11.904 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:50:11.908 +03:00 [INF] Received HTTP response headers after 3.4405ms - 404
+2025-03-20 15:50:11.909 +03:00 [INF] End processing HTTP request after 5.5292ms - 404
+2025-03-20 15:50:11.910 +03:00 [ERR] Error getting LLM response
+System.Exception: Ollama API error: NotFound, {"error":"model 'gemma:3-4b' not found"}
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.CallOllamaApiAsync(String prompt) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 225
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.GetResponseAsync(String userMessage, List`1 conversationHistory) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 38
+2025-03-20 15:51:40.981 +03:00 [INF] Application is shutting down...
+2025-03-20 15:51:47.167 +03:00 [INF] Starting Language Learning API
+2025-03-20 15:51:47.232 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-20 15:51:47.235 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-20 15:51:47.236 +03:00 [INF] Hosting environment: Development
+2025-03-20 15:51:47.237 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-20 15:52:41.904 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:52:41.907 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:52:43.978 +03:00 [INF] Received HTTP response headers after 2069.4348ms - 404
+2025-03-20 15:52:43.982 +03:00 [INF] End processing HTTP request after 2081.4143ms - 404
+2025-03-20 15:52:43.985 +03:00 [ERR] Error analyzing text for errors
+System.Exception: Ollama API error: NotFound, {"error":"model 'gemma:3-4b' not found"}
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.CallOllamaApiAsync(String prompt) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 225
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.AnalyzeErrorsAsync(String userMessage) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 62
+2025-03-20 15:52:44.011 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:52:44.014 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:52:44.019 +03:00 [INF] Received HTTP response headers after 4.0545ms - 404
+2025-03-20 15:52:44.021 +03:00 [INF] End processing HTTP request after 9.7726ms - 404
+2025-03-20 15:52:44.023 +03:00 [ERR] Error extracting vocabulary
+System.Exception: Ollama API error: NotFound, {"error":"model 'gemma:3-4b' not found"}
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.CallOllamaApiAsync(String prompt) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 225
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.ExtractVocabularyAsync(String userMessage) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 95
+2025-03-20 15:52:44.027 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:52:44.028 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:52:44.033 +03:00 [INF] Received HTTP response headers after 3.6744ms - 404
+2025-03-20 15:52:44.035 +03:00 [INF] End processing HTTP request after 8.0457ms - 404
+2025-03-20 15:52:44.036 +03:00 [ERR] Error getting LLM response
+System.Exception: Ollama API error: NotFound, {"error":"model 'gemma:3-4b' not found"}
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.CallOllamaApiAsync(String prompt) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 225
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.GetResponseAsync(String userMessage, List`1 conversationHistory) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 38
+2025-03-20 15:52:44.105 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-20 15:55:22.973 +03:00 [INF] Application is shutting down...
+2025-03-20 15:55:27.572 +03:00 [INF] Starting Language Learning API
+2025-03-20 15:55:27.636 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-20 15:55:27.639 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-20 15:55:27.640 +03:00 [INF] Hosting environment: Development
+2025-03-20 15:55:27.641 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-20 15:56:54.569 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:56:54.573 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:57:11.054 +03:00 [INF] Received HTTP response headers after 16478.8218ms - 200
+2025-03-20 15:57:11.060 +03:00 [INF] End processing HTTP request after 16494.2017ms - 200
+2025-03-20 15:57:11.073 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-20 15:57:11.086 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:57:11.088 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:57:13.082 +03:00 [INF] Received HTTP response headers after 1992.9123ms - 200
+2025-03-20 15:57:13.084 +03:00 [INF] End processing HTTP request after 1998.5132ms - 200
+2025-03-20 15:57:13.092 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction. Attempting to parse.
+2025-03-20 15:57:13.095 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:57:13.096 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 15:57:15.443 +03:00 [INF] Received HTTP response headers after 2346.0116ms - 200
+2025-03-20 15:57:15.445 +03:00 [INF] End processing HTTP request after 2350.9689ms - 200
+2025-03-20 15:57:15.517 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-20 16:00:59.067 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 16:00:59.068 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 16:01:12.439 +03:00 [INF] Received HTTP response headers after 13369.5651ms - 200
+2025-03-20 16:01:12.442 +03:00 [INF] End processing HTTP request after 13374.7087ms - 200
+2025-03-20 16:01:12.444 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-20 16:01:12.462 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 16:01:12.464 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 16:01:15.128 +03:00 [INF] Received HTTP response headers after 2663.4481ms - 200
+2025-03-20 16:01:15.130 +03:00 [INF] End processing HTTP request after 2668.2703ms - 200
+2025-03-20 16:01:15.132 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction. Attempting to parse.
+2025-03-20 16:01:15.156 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 16:01:15.158 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 16:01:21.397 +03:00 [INF] Received HTTP response headers after 6238.2621ms - 200
+2025-03-20 16:01:21.400 +03:00 [INF] End processing HTTP request after 6243.552ms - 200
+2025-03-20 16:11:32.030 +03:00 [INF] Application is shutting down...
