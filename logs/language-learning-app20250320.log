@@ -378,3 +378,35 @@ System.Exception: Ollama API error: NotFound, {"error":"model 'gemma:3-4b' not f
 2025-03-20 16:01:21.397 +03:00 [INF] Received HTTP response headers after 6238.2621ms - 200
 2025-03-20 16:01:21.400 +03:00 [INF] End processing HTTP request after 6243.552ms - 200
 2025-03-20 16:11:32.030 +03:00 [INF] Application is shutting down...
+2025-03-20 16:14:17.169 +03:00 [INF] Starting Language Learning API
+2025-03-20 16:14:17.233 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-20 16:14:17.236 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-20 16:14:17.237 +03:00 [INF] Hosting environment: Development
+2025-03-20 16:14:17.238 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-20 16:15:32.590 +03:00 [INF] Application is shutting down...
+2025-03-20 16:55:34.371 +03:00 [INF] Starting Language Learning API
+2025-03-20 16:55:34.434 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-20 16:55:34.437 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-20 16:55:34.438 +03:00 [INF] Hosting environment: Development
+2025-03-20 16:55:34.438 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-20 17:05:06.857 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 17:05:06.860 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 17:05:18.326 +03:00 [INF] Received HTTP response headers after 11462.3883ms - 200
+2025-03-20 17:05:18.333 +03:00 [INF] End processing HTTP request after 11480.3613ms - 200
+2025-03-20 17:05:18.351 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-20 17:05:18.368 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 17:05:18.371 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 17:05:19.956 +03:00 [INF] Received HTTP response headers after 1583.7574ms - 200
+2025-03-20 17:05:19.960 +03:00 [INF] End processing HTTP request after 1593.5559ms - 200
+2025-03-20 17:05:19.969 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction. Attempting to parse.
+2025-03-20 17:05:19.972 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-20 17:05:19.974 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-20 17:05:26.657 +03:00 [INF] Received HTTP response headers after 6680.0381ms - 200
+2025-03-20 17:05:26.662 +03:00 [INF] End processing HTTP request after 6690.3498ms - 200
+2025-03-20 17:05:26.775 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-20 17:06:37.513 +03:00 [INF] Application is shutting down...
+2025-03-20 19:16:47.057 +03:00 [INF] Starting Language Learning API
+2025-03-20 19:16:47.118 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-20 19:16:47.121 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-20 19:16:47.122 +03:00 [INF] Hosting environment: Development
+2025-03-20 19:16:47.122 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
