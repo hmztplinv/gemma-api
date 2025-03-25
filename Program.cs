@@ -80,6 +80,7 @@ builder.Services.AddScoped<TokenService>();
 builder.Services.AddScoped<ILlmService, LlmService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IConversationService, ConversationService>();
+builder.Services.AddScoped<IUserVocabularyService, UserVocabularyService>();
 
 // Configure authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

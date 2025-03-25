@@ -10,3 +10,4 @@ public class UserProfileDto
         public int CurrentStreak { get; set; }
         public int LongestStreak { get; set; }
     }
+

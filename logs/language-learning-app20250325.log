@@ -1,0 +1,817 @@
+2025-03-25 09:59:47.156 +03:00 [INF] Starting Language Learning API
+2025-03-25 09:59:47.404 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-25 09:59:47.407 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-25 09:59:47.408 +03:00 [INF] Hosting environment: Development
+2025-03-25 09:59:47.408 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-25 10:00:53.041 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:00:53.048 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:01:20.406 +03:00 [INF] Received HTTP response headers after 27353.6876ms - 200
+2025-03-25 10:01:20.412 +03:00 [INF] End processing HTTP request after 27373.5957ms - 200
+2025-03-25 10:01:20.421 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-25 10:01:20.436 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:01:20.440 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:01:21.595 +03:00 [INF] Received HTTP response headers after 1153.4295ms - 200
+2025-03-25 10:01:21.597 +03:00 [INF] End processing HTTP request after 1161.4369ms - 200
+2025-03-25 10:01:21.602 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction. Attempting to parse.
+2025-03-25 10:01:21.604 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:01:21.606 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:01:23.675 +03:00 [INF] Received HTTP response headers after 2067.0968ms - 200
+2025-03-25 10:01:23.678 +03:00 [INF] End processing HTTP request after 2074.4239ms - 200
+2025-03-25 10:01:23.757 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-25 10:01:43.804 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:01:43.806 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:01:47.375 +03:00 [INF] Received HTTP response headers after 3567.6477ms - 200
+2025-03-25 10:01:47.376 +03:00 [INF] End processing HTTP request after 3572.1628ms - 200
+2025-03-25 10:01:47.378 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-25 10:01:47.381 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:01:47.382 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:01:48.903 +03:00 [INF] Received HTTP response headers after 1519.8863ms - 200
+2025-03-25 10:01:48.905 +03:00 [INF] End processing HTTP request after 1524.7051ms - 200
+2025-03-25 10:01:48.906 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction. Attempting to parse.
+2025-03-25 10:01:48.926 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:01:48.928 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:01:54.127 +03:00 [INF] Received HTTP response headers after 5197.3458ms - 200
+2025-03-25 10:01:54.131 +03:00 [INF] End processing HTTP request after 5205.2018ms - 200
+2025-03-25 10:02:44.851 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:02:44.853 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:02:59.358 +03:00 [INF] Received HTTP response headers after 14503.2138ms - 200
+2025-03-25 10:02:59.362 +03:00 [INF] End processing HTTP request after 14511.0175ms - 200
+2025-03-25 10:02:59.365 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-25 10:02:59.383 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:02:59.385 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:03:01.071 +03:00 [INF] Received HTTP response headers after 1684.9131ms - 200
+2025-03-25 10:03:01.074 +03:00 [INF] End processing HTTP request after 1690.1924ms - 200
+2025-03-25 10:03:01.076 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction. Attempting to parse.
+2025-03-25 10:03:01.083 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:03:01.084 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:03:07.248 +03:00 [INF] Received HTTP response headers after 6160.3401ms - 200
+2025-03-25 10:03:07.252 +03:00 [INF] End processing HTTP request after 6169.6504ms - 200
+2025-03-25 10:04:31.994 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:04:31.995 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:04:41.795 +03:00 [INF] Received HTTP response headers after 9799.0804ms - 200
+2025-03-25 10:04:41.799 +03:00 [INF] End processing HTTP request after 9805.2463ms - 200
+2025-03-25 10:04:41.800 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-25 10:04:41.818 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:04:41.820 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:04:43.338 +03:00 [INF] Received HTTP response headers after 1516.2289ms - 200
+2025-03-25 10:04:43.340 +03:00 [INF] End processing HTTP request after 1522.4383ms - 200
+2025-03-25 10:04:43.343 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction. Attempting to parse.
+2025-03-25 10:04:43.349 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:04:43.350 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:04:52.066 +03:00 [INF] Received HTTP response headers after 8715.081ms - 200
+2025-03-25 10:04:52.068 +03:00 [INF] End processing HTTP request after 8719.1518ms - 200
+2025-03-25 10:05:48.018 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:05:48.019 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:05:55.334 +03:00 [INF] Received HTTP response headers after 7312.6371ms - 200
+2025-03-25 10:05:55.336 +03:00 [INF] End processing HTTP request after 7318.2219ms - 200
+2025-03-25 10:05:55.339 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-25 10:05:55.359 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:05:55.361 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:05:56.976 +03:00 [INF] Received HTTP response headers after 1612.3608ms - 200
+2025-03-25 10:05:56.979 +03:00 [INF] End processing HTTP request after 1620.0778ms - 200
+2025-03-25 10:05:56.981 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction. Attempting to parse.
+2025-03-25 10:05:56.989 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:05:56.992 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 10:06:06.920 +03:00 [INF] Received HTTP response headers after 9927.015ms - 200
+2025-03-25 10:06:06.923 +03:00 [INF] End processing HTTP request after 9934.2633ms - 200
+2025-03-25 11:36:00.560 +03:00 [INF] Application is shutting down...
+2025-03-25 11:36:06.100 +03:00 [INF] Starting Language Learning API
+2025-03-25 11:36:06.156 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-25 11:36:06.160 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-25 11:36:06.161 +03:00 [INF] Hosting environment: Development
+2025-03-25 11:36:06.161 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-25 11:38:06.130 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-25 11:46:56.241 +03:00 [INF] Application is shutting down...
+2025-03-25 11:47:02.140 +03:00 [INF] Starting Language Learning API
+2025-03-25 11:47:02.198 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-25 11:47:02.201 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-25 11:47:02.202 +03:00 [INF] Hosting environment: Development
+2025-03-25 11:47:02.202 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-25 11:47:23.310 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:47:23.313 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:47:34.627 +03:00 [INF] Received HTTP response headers after 11310.219ms - 200
+2025-03-25 11:47:34.632 +03:00 [INF] End processing HTTP request after 11325.7243ms - 200
+2025-03-25 11:47:34.641 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-25 11:47:34.657 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:47:34.658 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:47:36.395 +03:00 [INF] Received HTTP response headers after 1734.3211ms - 200
+2025-03-25 11:47:36.398 +03:00 [INF] End processing HTTP request after 1741.9132ms - 200
+2025-03-25 11:47:36.401 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction. Attempting to parse.
+2025-03-25 11:47:36.404 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:47:36.407 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:47:40.760 +03:00 [INF] Received HTTP response headers after 4350.8949ms - 200
+2025-03-25 11:47:40.763 +03:00 [INF] End processing HTTP request after 4358.5169ms - 200
+2025-03-25 11:47:40.833 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-25 11:51:07.393 +03:00 [INF] Application is shutting down...
+2025-03-25 11:51:12.479 +03:00 [INF] Starting Language Learning API
+2025-03-25 11:51:12.542 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-25 11:51:12.546 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-25 11:51:12.547 +03:00 [INF] Hosting environment: Development
+2025-03-25 11:51:12.547 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-25 11:51:26.336 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:51:26.340 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:51:32.433 +03:00 [INF] Received HTTP response headers after 6090.0718ms - 200
+2025-03-25 11:51:32.439 +03:00 [INF] End processing HTTP request after 6105.1816ms - 200
+2025-03-25 11:51:32.447 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-25 11:51:32.471 +03:00 [INF] Starting vocabulary processing for message: 'hello there'
+2025-03-25 11:51:32.474 +03:00 [INF] Starting vocabulary extraction for message
+2025-03-25 11:51:32.475 +03:00 [INF] Sending prompt to LLM: 
+        Extract the most important vocabulary words from the following text. 
+        Include only words that would be useful for an English language learner to know.
+        Return a JSON array containing only the words.
+
+        Text: 'hello there'
+        
+2025-03-25 11:51:32.477 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:51:32.478 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:51:33.629 +03:00 [INF] Received HTTP response headers after 1149.4422ms - 200
+2025-03-25 11:51:33.632 +03:00 [INF] End processing HTTP request after 1155.6608ms - 200
+2025-03-25 11:51:33.634 +03:00 [INF] Raw response from LLM: ```json
+[
+  "hello",
+  "there"
+]
+```
+
+2025-03-25 11:51:33.640 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction: '`' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 11:51:33.641 +03:00 [WRN] Attempting to fix response: ```json
+[
+  "hello",
+  "there"
+]
+```
+
+2025-03-25 11:51:33.643 +03:00 [INF] Extracted JSON part: [
+  "hello",
+  "there"
+]
+2025-03-25 11:51:33.646 +03:00 [INF] Fixed JSON parse successful: ["hello","there"]
+2025-03-25 11:51:33.648 +03:00 [INF] Extracted words: ["hello","there"]
+2025-03-25 11:51:33.785 +03:00 [INF] Word 'hello' exists in DB: False
+2025-03-25 11:51:33.787 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:51:33.788 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:51:34.243 +03:00 [INF] Received HTTP response headers after 454.1613ms - 200
+2025-03-25 11:51:34.244 +03:00 [INF] End processing HTTP request after 457.3229ms - 200
+2025-03-25 11:51:34.246 +03:00 [INF] Determined level for 'hello': A1
+2025-03-25 11:51:34.254 +03:00 [INF] Added new word to vocabulary: 'hello'
+2025-03-25 11:51:34.259 +03:00 [INF] Word 'there' exists in DB: False
+2025-03-25 11:51:34.260 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:51:34.261 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:51:34.800 +03:00 [INF] Received HTTP response headers after 538.0896ms - 200
+2025-03-25 11:51:34.805 +03:00 [INF] End processing HTTP request after 544.7461ms - 200
+2025-03-25 11:51:34.807 +03:00 [INF] Determined level for 'there': A1
+2025-03-25 11:51:34.809 +03:00 [INF] Added new word to vocabulary: 'there'
+2025-03-25 11:51:34.846 +03:00 [INF] SaveChanges result: True, indicates True affected rows
+2025-03-25 11:51:34.849 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:51:34.850 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:51:36.872 +03:00 [INF] Received HTTP response headers after 2020.1631ms - 200
+2025-03-25 11:51:36.874 +03:00 [INF] End processing HTTP request after 2025.4279ms - 200
+2025-03-25 11:51:36.936 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-25 11:52:04.763 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:04.765 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:09.766 +03:00 [INF] Received HTTP response headers after 4999.7332ms - 200
+2025-03-25 11:52:09.769 +03:00 [INF] End processing HTTP request after 5005.6568ms - 200
+2025-03-25 11:52:09.771 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-25 11:52:09.788 +03:00 [INF] Starting vocabulary processing for message: 'upper level 10 english vocabulary please'
+2025-03-25 11:52:09.789 +03:00 [INF] Starting vocabulary extraction for message
+2025-03-25 11:52:09.790 +03:00 [INF] Sending prompt to LLM: 
+        Extract the most important vocabulary words from the following text. 
+        Include only words that would be useful for an English language learner to know.
+        Return a JSON array containing only the words.
+
+        Text: 'upper level 10 english vocabulary please'
+        
+2025-03-25 11:52:09.792 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:09.794 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:11.683 +03:00 [INF] Received HTTP response headers after 1887.3719ms - 200
+2025-03-25 11:52:11.685 +03:00 [INF] End processing HTTP request after 1893.3158ms - 200
+2025-03-25 11:52:11.688 +03:00 [INF] Raw response from LLM: ```json
+[
+  "upper",
+  "level",
+  "english",
+  "vocabulary",
+  "please"
+]
+```
+
+2025-03-25 11:52:11.690 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction: '`' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 11:52:11.691 +03:00 [WRN] Attempting to fix response: ```json
+[
+  "upper",
+  "level",
+  "english",
+  "vocabulary",
+  "please"
+]
+```
+
+2025-03-25 11:52:11.693 +03:00 [INF] Extracted JSON part: [
+  "upper",
+  "level",
+  "english",
+  "vocabulary",
+  "please"
+]
+2025-03-25 11:52:11.694 +03:00 [INF] Fixed JSON parse successful: ["upper","level","english","vocabulary","please"]
+2025-03-25 11:52:11.696 +03:00 [INF] Extracted words: ["upper","level","english","vocabulary","please"]
+2025-03-25 11:52:11.709 +03:00 [INF] Word 'upper' exists in DB: False
+2025-03-25 11:52:11.710 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:11.712 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:12.142 +03:00 [INF] Received HTTP response headers after 428.6911ms - 200
+2025-03-25 11:52:12.145 +03:00 [INF] End processing HTTP request after 435.1269ms - 200
+2025-03-25 11:52:12.148 +03:00 [INF] Determined level for 'upper': A2
+2025-03-25 11:52:12.150 +03:00 [INF] Added new word to vocabulary: 'upper'
+2025-03-25 11:52:12.152 +03:00 [INF] Word 'level' exists in DB: False
+2025-03-25 11:52:12.153 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:12.154 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:12.644 +03:00 [INF] Received HTTP response headers after 488.0652ms - 200
+2025-03-25 11:52:12.646 +03:00 [INF] End processing HTTP request after 493.026ms - 200
+2025-03-25 11:52:12.647 +03:00 [INF] Determined level for 'level': A2
+2025-03-25 11:52:12.648 +03:00 [INF] Added new word to vocabulary: 'level'
+2025-03-25 11:52:12.650 +03:00 [INF] Word 'english' exists in DB: False
+2025-03-25 11:52:12.651 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:12.652 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:13.146 +03:00 [INF] Received HTTP response headers after 492.8828ms - 200
+2025-03-25 11:52:13.150 +03:00 [INF] End processing HTTP request after 498.9241ms - 200
+2025-03-25 11:52:13.154 +03:00 [INF] Determined level for 'english': A1
+2025-03-25 11:52:13.155 +03:00 [INF] Added new word to vocabulary: 'english'
+2025-03-25 11:52:13.157 +03:00 [INF] Word 'vocabulary' exists in DB: False
+2025-03-25 11:52:13.158 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:13.159 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:13.657 +03:00 [INF] Received HTTP response headers after 495.0705ms - 200
+2025-03-25 11:52:13.660 +03:00 [INF] End processing HTTP request after 501.6775ms - 200
+2025-03-25 11:52:13.661 +03:00 [INF] Determined level for 'vocabulary': B2
+2025-03-25 11:52:13.662 +03:00 [INF] Added new word to vocabulary: 'vocabulary'
+2025-03-25 11:52:13.664 +03:00 [INF] Word 'please' exists in DB: False
+2025-03-25 11:52:13.666 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:13.667 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:14.234 +03:00 [INF] Received HTTP response headers after 565.7594ms - 200
+2025-03-25 11:52:14.237 +03:00 [INF] End processing HTTP request after 571.1504ms - 200
+2025-03-25 11:52:14.240 +03:00 [INF] Determined level for 'please': A1
+2025-03-25 11:52:14.242 +03:00 [INF] Added new word to vocabulary: 'please'
+2025-03-25 11:52:14.262 +03:00 [INF] SaveChanges result: True, indicates True affected rows
+2025-03-25 11:52:14.276 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:14.280 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:52:30.208 +03:00 [INF] Received HTTP response headers after 15926.1204ms - 200
+2025-03-25 11:52:30.214 +03:00 [INF] End processing HTTP request after 15937.485ms - 200
+2025-03-25 11:54:46.378 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:54:46.379 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:54:55.622 +03:00 [INF] Received HTTP response headers after 9241.5553ms - 200
+2025-03-25 11:54:55.625 +03:00 [INF] End processing HTTP request after 9247.6401ms - 200
+2025-03-25 11:54:55.628 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-25 11:54:55.643 +03:00 [INF] Starting vocabulary processing for message: ' thank you more 10 words releated like tech'
+2025-03-25 11:54:55.645 +03:00 [INF] Starting vocabulary extraction for message
+2025-03-25 11:54:55.646 +03:00 [INF] Sending prompt to LLM: 
+        Extract the most important vocabulary words from the following text. 
+        Include only words that would be useful for an English language learner to know.
+        Return a JSON array containing only the words.
+
+        Text: ' thank you more 10 words releated like tech'
+        
+2025-03-25 11:54:55.648 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:54:55.651 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:54:57.223 +03:00 [INF] Received HTTP response headers after 1570.3602ms - 200
+2025-03-25 11:54:57.226 +03:00 [INF] End processing HTTP request after 1577.1261ms - 200
+2025-03-25 11:54:57.227 +03:00 [INF] Raw response from LLM: ```json
+[
+  "thank",
+  "more",
+  "like",
+  "tech"
+]
+```
+
+2025-03-25 11:54:57.229 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction: '`' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 11:54:57.231 +03:00 [WRN] Attempting to fix response: ```json
+[
+  "thank",
+  "more",
+  "like",
+  "tech"
+]
+```
+
+2025-03-25 11:54:57.232 +03:00 [INF] Extracted JSON part: [
+  "thank",
+  "more",
+  "like",
+  "tech"
+]
+2025-03-25 11:54:57.233 +03:00 [INF] Fixed JSON parse successful: ["thank","more","like","tech"]
+2025-03-25 11:54:57.234 +03:00 [INF] Extracted words: ["thank","more","like","tech"]
+2025-03-25 11:54:57.241 +03:00 [INF] Word 'thank' exists in DB: False
+2025-03-25 11:54:57.242 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:54:57.243 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:54:57.712 +03:00 [INF] Received HTTP response headers after 466.1894ms - 200
+2025-03-25 11:54:57.716 +03:00 [INF] End processing HTTP request after 473.5121ms - 200
+2025-03-25 11:54:57.717 +03:00 [INF] Determined level for 'thank': A1
+2025-03-25 11:54:57.719 +03:00 [INF] Added new word to vocabulary: 'thank'
+2025-03-25 11:54:57.721 +03:00 [INF] Word 'more' exists in DB: False
+2025-03-25 11:54:57.723 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:54:57.724 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:54:58.212 +03:00 [INF] Received HTTP response headers after 486.2687ms - 200
+2025-03-25 11:54:58.215 +03:00 [INF] End processing HTTP request after 491.9124ms - 200
+2025-03-25 11:54:58.217 +03:00 [INF] Determined level for 'more': A1
+2025-03-25 11:54:58.218 +03:00 [INF] Added new word to vocabulary: 'more'
+2025-03-25 11:54:58.220 +03:00 [INF] Word 'like' exists in DB: False
+2025-03-25 11:54:58.222 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:54:58.223 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:54:58.723 +03:00 [INF] Received HTTP response headers after 498.8777ms - 200
+2025-03-25 11:54:58.728 +03:00 [INF] End processing HTTP request after 506.7669ms - 200
+2025-03-25 11:54:58.731 +03:00 [INF] Determined level for 'like': A1
+2025-03-25 11:54:58.732 +03:00 [INF] Added new word to vocabulary: 'like'
+2025-03-25 11:54:58.735 +03:00 [INF] Word 'tech' exists in DB: False
+2025-03-25 11:54:58.736 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:54:58.738 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:54:59.218 +03:00 [INF] Received HTTP response headers after 479.2754ms - 200
+2025-03-25 11:54:59.222 +03:00 [INF] End processing HTTP request after 485.5483ms - 200
+2025-03-25 11:54:59.223 +03:00 [INF] Determined level for 'tech': A1
+2025-03-25 11:54:59.226 +03:00 [INF] Added new word to vocabulary: 'tech'
+2025-03-25 11:54:59.239 +03:00 [INF] SaveChanges result: True, indicates True affected rows
+2025-03-25 11:54:59.245 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:54:59.247 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:55:25.422 +03:00 [INF] Received HTTP response headers after 26173.6728ms - 200
+2025-03-25 11:55:25.425 +03:00 [INF] End processing HTTP request after 26179.7573ms - 200
+2025-03-25 11:58:31.201 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:31.202 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:41.746 +03:00 [INF] Received HTTP response headers after 10543.0005ms - 200
+2025-03-25 11:58:41.751 +03:00 [INF] End processing HTTP request after 10550.1696ms - 200
+2025-03-25 11:58:41.756 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-25 11:58:41.763 +03:00 [INF] Starting vocabulary processing for message: ' it is tru buddy High latency can cause problems with online gaming'
+2025-03-25 11:58:41.766 +03:00 [INF] Starting vocabulary extraction for message
+2025-03-25 11:58:41.767 +03:00 [INF] Sending prompt to LLM: 
+        Extract the most important vocabulary words from the following text. 
+        Include only words that would be useful for an English language learner to know.
+        Return a JSON array containing only the words.
+
+        Text: ' it is tru buddy High latency can cause problems with online gaming'
+        
+2025-03-25 11:58:41.770 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:41.772 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:44.018 +03:00 [INF] Received HTTP response headers after 2244.5474ms - 200
+2025-03-25 11:58:44.022 +03:00 [INF] End processing HTTP request after 2251.8672ms - 200
+2025-03-25 11:58:44.024 +03:00 [INF] Raw response from LLM: ```json
+[
+  "true",
+  "buddy",
+  "latency",
+  "cause",
+  "problems",
+  "online",
+  "gaming"
+]
+```
+
+2025-03-25 11:58:44.026 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction: '`' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 11:58:44.027 +03:00 [WRN] Attempting to fix response: ```json
+[
+  "true",
+  "buddy",
+  "latency",
+  "cause",
+  "problems",
+  "online",
+  "gaming"
+]
+```
+
+2025-03-25 11:58:44.029 +03:00 [INF] Extracted JSON part: [
+  "true",
+  "buddy",
+  "latency",
+  "cause",
+  "problems",
+  "online",
+  "gaming"
+]
+2025-03-25 11:58:44.031 +03:00 [INF] Fixed JSON parse successful: ["true","buddy","latency","cause","problems","online","gaming"]
+2025-03-25 11:58:44.033 +03:00 [INF] Extracted words: ["true","buddy","latency","cause","problems","online","gaming"]
+2025-03-25 11:58:44.040 +03:00 [INF] Word 'true' exists in DB: False
+2025-03-25 11:58:44.043 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:44.045 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:44.514 +03:00 [INF] Received HTTP response headers after 467.5951ms - 200
+2025-03-25 11:58:44.517 +03:00 [INF] End processing HTTP request after 474.5071ms - 200
+2025-03-25 11:58:44.520 +03:00 [INF] Determined level for 'true': A1
+2025-03-25 11:58:44.521 +03:00 [INF] Added new word to vocabulary: 'true'
+2025-03-25 11:58:44.524 +03:00 [INF] Word 'buddy' exists in DB: False
+2025-03-25 11:58:44.526 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:44.528 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:45.034 +03:00 [INF] Received HTTP response headers after 504.8284ms - 200
+2025-03-25 11:58:45.038 +03:00 [INF] End processing HTTP request after 511.9518ms - 200
+2025-03-25 11:58:45.039 +03:00 [INF] Determined level for 'buddy': A1
+2025-03-25 11:58:45.041 +03:00 [INF] Added new word to vocabulary: 'buddy'
+2025-03-25 11:58:45.043 +03:00 [INF] Word 'latency' exists in DB: False
+2025-03-25 11:58:45.044 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:45.045 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:45.572 +03:00 [INF] Received HTTP response headers after 525.684ms - 200
+2025-03-25 11:58:45.577 +03:00 [INF] End processing HTTP request after 532.5223ms - 200
+2025-03-25 11:58:45.580 +03:00 [INF] Determined level for 'latency': B2
+2025-03-25 11:58:45.582 +03:00 [INF] Added new word to vocabulary: 'latency'
+2025-03-25 11:58:45.585 +03:00 [INF] Word 'cause' exists in DB: False
+2025-03-25 11:58:45.586 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:45.589 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:46.110 +03:00 [INF] Received HTTP response headers after 518.9488ms - 200
+2025-03-25 11:58:46.117 +03:00 [INF] End processing HTTP request after 530.6294ms - 200
+2025-03-25 11:58:46.121 +03:00 [INF] Determined level for 'cause': A1
+2025-03-25 11:58:46.123 +03:00 [INF] Added new word to vocabulary: 'cause'
+2025-03-25 11:58:46.126 +03:00 [INF] Word 'problems' exists in DB: False
+2025-03-25 11:58:46.128 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:46.130 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:46.651 +03:00 [INF] Received HTTP response headers after 519.5216ms - 200
+2025-03-25 11:58:46.655 +03:00 [INF] End processing HTTP request after 527.1692ms - 200
+2025-03-25 11:58:46.658 +03:00 [INF] Determined level for 'problems': B1
+2025-03-25 11:58:46.659 +03:00 [INF] Added new word to vocabulary: 'problems'
+2025-03-25 11:58:46.662 +03:00 [INF] Word 'online' exists in DB: False
+2025-03-25 11:58:46.664 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:46.665 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:47.180 +03:00 [INF] Received HTTP response headers after 513.659ms - 200
+2025-03-25 11:58:47.182 +03:00 [INF] End processing HTTP request after 518.4712ms - 200
+2025-03-25 11:58:47.183 +03:00 [INF] Determined level for 'online': A1
+2025-03-25 11:58:47.184 +03:00 [INF] Added new word to vocabulary: 'online'
+2025-03-25 11:58:47.186 +03:00 [INF] Word 'gaming' exists in DB: False
+2025-03-25 11:58:47.186 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:47.187 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:47.705 +03:00 [INF] Received HTTP response headers after 516.306ms - 200
+2025-03-25 11:58:47.709 +03:00 [INF] End processing HTTP request after 522.7637ms - 200
+2025-03-25 11:58:47.711 +03:00 [INF] Determined level for 'gaming': B2
+2025-03-25 11:58:47.712 +03:00 [INF] Added new word to vocabulary: 'gaming'
+2025-03-25 11:58:47.743 +03:00 [INF] SaveChanges result: True, indicates True affected rows
+2025-03-25 11:58:47.753 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:58:47.756 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 11:59:00.249 +03:00 [INF] Received HTTP response headers after 12491.6084ms - 200
+2025-03-25 11:59:00.252 +03:00 [INF] End processing HTTP request after 12499.3322ms - 200
+2025-03-25 12:05:36.482 +03:00 [INF] Application is shutting down...
+2025-03-25 12:05:43.328 +03:00 [INF] Starting Language Learning API
+2025-03-25 12:05:43.389 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-25 12:05:43.392 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-25 12:05:43.393 +03:00 [INF] Hosting environment: Development
+2025-03-25 12:05:43.394 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-25 12:06:14.586 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:14.590 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:24.348 +03:00 [INF] Received HTTP response headers after 9755.8257ms - 200
+2025-03-25 12:06:24.353 +03:00 [INF] End processing HTTP request after 9770.1937ms - 200
+2025-03-25 12:06:24.362 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-25 12:06:24.378 +03:00 [INF] Starting vocabulary processing for message: ' A virtual reality headset creates a virtual world it' great'
+2025-03-25 12:06:24.380 +03:00 [INF] Starting vocabulary extraction for message
+2025-03-25 12:06:24.383 +03:00 [INF] Sending prompt to LLM: 
+        Extract the most important vocabulary words from the following text. 
+        Include only words that would be useful for an English language learner to know.
+        Return a JSON array containing only the words.
+
+        Text: ' A virtual reality headset creates a virtual world it' great'
+        
+2025-03-25 12:06:24.386 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:24.389 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:26.224 +03:00 [INF] Received HTTP response headers after 1833.257ms - 200
+2025-03-25 12:06:26.226 +03:00 [INF] End processing HTTP request after 1840.8732ms - 200
+2025-03-25 12:06:26.229 +03:00 [INF] Raw response from LLM: ```json
+[
+  "virtual",
+  "reality",
+  "headset",
+  "world",
+  "great"
+]
+```
+
+2025-03-25 12:06:26.231 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction: '`' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 12:06:26.233 +03:00 [WRN] Attempting to fix response: ```json
+[
+  "virtual",
+  "reality",
+  "headset",
+  "world",
+  "great"
+]
+```
+
+2025-03-25 12:06:26.235 +03:00 [INF] Extracted JSON part: [
+  "virtual",
+  "reality",
+  "headset",
+  "world",
+  "great"
+]
+2025-03-25 12:06:26.237 +03:00 [INF] Fixed JSON parse successful: ["virtual","reality","headset","world","great"]
+2025-03-25 12:06:26.238 +03:00 [INF] Extracted words: ["virtual","reality","headset","world","great"]
+2025-03-25 12:06:26.263 +03:00 [INF] Word 'virtual' exists in DB: False
+2025-03-25 12:06:26.266 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:26.268 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:26.734 +03:00 [INF] Received HTTP response headers after 463.1443ms - 200
+2025-03-25 12:06:26.738 +03:00 [INF] End processing HTTP request after 472.0883ms - 200
+2025-03-25 12:06:26.741 +03:00 [INF] Determined level for 'virtual': A2
+2025-03-25 12:06:26.748 +03:00 [INF] Added new word to vocabulary: 'virtual'
+2025-03-25 12:06:26.750 +03:00 [INF] Word 'reality' exists in DB: False
+2025-03-25 12:06:26.753 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:26.754 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:27.257 +03:00 [INF] Received HTTP response headers after 501.695ms - 200
+2025-03-25 12:06:27.261 +03:00 [INF] End processing HTTP request after 508.3674ms - 200
+2025-03-25 12:06:27.264 +03:00 [INF] Determined level for 'reality': B2
+2025-03-25 12:06:27.266 +03:00 [INF] Added new word to vocabulary: 'reality'
+2025-03-25 12:06:27.268 +03:00 [INF] Word 'headset' exists in DB: False
+2025-03-25 12:06:27.270 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:27.271 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:27.751 +03:00 [INF] Received HTTP response headers after 478.0367ms - 200
+2025-03-25 12:06:27.752 +03:00 [INF] End processing HTTP request after 482.543ms - 200
+2025-03-25 12:06:27.755 +03:00 [INF] Determined level for 'headset': B2
+2025-03-25 12:06:27.755 +03:00 [INF] Added new word to vocabulary: 'headset'
+2025-03-25 12:06:27.758 +03:00 [INF] Word 'world' exists in DB: False
+2025-03-25 12:06:27.759 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:27.761 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:28.251 +03:00 [INF] Received HTTP response headers after 487.4863ms - 200
+2025-03-25 12:06:28.257 +03:00 [INF] End processing HTTP request after 497.4223ms - 200
+2025-03-25 12:06:28.259 +03:00 [INF] Determined level for 'world': A1
+2025-03-25 12:06:28.262 +03:00 [INF] Added new word to vocabulary: 'world'
+2025-03-25 12:06:28.266 +03:00 [INF] Word 'great' exists in DB: False
+2025-03-25 12:06:28.268 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:28.270 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:28.785 +03:00 [INF] Received HTTP response headers after 513.9165ms - 200
+2025-03-25 12:06:28.789 +03:00 [INF] End processing HTTP request after 520.9578ms - 200
+2025-03-25 12:06:28.793 +03:00 [INF] Determined level for 'great': A1
+2025-03-25 12:06:28.796 +03:00 [INF] Added new word to vocabulary: 'great'
+2025-03-25 12:06:28.843 +03:00 [INF] SaveChanges result: True, indicates True affected rows
+2025-03-25 12:06:28.860 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:28.863 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:06:40.311 +03:00 [INF] Received HTTP response headers after 11445.2549ms - 200
+2025-03-25 12:06:40.314 +03:00 [INF] End processing HTTP request after 11454.4707ms - 200
+2025-03-25 12:06:40.370 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-25 12:18:12.921 +03:00 [INF] Application is shutting down...
+2025-03-25 12:18:18.511 +03:00 [INF] Starting Language Learning API
+2025-03-25 12:18:18.574 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-25 12:18:18.577 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-25 12:18:18.578 +03:00 [INF] Hosting environment: Development
+2025-03-25 12:18:18.578 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-25 12:19:05.286 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:05.290 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:22.575 +03:00 [INF] Received HTTP response headers after 17283.0148ms - 200
+2025-03-25 12:19:22.580 +03:00 [INF] End processing HTTP request after 17298.5461ms - 200
+2025-03-25 12:19:22.591 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-25 12:19:22.675 +03:00 [INF] Starting vocabulary processing for message: ' Motion Simulation:** Haptic feedback (like vibrations) can enhance the sense of immersion.
+Head Tracking:** Sensors in the headset track your head movements, so the virtual world responds accordingly.'
+2025-03-25 12:19:22.680 +03:00 [INF] Starting vocabulary extraction for message
+2025-03-25 12:19:22.682 +03:00 [INF] Sending prompt to LLM: 
+        Extract the most important vocabulary words from the following text. 
+        Include only words that would be useful for an English language learner to know.
+        Return a JSON array containing only the words.
+
+        Text: ' Motion Simulation:** Haptic feedback (like vibrations) can enhance the sense of immersion.
+Head Tracking:** Sensors in the headset track your head movements, so the virtual world responds accordingly.'
+        
+2025-03-25 12:19:22.683 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:22.684 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:26.520 +03:00 [INF] Received HTTP response headers after 3834.3435ms - 200
+2025-03-25 12:19:26.524 +03:00 [INF] End processing HTTP request after 3841.0387ms - 200
+2025-03-25 12:19:26.526 +03:00 [INF] Raw response from LLM: ```json
+[
+  "motion",
+  "simulation",
+  "haptic",
+  "feedback",
+  "vibrations",
+  "sense",
+  "immersion",
+  "head",
+  "tracking",
+  "sensors",
+  "respond",
+  "virtual"
+]
+```
+
+2025-03-25 12:19:26.528 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction: '`' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 12:19:26.529 +03:00 [WRN] Attempting to fix response: ```json
+[
+  "motion",
+  "simulation",
+  "haptic",
+  "feedback",
+  "vibrations",
+  "sense",
+  "immersion",
+  "head",
+  "tracking",
+  "sensors",
+  "respond",
+  "virtual"
+]
+```
+
+2025-03-25 12:19:26.531 +03:00 [INF] Extracted JSON part: [
+  "motion",
+  "simulation",
+  "haptic",
+  "feedback",
+  "vibrations",
+  "sense",
+  "immersion",
+  "head",
+  "tracking",
+  "sensors",
+  "respond",
+  "virtual"
+]
+2025-03-25 12:19:26.533 +03:00 [INF] Fixed JSON parse successful: ["motion","simulation","haptic","feedback","vibrations","sense","immersion","head","tracking","sensors","respond","virtual"]
+2025-03-25 12:19:26.534 +03:00 [INF] Extracted words: ["motion","simulation","haptic","feedback","vibrations","sense","immersion","head","tracking","sensors","respond","virtual"]
+2025-03-25 12:19:26.556 +03:00 [INF] Word 'motion' exists in DB: False
+2025-03-25 12:19:26.559 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:26.560 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:27.086 +03:00 [INF] Received HTTP response headers after 525.0048ms - 200
+2025-03-25 12:19:27.088 +03:00 [INF] End processing HTTP request after 529.6145ms - 200
+2025-03-25 12:19:27.091 +03:00 [INF] Determined level for 'motion': B1
+2025-03-25 12:19:27.095 +03:00 [INF] Added new word to vocabulary: 'motion'
+2025-03-25 12:19:27.097 +03:00 [INF] Word 'simulation' exists in DB: False
+2025-03-25 12:19:27.099 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:27.101 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:27.612 +03:00 [INF] Received HTTP response headers after 509.4179ms - 200
+2025-03-25 12:19:27.616 +03:00 [INF] End processing HTTP request after 517.7985ms - 200
+2025-03-25 12:19:27.618 +03:00 [INF] Determined level for 'simulation': B2
+2025-03-25 12:19:27.619 +03:00 [INF] Added new word to vocabulary: 'simulation'
+2025-03-25 12:19:27.623 +03:00 [INF] Word 'haptic' exists in DB: False
+2025-03-25 12:19:27.625 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:27.626 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:28.168 +03:00 [INF] Received HTTP response headers after 540.7333ms - 200
+2025-03-25 12:19:28.172 +03:00 [INF] End processing HTTP request after 546.9927ms - 200
+2025-03-25 12:19:28.174 +03:00 [INF] Determined level for 'haptic': C2
+2025-03-25 12:19:28.175 +03:00 [INF] Added new word to vocabulary: 'haptic'
+2025-03-25 12:19:28.177 +03:00 [INF] Word 'feedback' exists in DB: False
+2025-03-25 12:19:28.179 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:28.180 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:28.676 +03:00 [INF] Received HTTP response headers after 494.8552ms - 200
+2025-03-25 12:19:28.679 +03:00 [INF] End processing HTTP request after 500.1231ms - 200
+2025-03-25 12:19:28.681 +03:00 [INF] Determined level for 'feedback': B1
+2025-03-25 12:19:28.682 +03:00 [INF] Added new word to vocabulary: 'feedback'
+2025-03-25 12:19:28.685 +03:00 [INF] Word 'vibrations' exists in DB: False
+2025-03-25 12:19:28.686 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:28.687 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:29.207 +03:00 [INF] Received HTTP response headers after 517.9622ms - 200
+2025-03-25 12:19:29.210 +03:00 [INF] End processing HTTP request after 524.6729ms - 200
+2025-03-25 12:19:29.216 +03:00 [INF] Determined level for 'vibrations': A2
+2025-03-25 12:19:29.217 +03:00 [INF] Added new word to vocabulary: 'vibrations'
+2025-03-25 12:19:29.219 +03:00 [INF] Word 'sense' exists in DB: False
+2025-03-25 12:19:29.220 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:29.222 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:29.744 +03:00 [INF] Received HTTP response headers after 519.7247ms - 200
+2025-03-25 12:19:29.746 +03:00 [INF] End processing HTTP request after 525.8633ms - 200
+2025-03-25 12:19:29.748 +03:00 [INF] Determined level for 'sense': A1
+2025-03-25 12:19:29.750 +03:00 [INF] Added new word to vocabulary: 'sense'
+2025-03-25 12:19:29.753 +03:00 [INF] Word 'immersion' exists in DB: False
+2025-03-25 12:19:29.754 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:29.756 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:30.285 +03:00 [INF] Received HTTP response headers after 528.0399ms - 200
+2025-03-25 12:19:30.288 +03:00 [INF] End processing HTTP request after 533.6394ms - 200
+2025-03-25 12:19:30.290 +03:00 [INF] Determined level for 'immersion': B2
+2025-03-25 12:19:30.291 +03:00 [INF] Added new word to vocabulary: 'immersion'
+2025-03-25 12:19:30.292 +03:00 [INF] Word 'head' exists in DB: False
+2025-03-25 12:19:30.293 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:30.295 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:30.801 +03:00 [INF] Received HTTP response headers after 505.2421ms - 200
+2025-03-25 12:19:30.802 +03:00 [INF] End processing HTTP request after 509.0933ms - 200
+2025-03-25 12:19:30.805 +03:00 [INF] Determined level for 'head': A1
+2025-03-25 12:19:30.805 +03:00 [INF] Added new word to vocabulary: 'head'
+2025-03-25 12:19:30.808 +03:00 [INF] Word 'tracking' exists in DB: False
+2025-03-25 12:19:30.809 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:30.810 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:31.389 +03:00 [INF] Received HTTP response headers after 577.5849ms - 200
+2025-03-25 12:19:31.393 +03:00 [INF] End processing HTTP request after 583.2293ms - 200
+2025-03-25 12:19:31.394 +03:00 [INF] Determined level for 'tracking': B2
+2025-03-25 12:19:31.395 +03:00 [INF] Added new word to vocabulary: 'tracking'
+2025-03-25 12:19:31.398 +03:00 [INF] Word 'sensors' exists in DB: False
+2025-03-25 12:19:31.399 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:31.401 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:31.957 +03:00 [INF] Received HTTP response headers after 555.4944ms - 200
+2025-03-25 12:19:31.961 +03:00 [INF] End processing HTTP request after 561.6141ms - 200
+2025-03-25 12:19:31.963 +03:00 [INF] Determined level for 'sensors': B2
+2025-03-25 12:19:31.964 +03:00 [INF] Added new word to vocabulary: 'sensors'
+2025-03-25 12:19:31.967 +03:00 [INF] Word 'respond' exists in DB: False
+2025-03-25 12:19:31.968 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:31.969 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:32.495 +03:00 [INF] Received HTTP response headers after 525.1485ms - 200
+2025-03-25 12:19:32.497 +03:00 [INF] End processing HTTP request after 528.7388ms - 200
+2025-03-25 12:19:32.498 +03:00 [INF] Determined level for 'respond': A2
+2025-03-25 12:19:32.500 +03:00 [INF] Added new word to vocabulary: 'respond'
+2025-03-25 12:19:32.505 +03:00 [INF] Word 'virtual' exists in DB: True
+2025-03-25 12:19:32.506 +03:00 [INF] Updated word 'virtual', encounters: 2
+2025-03-25 12:19:32.556 +03:00 [INF] SaveChanges result: True, indicates True affected rows
+2025-03-25 12:19:32.571 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:32.573 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:19:48.017 +03:00 [INF] Received HTTP response headers after 15442.0316ms - 200
+2025-03-25 12:19:48.020 +03:00 [INF] End processing HTTP request after 15448.5348ms - 200
+2025-03-25 12:19:48.062 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-25 12:20:20.614 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:20:20.615 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:20:30.458 +03:00 [INF] Received HTTP response headers after 9841.9811ms - 200
+2025-03-25 12:20:30.460 +03:00 [INF] End processing HTTP request after 9846.2807ms - 200
+2025-03-25 12:20:30.462 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-25 12:20:30.502 +03:00 [INF] Starting vocabulary processing for message: ' ı like my virtual asistan gpt'
+2025-03-25 12:20:30.504 +03:00 [INF] Starting vocabulary extraction for message
+2025-03-25 12:20:30.505 +03:00 [INF] Sending prompt to LLM: 
+        Extract the most important vocabulary words from the following text. 
+        Include only words that would be useful for an English language learner to know.
+        Return a JSON array containing only the words.
+
+        Text: ' ı like my virtual asistan gpt'
+        
+2025-03-25 12:20:30.506 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:20:30.507 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:20:32.180 +03:00 [INF] Received HTTP response headers after 1671.1905ms - 200
+2025-03-25 12:20:32.182 +03:00 [INF] End processing HTTP request after 1675.4805ms - 200
+2025-03-25 12:20:32.183 +03:00 [INF] Raw response from LLM: ```json
+[
+  "like",
+  "virtual",
+  "assistant",
+  "GPT"
+]
+```
+
+2025-03-25 12:20:32.184 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction: '`' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 12:20:32.184 +03:00 [WRN] Attempting to fix response: ```json
+[
+  "like",
+  "virtual",
+  "assistant",
+  "GPT"
+]
+```
+
+2025-03-25 12:20:32.185 +03:00 [INF] Extracted JSON part: [
+  "like",
+  "virtual",
+  "assistant",
+  "GPT"
+]
+2025-03-25 12:20:32.186 +03:00 [INF] Fixed JSON parse successful: ["like","virtual","assistant","GPT"]
+2025-03-25 12:20:32.188 +03:00 [INF] Extracted words: ["like","virtual","assistant","GPT"]
+2025-03-25 12:20:32.194 +03:00 [INF] Word 'like' exists in DB: True
+2025-03-25 12:20:32.195 +03:00 [INF] Updated word 'like', encounters: 2
+2025-03-25 12:20:32.197 +03:00 [INF] Word 'virtual' exists in DB: True
+2025-03-25 12:20:32.197 +03:00 [INF] Updated word 'virtual', encounters: 3
+2025-03-25 12:20:32.198 +03:00 [INF] Word 'assistant' exists in DB: False
+2025-03-25 12:20:32.199 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:20:32.200 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:20:32.711 +03:00 [INF] Received HTTP response headers after 509.8253ms - 200
+2025-03-25 12:20:32.714 +03:00 [INF] End processing HTTP request after 515.1654ms - 200
+2025-03-25 12:20:32.715 +03:00 [INF] Determined level for 'assistant': B1
+2025-03-25 12:20:32.716 +03:00 [INF] Added new word to vocabulary: 'assistant'
+2025-03-25 12:20:32.720 +03:00 [INF] Word 'GPT' exists in DB: False
+2025-03-25 12:20:32.722 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:20:32.723 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:20:33.174 +03:00 [INF] Received HTTP response headers after 448.9953ms - 200
+2025-03-25 12:20:33.176 +03:00 [INF] End processing HTTP request after 453.568ms - 200
+2025-03-25 12:20:33.177 +03:00 [INF] Determined level for 'GPT': A2
+2025-03-25 12:20:33.178 +03:00 [INF] Added new word to vocabulary: 'GPT'
+2025-03-25 12:20:33.205 +03:00 [INF] SaveChanges result: True, indicates True affected rows
+2025-03-25 12:20:33.212 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:20:33.214 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:20:52.764 +03:00 [INF] Received HTTP response headers after 19548.5001ms - 200
+2025-03-25 12:20:52.765 +03:00 [INF] End processing HTTP request after 19552.2203ms - 200
+2025-03-25 12:23:01.307 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:23:01.309 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:23:07.511 +03:00 [INF] Received HTTP response headers after 6200.7357ms - 200
+2025-03-25 12:23:07.513 +03:00 [INF] End processing HTTP request after 6205.9174ms - 200
+2025-03-25 12:23:07.514 +03:00 [WRN] LLM returned non-JSON response for error analysis. Attempting to format.
+2025-03-25 12:23:07.547 +03:00 [INF] Starting vocabulary processing for message: ' virtual world '
+2025-03-25 12:23:07.547 +03:00 [INF] Starting vocabulary extraction for message
+2025-03-25 12:23:07.548 +03:00 [INF] Sending prompt to LLM: 
+        Extract the most important vocabulary words from the following text. 
+        Include only words that would be useful for an English language learner to know.
+        Return a JSON array containing only the words.
+
+        Text: ' virtual world '
+        
+2025-03-25 12:23:07.549 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:23:07.551 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:23:08.777 +03:00 [INF] Received HTTP response headers after 1225.8137ms - 200
+2025-03-25 12:23:08.780 +03:00 [INF] End processing HTTP request after 1231.2473ms - 200
+2025-03-25 12:23:08.784 +03:00 [INF] Raw response from LLM: ```json
+[
+  "virtual",
+  "world"
+]
+```
+
+2025-03-25 12:23:08.786 +03:00 [WRN] LLM returned non-JSON response for vocabulary extraction: '`' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 12:23:08.787 +03:00 [WRN] Attempting to fix response: ```json
+[
+  "virtual",
+  "world"
+]
+```
+
+2025-03-25 12:23:08.788 +03:00 [INF] Extracted JSON part: [
+  "virtual",
+  "world"
+]
+2025-03-25 12:23:08.789 +03:00 [INF] Fixed JSON parse successful: ["virtual","world"]
+2025-03-25 12:23:08.790 +03:00 [INF] Extracted words: ["virtual","world"]
+2025-03-25 12:23:08.795 +03:00 [INF] Word 'virtual' exists in DB: True
+2025-03-25 12:23:08.796 +03:00 [INF] Updated word 'virtual', encounters: 4
+2025-03-25 12:23:08.798 +03:00 [INF] Word 'world' exists in DB: True
+2025-03-25 12:23:08.799 +03:00 [INF] Updated word 'world', encounters: 2
+2025-03-25 12:23:08.806 +03:00 [INF] SaveChanges result: True, indicates True affected rows
+2025-03-25 12:23:08.812 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:23:08.813 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 12:23:25.728 +03:00 [INF] Received HTTP response headers after 16913.1037ms - 200
+2025-03-25 12:23:25.731 +03:00 [INF] End processing HTTP request after 16919.1222ms - 200
+2025-03-25 12:25:49.962 +03:00 [INF] Application is shutting down...

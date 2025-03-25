@@ -81,35 +81,62 @@ namespace LanguageLearningApp.API.Infrastructure.Services
         }
 
         public async Task<List<string>> ExtractVocabularyAsync(string userMessage)
+{
+    try
+    {
+        _logger.LogInformation("Starting vocabulary extraction for message");
+        
+        var prompt = @$"
+        Extract the most important vocabulary words from the following text. 
+        Include only words that would be useful for an English language learner to know.
+        Return a JSON array containing only the words.
+
+        Text: '{userMessage}'
+        ";
+        
+        _logger.LogInformation($"Sending prompt to LLM: {prompt}");
+
+        var response = await CallOllamaApiAsync(prompt);
+        _logger.LogInformation($"Raw response from LLM: {response}");
+
+        try
         {
-            try
-            {
-                var prompt = @$"
-                Extract the most important vocabulary words from the following text. 
-                Include only words that would be useful for an English language learner to know.
-                Return a JSON array containing only the words.
-
-                Text: '{userMessage}'
-                ";
-
-                var response = await CallOllamaApiAsync(prompt);
-
-                try
-                {
-                    return JsonSerializer.Deserialize<List<string>>(response) ?? new List<string>();
-                }
-                catch (JsonException)
-                {
-                    _logger.LogWarning("LLM returned non-JSON response for vocabulary extraction. Attempting to parse.");
-                    return new List<string>();
-                }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error extracting vocabulary");
-                return new List<string>();
-            }
+            var words = JsonSerializer.Deserialize<List<string>>(response);
+            _logger.LogInformation($"Successfully deserialized JSON response: {JsonSerializer.Serialize(words)}");
+            return words ?? new List<string>();
         }
+        catch (JsonException jsonEx)
+        {
+            _logger.LogWarning($"LLM returned non-JSON response for vocabulary extraction: {jsonEx.Message}");
+            _logger.LogWarning($"Attempting to fix response: {response}");
+            
+            // Basit bir düzeltme denemesi
+            if (response.Contains("[") && response.Contains("]"))
+            {
+                try {
+                    var startIdx = response.IndexOf("[");
+                    var endIdx = response.LastIndexOf("]") + 1;
+                    var jsonPart = response.Substring(startIdx, endIdx - startIdx);
+                    _logger.LogInformation($"Extracted JSON part: {jsonPart}");
+                    
+                    var wordsFixed = JsonSerializer.Deserialize<List<string>>(jsonPart);
+                    _logger.LogInformation($"Fixed JSON parse successful: {JsonSerializer.Serialize(wordsFixed)}");
+                    return wordsFixed ?? new List<string>();
+                }
+                catch (Exception ex) {
+                    _logger.LogError($"Fix attempt failed: {ex.Message}");
+                }
+            }
+            
+            return new List<string>();
+        }
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, "Error extracting vocabulary: {ErrorMessage}", ex.Message);
+        return new List<string>();
+    }
+}
 
         public async Task<string> GetVocabularyLevelAsync(string word)
         {
