@@ -81,6 +81,7 @@ builder.Services.AddScoped<ILlmService, LlmService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IConversationService, ConversationService>();
 builder.Services.AddScoped<IUserVocabularyService, UserVocabularyService>();
+builder.Services.AddScoped<IQuizService, QuizService>();
 
 // Configure authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

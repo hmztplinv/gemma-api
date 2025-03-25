@@ -81,62 +81,64 @@ namespace LanguageLearningApp.API.Infrastructure.Services
         }
 
         public async Task<List<string>> ExtractVocabularyAsync(string userMessage)
-{
-    try
-    {
-        _logger.LogInformation("Starting vocabulary extraction for message");
-        
-        var prompt = @$"
+        {
+            try
+            {
+                _logger.LogInformation("Starting vocabulary extraction for message");
+
+                var prompt = @$"
         Extract the most important vocabulary words from the following text. 
         Include only words that would be useful for an English language learner to know.
         Return a JSON array containing only the words.
 
         Text: '{userMessage}'
         ";
-        
-        _logger.LogInformation($"Sending prompt to LLM: {prompt}");
 
-        var response = await CallOllamaApiAsync(prompt);
-        _logger.LogInformation($"Raw response from LLM: {response}");
+                _logger.LogInformation($"Sending prompt to LLM: {prompt}");
 
-        try
-        {
-            var words = JsonSerializer.Deserialize<List<string>>(response);
-            _logger.LogInformation($"Successfully deserialized JSON response: {JsonSerializer.Serialize(words)}");
-            return words ?? new List<string>();
-        }
-        catch (JsonException jsonEx)
-        {
-            _logger.LogWarning($"LLM returned non-JSON response for vocabulary extraction: {jsonEx.Message}");
-            _logger.LogWarning($"Attempting to fix response: {response}");
-            
-            // Basit bir düzeltme denemesi
-            if (response.Contains("[") && response.Contains("]"))
-            {
-                try {
-                    var startIdx = response.IndexOf("[");
-                    var endIdx = response.LastIndexOf("]") + 1;
-                    var jsonPart = response.Substring(startIdx, endIdx - startIdx);
-                    _logger.LogInformation($"Extracted JSON part: {jsonPart}");
-                    
-                    var wordsFixed = JsonSerializer.Deserialize<List<string>>(jsonPart);
-                    _logger.LogInformation($"Fixed JSON parse successful: {JsonSerializer.Serialize(wordsFixed)}");
-                    return wordsFixed ?? new List<string>();
+                var response = await CallOllamaApiAsync(prompt);
+                _logger.LogInformation($"Raw response from LLM: {response}");
+
+                try
+                {
+                    var words = JsonSerializer.Deserialize<List<string>>(response);
+                    _logger.LogInformation($"Successfully deserialized JSON response: {JsonSerializer.Serialize(words)}");
+                    return words ?? new List<string>();
                 }
-                catch (Exception ex) {
-                    _logger.LogError($"Fix attempt failed: {ex.Message}");
+                catch (JsonException jsonEx)
+                {
+                    _logger.LogWarning($"LLM returned non-JSON response for vocabulary extraction: {jsonEx.Message}");
+                    _logger.LogWarning($"Attempting to fix response: {response}");
+
+                    // Basit bir düzeltme denemesi
+                    if (response.Contains("[") && response.Contains("]"))
+                    {
+                        try
+                        {
+                            var startIdx = response.IndexOf("[");
+                            var endIdx = response.LastIndexOf("]") + 1;
+                            var jsonPart = response.Substring(startIdx, endIdx - startIdx);
+                            _logger.LogInformation($"Extracted JSON part: {jsonPart}");
+
+                            var wordsFixed = JsonSerializer.Deserialize<List<string>>(jsonPart);
+                            _logger.LogInformation($"Fixed JSON parse successful: {JsonSerializer.Serialize(wordsFixed)}");
+                            return wordsFixed ?? new List<string>();
+                        }
+                        catch (Exception ex)
+                        {
+                            _logger.LogError($"Fix attempt failed: {ex.Message}");
+                        }
+                    }
+
+                    return new List<string>();
                 }
             }
-            
-            return new List<string>();
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error extracting vocabulary: {ErrorMessage}", ex.Message);
+                return new List<string>();
+            }
         }
-    }
-    catch (Exception ex)
-    {
-        _logger.LogError(ex, "Error extracting vocabulary: {ErrorMessage}", ex.Message);
-        return new List<string>();
-    }
-}
 
         public async Task<string> GetVocabularyLevelAsync(string word)
         {
@@ -171,12 +173,21 @@ namespace LanguageLearningApp.API.Infrastructure.Services
             try
             {
                 var prompt = @$"
-                Generate an English language quiz question about '{topic}' for CEFR level {level}.
-                Return the response as JSON with the following properties:
-                - question: The question text
-                - options: An array of 4 possible answers
-                - correctAnswer: The correct option (must be one of the options)
-                - explanation: A brief explanation of why this is the correct answer
+                You are an English language teacher creating a vocabulary quiz.
+
+                Create ONE multiple-choice question about the word '{topic}' appropriate for {level} level English students.
+
+                IMPORTANT: Your response must be a single valid JSON object exactly in this format:
+                {{
+                ""question"": ""[A specific question about the word that tests understanding]"",
+                ""options"": [""[Correct answer]"", ""[Wrong answer 1]"", ""[Wrong answer 2]"", ""[Wrong answer 3]""],
+                ""correctAnswer"": ""[Exact copy of the correct answer from options]"",
+                ""explanation"": ""[Brief explanation why this is correct]""
+                }}
+
+                For example, if the word is 'book', don't ask 'What is the meaning of book?' Instead, ask 'Which of these is a book?' or 'What do you typically do with a book?'
+
+                The options should be meaningful alternatives, not just 'Option 2', 'Option 3'.
                 ";
 
                 var response = await CallOllamaApiAsync(prompt);
