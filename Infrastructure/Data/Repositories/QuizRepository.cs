@@ -20,5 +20,13 @@ namespace LanguageLearningApp.API.Infrastructure.Data.Repositories
                 .Include(q => q.Questions)
                 .ToListAsync();
         }
+
+        public async Task<Quiz> GetByIdAsync(int id)
+        {
+
+            return await _context.Quizzes
+                .Include(q => q.Questions)
+                .FirstOrDefaultAsync(q => q.Id == id);
+        }
     }
 }

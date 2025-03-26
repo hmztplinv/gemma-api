@@ -4,4 +4,5 @@ public class QuizQuestionDto
         public string Question { get; set; }
         public string[] Options { get; set; }
         public string Explanation { get; set; }
+        public string CorrectAnswer { get; set; }
     }

@@ -1,20 +1,39 @@
-public interface IQuizService
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using LanguageLearningApp.API.Application.DTOs;
+
+namespace LanguageLearningApp.API.Application.Interfaces
+{
+    public interface IQuizService
     {
-        // Get a list of quizzes by level
+        /// <summary>
+        /// Get a list of quizzes by level
+        /// </summary>
         Task<IEnumerable<QuizDto>> GetQuizzesByLevelAsync(string level);
         
-        // Get a specific quiz by ID
+        /// <summary>
+        /// Get a specific quiz by ID
+        /// </summary>
         Task<QuizDto> GetQuizByIdAsync(int quizId);
         
-        // Get a quiz for a user to take (generates questions based on their vocabulary)
+        /// <summary>
+        /// Generate a vocabulary quiz based on user's vocabulary
+        /// </summary>
         Task<QuizDto> GenerateVocabularyQuizAsync(int userId, string level, int questionCount = 10);
         
-        // Submit quiz answers and get results
+        /// <summary>
+        /// Submit quiz answers and get results
+        /// </summary>
         Task<QuizResultDto> SubmitQuizAnswersAsync(int userId, SubmitQuizAnswerDto answers);
         
-        // Get quiz results for a user
+        /// <summary>
+        /// Get quiz results for a user
+        /// </summary>
         Task<IEnumerable<QuizResultDto>> GetUserQuizResultsAsync(int userId);
         
-        // Create a new quiz (admin functionality)
+        /// <summary>
+        /// Create a new quiz (admin functionality)
+        /// </summary>
         Task<QuizDto> CreateQuizAsync(QuizDto quiz);
     }
+}
