@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Linq;
 using LanguageLearningApp.API.Domain.Entities;
 using LanguageLearningApp.API.Domain.Interfaces;
 using Microsoft.Extensions.Configuration;
@@ -31,13 +32,8 @@ namespace LanguageLearningApp.API.Infrastructure.Services
         {
             try
             {
-                // Build prompt with conversation history (last 10 messages or fewer)
                 var prompt = BuildConversationPrompt(userMessage, conversationHistory);
-
-                // Call Ollama API with Gemma model
-                var response = await CallOllamaApiAsync(prompt);
-
-                return response;
+                return await CallOllamaApiAsync(prompt);
             }
             catch (Exception ex)
             {
@@ -61,7 +57,6 @@ namespace LanguageLearningApp.API.Infrastructure.Services
 
                 var response = await CallOllamaApiAsync(prompt);
 
-                // Ensure response is in valid JSON format
                 try
                 {
                     JsonDocument.Parse(response);
@@ -69,7 +64,22 @@ namespace LanguageLearningApp.API.Infrastructure.Services
                 }
                 catch (JsonException)
                 {
-                    _logger.LogWarning("LLM returned non-JSON response for error analysis. Attempting to format.");
+                    _logger.LogWarning("LLM returned non-JSON response for error analysis");
+                    if (response.Contains("[") && response.Contains("]"))
+                    {
+                        var startIdx = response.IndexOf("[");
+                        var endIdx = response.LastIndexOf("]") + 1;
+                        var jsonPart = "{ \"errors\": " + response.Substring(startIdx, endIdx - startIdx) + "}";
+                        try
+                        {
+                            JsonDocument.Parse(jsonPart);
+                            return jsonPart;
+                        }
+                        catch
+                        {
+                            // Fall back to empty array
+                        }
+                    }
                     return "{ \"errors\": [] }";
                 }
             }
@@ -84,33 +94,23 @@ namespace LanguageLearningApp.API.Infrastructure.Services
         {
             try
             {
-                _logger.LogInformation("Starting vocabulary extraction for message");
-
                 var prompt = @$"
-        Extract the most important vocabulary words from the following text. 
-        Include only words that would be useful for an English language learner to know.
-        Return a JSON array containing only the words.
+                Extract the most important vocabulary words from the following text. 
+                Include only words that would be useful for an English language learner to know.
+                Return a JSON array containing only the words.
 
-        Text: '{userMessage}'
-        ";
-
-                _logger.LogInformation($"Sending prompt to LLM: {prompt}");
+                Text: '{userMessage}'
+                ";
 
                 var response = await CallOllamaApiAsync(prompt);
-                _logger.LogInformation($"Raw response from LLM: {response}");
 
                 try
                 {
                     var words = JsonSerializer.Deserialize<List<string>>(response);
-                    _logger.LogInformation($"Successfully deserialized JSON response: {JsonSerializer.Serialize(words)}");
                     return words ?? new List<string>();
                 }
-                catch (JsonException jsonEx)
+                catch (JsonException)
                 {
-                    _logger.LogWarning($"LLM returned non-JSON response for vocabulary extraction: {jsonEx.Message}");
-                    _logger.LogWarning($"Attempting to fix response: {response}");
-
-                    // Basit bir düzeltme denemesi
                     if (response.Contains("[") && response.Contains("]"))
                     {
                         try
@@ -118,24 +118,26 @@ namespace LanguageLearningApp.API.Infrastructure.Services
                             var startIdx = response.IndexOf("[");
                             var endIdx = response.LastIndexOf("]") + 1;
                             var jsonPart = response.Substring(startIdx, endIdx - startIdx);
-                            _logger.LogInformation($"Extracted JSON part: {jsonPart}");
-
                             var wordsFixed = JsonSerializer.Deserialize<List<string>>(jsonPart);
-                            _logger.LogInformation($"Fixed JSON parse successful: {JsonSerializer.Serialize(wordsFixed)}");
                             return wordsFixed ?? new List<string>();
                         }
-                        catch (Exception ex)
+                        catch
                         {
-                            _logger.LogError($"Fix attempt failed: {ex.Message}");
+                            // Continue to fallback
                         }
                     }
-
-                    return new List<string>();
+                    
+                    // Fallback: extract words from text response
+                    return response
+                        .Split(new[] { ' ', ',', '.', '\n', '\r', '"', '\'' }, StringSplitOptions.RemoveEmptyEntries)
+                        .Where(w => w.Length > 2 && !string.IsNullOrWhiteSpace(w))
+                        .Take(10)
+                        .ToList();
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error extracting vocabulary: {ErrorMessage}", ex.Message);
+                _logger.LogError(ex, "Error extracting vocabulary");
                 return new List<string>();
             }
         }
@@ -151,7 +153,6 @@ namespace LanguageLearningApp.API.Infrastructure.Services
 
                 var response = await CallOllamaApiAsync(prompt);
 
-                // Extract just the level (A1, A2, B1, B2, C1, C2)
                 if (response.Contains("A1")) return "A1";
                 if (response.Contains("A2")) return "A2";
                 if (response.Contains("B1")) return "B1";
@@ -176,37 +177,69 @@ namespace LanguageLearningApp.API.Infrastructure.Services
                 You are an English language teacher creating a vocabulary quiz.
 
                 Create ONE multiple-choice question about the word '{topic}' appropriate for {level} level English students.
-
-                IMPORTANT: Your response must be a single valid JSON object exactly in this format:
-                {{
-                ""question"": ""[A specific question about the word that tests understanding]"",
-                ""options"": [""[Correct answer]"", ""[Wrong answer 1]"", ""[Wrong answer 2]"", ""[Wrong answer 3]""],
-                ""correctAnswer"": ""[Exact copy of the correct answer from options]"",
-                ""explanation"": ""[Brief explanation why this is correct]""
-                }}
-
-                For example, if the word is 'book', don't ask 'What is the meaning of book?' Instead, ask 'Which of these is a book?' or 'What do you typically do with a book?'
-
-                The options should be meaningful alternatives, not just 'Option 2', 'Option 3'.
+                
+                Format your response as:
+                Question: [Write a clear, specific question about the word]
+                a) [Correct answer]
+                b) [Wrong answer 1]
+                c) [Wrong answer 2]
+                d) [Wrong answer 3]
+                Correct: a
                 ";
 
                 var response = await CallOllamaApiAsync(prompt);
-
-                try
-                {
-                    JsonDocument.Parse(response);
-                    return response;
-                }
-                catch (JsonException)
-                {
-                    _logger.LogWarning("LLM returned non-JSON response for quiz generation. Attempting to handle.");
-                    return "{ \"question\": \"What is the meaning of 'hello'?\", \"options\": [\"A greeting\", \"A farewell\", \"An expression of surprise\", \"A question\"], \"correctAnswer\": \"A greeting\", \"explanation\": \"'Hello' is a common greeting in English.\" }";
-                }
+                return response;
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error generating quiz question");
-                return "{ \"question\": \"What is the meaning of 'hello'?\", \"options\": [\"A greeting\", \"A farewell\", \"An expression of surprise\", \"A question\"], \"correctAnswer\": \"A greeting\", \"explanation\": \"'Hello' is a common greeting in English.\" }";
+                return $"Question: What does '{topic}' mean?\na) The correct meaning\nb) Wrong meaning 1\nc) Wrong meaning 2\nd) Wrong meaning 3\nCorrect: a";
+            }
+        }
+
+        public async Task<string> GenerateVocabularyQuizAsync(List<string> words, string level, int questionCount = 5)
+        {
+            try
+            {
+                // Create a simple, clear prompt
+                string wordList = string.Join(", ", words);
+                
+                var prompt = @$"
+                You are an English language teacher creating a vocabulary quiz with {questionCount} multiple-choice questions.
+                
+                Use ONLY these words: {wordList}
+                
+                Create exactly {questionCount} multiple-choice questions suitable for {level} level students.
+                
+                Format each question with:
+                - A clear question
+                - 4 options labeled a, b, c, d
+                - Make sure the correct answer is included
+                
+                DO NOT use markdown formatting.
+                DO NOT include explanations.
+                DO NOT add any introduction or conclusion.
+                JUST create the questions and options.
+                
+                Format your response as:
+                Question 1: [Question text]
+                a) [Option a]
+                b) [Option b]
+                c) [Option c]
+                d) [Option d]
+                Correct: [correct letter]
+                
+                Question 2: [Question text]
+                ...and so on.
+                ";
+
+                var response = await CallOllamaApiAsync(prompt);
+                return response;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error generating vocabulary quiz");
+                return "Error generating quiz. Please try again.";
             }
         }
 
@@ -218,18 +251,16 @@ namespace LanguageLearningApp.API.Infrastructure.Services
                          "correcting their grammar and vocabulary errors, and providing helpful explanations. " +
                          "Be friendly, encouraging, and educational.");
 
-            // Add conversation history
             if (conversationHistory.Count > 0)
             {
                 sb.AppendLine("\nConversation history:");
-                foreach (var message in conversationHistory)
+                foreach (var message in conversationHistory.TakeLast(10))
                 {
                     var role = message.IsFromUser ? "User" : "Tutor";
                     sb.AppendLine($"{role}: {message.Content}");
                 }
             }
 
-            // Add current user message
             sb.AppendLine($"\nUser: {userMessage}");
             sb.AppendLine("\nTutor:");
 
@@ -240,8 +271,7 @@ namespace LanguageLearningApp.API.Infrastructure.Services
         {
             var requestBody = new
             {
-                // DÜZELTİLDİ: "gemma:3-4b" yerine "gemma3:4b" kullanın (listedeki gibi)
-                model = "gemma3:4b", // Ollama list komutunda görünen format
+                model = "gemma3:4b",
                 prompt = prompt,
                 stream = false,
                 options = new
@@ -267,7 +297,6 @@ namespace LanguageLearningApp.API.Infrastructure.Services
             var responseJson = await response.Content.ReadAsStringAsync();
             using var jsonDoc = JsonDocument.Parse(responseJson);
 
-            // Extract the generated text
             if (jsonDoc.RootElement.TryGetProperty("response", out var responseElement))
             {
                 return responseElement.GetString() ?? string.Empty;

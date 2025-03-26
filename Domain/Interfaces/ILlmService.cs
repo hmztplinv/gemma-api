@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using LanguageLearningApp.API.Domain.Entities;
@@ -11,5 +12,8 @@ namespace LanguageLearningApp.API.Domain.Interfaces
         Task<List<string>> ExtractVocabularyAsync(string userMessage);
         Task<string> GetVocabularyLevelAsync(string word);
         Task<string> GenerateQuizQuestionAsync(string topic, string level);
+        
+        // QuizService'in çağırdığı metod
+        Task<string> GenerateVocabularyQuizAsync(List<string> words, string level, int questionCount = 5);
     }
 }

@@ -1,0 +1,83 @@
+2025-03-26 16:50:47.808 +03:00 [INF] Starting Language Learning API
+2025-03-26 16:50:47.973 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-26 16:50:47.976 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 16:50:47.977 +03:00 [INF] Hosting environment: Development
+2025-03-26 16:50:47.977 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-26 16:51:14.443 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-26 16:51:14.443 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-26 16:51:14.449 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-26 16:51:14.450 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-26 16:51:46.728 +03:00 [INF] Received HTTP response headers after 32274.6348ms - 200
+2025-03-26 16:51:46.734 +03:00 [INF] End processing HTTP request after 32295.3003ms - 200
+2025-03-26 16:52:10.154 +03:00 [INF] Received HTTP response headers after 55699.9857ms - 200
+2025-03-26 16:52:10.159 +03:00 [INF] End processing HTTP request after 55720.12ms - 200
+2025-03-26 17:02:54.212 +03:00 [INF] Application is shutting down...
+2025-03-26 17:03:01.735 +03:00 [INF] Starting Language Learning API
+2025-03-26 17:03:01.817 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-26 17:03:01.820 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 17:03:01.821 +03:00 [INF] Hosting environment: Development
+2025-03-26 17:03:01.821 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-26 17:03:39.602 +03:00 [INF] Application is shutting down...
+2025-03-26 17:03:43.913 +03:00 [INF] Starting Language Learning API
+2025-03-26 17:03:43.973 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-26 17:03:43.976 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 17:03:43.977 +03:00 [INF] Hosting environment: Development
+2025-03-26 17:03:43.977 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-26 17:04:25.763 +03:00 [ERR] Error generating vocabulary quiz
+System.NotImplementedException: The method or operation is not implemented.
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.GenerateVocabularyQuizAsync(List`1 words, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 281
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 98
+2025-03-26 17:04:25.763 +03:00 [ERR] Error generating vocabulary quiz
+System.NotImplementedException: The method or operation is not implemented.
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.GenerateVocabularyQuizAsync(List`1 words, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 281
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 98
+2025-03-26 17:04:25.788 +03:00 [ERR] Error generating vocabulary quiz
+System.NotImplementedException: The method or operation is not implemented.
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.GenerateVocabularyQuizAsync(List`1 words, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 281
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 98
+   at LanguageLearningApp.API.Controllers.QuizController.GenerateVocabularyQuiz(TakeQuizDto takeQuizDto) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Controllers\QuizController.cs:line 69
+2025-03-26 17:04:25.789 +03:00 [ERR] Error generating vocabulary quiz
+System.NotImplementedException: The method or operation is not implemented.
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.GenerateVocabularyQuizAsync(List`1 words, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 281
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 98
+   at LanguageLearningApp.API.Controllers.QuizController.GenerateVocabularyQuiz(TakeQuizDto takeQuizDto) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Controllers\QuizController.cs:line 69
+2025-03-26 17:04:29.484 +03:00 [ERR] Error generating vocabulary quiz
+System.NotImplementedException: The method or operation is not implemented.
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.GenerateVocabularyQuizAsync(List`1 words, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 281
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 98
+2025-03-26 17:04:29.484 +03:00 [ERR] Error generating vocabulary quiz
+System.NotImplementedException: The method or operation is not implemented.
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.GenerateVocabularyQuizAsync(List`1 words, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 281
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 98
+2025-03-26 17:04:29.485 +03:00 [ERR] Error generating vocabulary quiz
+System.NotImplementedException: The method or operation is not implemented.
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.GenerateVocabularyQuizAsync(List`1 words, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 281
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 98
+   at LanguageLearningApp.API.Controllers.QuizController.GenerateVocabularyQuiz(TakeQuizDto takeQuizDto) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Controllers\QuizController.cs:line 69
+2025-03-26 17:04:29.486 +03:00 [ERR] Error generating vocabulary quiz
+System.NotImplementedException: The method or operation is not implemented.
+   at LanguageLearningApp.API.Infrastructure.Services.LlmService.GenerateVocabularyQuizAsync(List`1 words, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Infrastructure\Services\LlmService.cs:line 281
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 98
+   at LanguageLearningApp.API.Controllers.QuizController.GenerateVocabularyQuiz(TakeQuizDto takeQuizDto) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Controllers\QuizController.cs:line 69
+2025-03-26 17:04:47.154 +03:00 [INF] Application is shutting down...
+2025-03-26 17:05:22.436 +03:00 [INF] Starting Language Learning API
+2025-03-26 17:05:22.500 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-26 17:05:22.503 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-26 17:05:22.504 +03:00 [INF] Hosting environment: Development
+2025-03-26 17:05:22.505 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-26 17:05:24.221 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-26 17:05:24.221 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-26 17:05:24.224 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-26 17:05:24.224 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-26 17:05:49.584 +03:00 [INF] Received HTTP response headers after 25357.2377ms - 200
+2025-03-26 17:05:49.588 +03:00 [INF] End processing HTTP request after 25370.0239ms - 200
+2025-03-26 17:06:09.234 +03:00 [INF] Received HTTP response headers after 45008.0099ms - 200
+2025-03-26 17:06:09.237 +03:00 [INF] End processing HTTP request after 45019.3517ms - 200
+2025-03-26 17:06:44.461 +03:00 [ERR] Error submitting quiz answers
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   at LanguageLearningApp.API.Application.Services.QuizService.SubmitQuizAnswersAsync(Int32 userId, SubmitQuizAnswerDto answers) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 174
+   at LanguageLearningApp.API.Controllers.QuizController.SubmitQuizAnswers(SubmitQuizAnswerDto answerDto) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Controllers\QuizController.cs:line 93
+2025-03-26 17:07:14.197 +03:00 [INF] Application is shutting down...

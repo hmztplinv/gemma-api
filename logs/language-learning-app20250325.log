@@ -1451,3 +1451,431 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'source')
 2025-03-25 15:17:17.842 +03:00 [INF] End processing HTTP request after 14285.0653ms - 200
 2025-03-25 15:17:17.843 +03:00 [WRN] LLM returned non-JSON response for quiz generation. Attempting to handle.
 2025-03-25 15:24:20.814 +03:00 [INF] Application is shutting down...
+2025-03-25 15:26:02.266 +03:00 [INF] Starting Language Learning API
+2025-03-25 15:26:02.329 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-25 15:26:02.332 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-25 15:26:02.332 +03:00 [INF] Hosting environment: Development
+2025-03-25 15:26:02.333 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-25 15:28:11.688 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:11.688 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:11.691 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:11.691 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:23.205 +03:00 [INF] Received HTTP response headers after 11510.7335ms - 200
+2025-03-25 15:28:23.211 +03:00 [INF] End processing HTTP request after 11526.7835ms - 200
+2025-03-25 15:28:23.225 +03:00 [WRN] LLM returned non-JSON response for quiz generation. Attempting to handle.
+2025-03-25 15:28:23.232 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:23.235 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:29.447 +03:00 [INF] Received HTTP response headers after 17754.4946ms - 200
+2025-03-25 15:28:29.452 +03:00 [INF] End processing HTTP request after 17767.9463ms - 200
+2025-03-25 15:28:29.455 +03:00 [WRN] LLM returned non-JSON response for quiz generation. Attempting to handle.
+2025-03-25 15:28:29.457 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:29.458 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:36.583 +03:00 [INF] Received HTTP response headers after 13346.8229ms - 200
+2025-03-25 15:28:36.586 +03:00 [INF] End processing HTTP request after 13353.7381ms - 200
+2025-03-25 15:28:36.588 +03:00 [WRN] LLM returned non-JSON response for quiz generation. Attempting to handle.
+2025-03-25 15:28:36.590 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:36.591 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:42.468 +03:00 [INF] Received HTTP response headers after 13008.1706ms - 200
+2025-03-25 15:28:42.473 +03:00 [INF] End processing HTTP request after 13015.5194ms - 200
+2025-03-25 15:28:42.475 +03:00 [WRN] LLM returned non-JSON response for quiz generation. Attempting to handle.
+2025-03-25 15:28:42.476 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:42.478 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:47.707 +03:00 [INF] Received HTTP response headers after 11114.9244ms - 200
+2025-03-25 15:28:47.709 +03:00 [INF] End processing HTTP request after 11119.6611ms - 200
+2025-03-25 15:28:47.711 +03:00 [WRN] LLM returned non-JSON response for quiz generation. Attempting to handle.
+2025-03-25 15:28:47.713 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:47.715 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:53.658 +03:00 [INF] Received HTTP response headers after 11178.1062ms - 200
+2025-03-25 15:28:53.660 +03:00 [INF] End processing HTTP request after 11183.5844ms - 200
+2025-03-25 15:28:53.661 +03:00 [WRN] LLM returned non-JSON response for quiz generation. Attempting to handle.
+2025-03-25 15:28:53.662 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:53.664 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:59.802 +03:00 [INF] Received HTTP response headers after 12085.578ms - 200
+2025-03-25 15:28:59.807 +03:00 [INF] End processing HTTP request after 12094.2275ms - 200
+2025-03-25 15:28:59.809 +03:00 [WRN] LLM returned non-JSON response for quiz generation. Attempting to handle.
+2025-03-25 15:28:59.810 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:28:59.811 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:29:06.394 +03:00 [INF] Received HTTP response headers after 12728.4081ms - 200
+2025-03-25 15:29:06.395 +03:00 [INF] End processing HTTP request after 12732.889ms - 200
+2025-03-25 15:29:06.398 +03:00 [WRN] LLM returned non-JSON response for quiz generation. Attempting to handle.
+2025-03-25 15:29:06.402 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:29:06.407 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:29:12.557 +03:00 [INF] Received HTTP response headers after 12744.4401ms - 200
+2025-03-25 15:29:12.560 +03:00 [INF] End processing HTTP request after 12749.5067ms - 200
+2025-03-25 15:29:12.562 +03:00 [WRN] LLM returned non-JSON response for quiz generation. Attempting to handle.
+2025-03-25 15:29:12.563 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:29:12.565 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:29:16.448 +03:00 [INF] Received HTTP response headers after 10039.4044ms - 200
+2025-03-25 15:29:16.452 +03:00 [INF] End processing HTTP request after 10049.9252ms - 200
+2025-03-25 15:29:16.456 +03:00 [WRN] LLM returned non-JSON response for quiz generation. Attempting to handle.
+2025-03-25 15:29:16.458 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:29:16.461 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:29:22.817 +03:00 [INF] Received HTTP response headers after 10251.3066ms - 200
+2025-03-25 15:29:22.819 +03:00 [INF] End processing HTTP request after 10256.4666ms - 200
+2025-03-25 15:29:22.821 +03:00 [WRN] LLM returned non-JSON response for quiz generation. Attempting to handle.
+2025-03-25 15:29:29.478 +03:00 [INF] Received HTTP response headers after 13015.5164ms - 200
+2025-03-25 15:29:29.479 +03:00 [INF] End processing HTTP request after 13020.7216ms - 200
+2025-03-25 15:29:29.480 +03:00 [WRN] LLM returned non-JSON response for quiz generation. Attempting to handle.
+2025-03-25 15:34:44.790 +03:00 [INF] Application is shutting down...
+2025-03-25 15:34:49.321 +03:00 [INF] Starting Language Learning API
+2025-03-25 15:34:49.386 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-25 15:34:49.389 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-25 15:34:49.390 +03:00 [INF] Hosting environment: Development
+2025-03-25 15:34:49.391 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-25 15:35:50.272 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:35:50.272 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:35:50.275 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:35:50.276 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:35:57.643 +03:00 [INF] Received HTTP response headers after 7363.62ms - 200
+2025-03-25 15:35:57.649 +03:00 [INF] End processing HTTP request after 7379.733ms - 200
+2025-03-25 15:35:57.659 +03:00 [WRN] LLM returned non-JSON response for quiz generation: '`' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 15:35:57.662 +03:00 [WRN] Response: ```json
+{
+  "question": "Sarah spends hours each week learning to play the piano. She believes that consistent 'practice' is the key to improving her technique.",
+  "options": ["recitation", "reflection", "repetition", "recognition"],
+  "correctAnswer": "repetition",
+  "explanation": "In this context, 'practice' refers to repeated, diligent effort to improve a skill. 'Repetition' is the closest synonym to this meaning."
+}
+```
+2025-03-25 15:35:57.669 +03:00 [ERR] Error generating question for word 'practice'
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 142
+2025-03-25 15:35:57.692 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:35:57.694 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:04.282 +03:00 [INF] Received HTTP response headers after 14004.5163ms - 200
+2025-03-25 15:36:04.284 +03:00 [INF] End processing HTTP request after 14014.8522ms - 200
+2025-03-25 15:36:04.286 +03:00 [WRN] LLM returned non-JSON response for quiz generation: '`' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 15:36:04.287 +03:00 [WRN] Response: ```json
+{
+  "question": "Sarah said, \"I want to go to the beach tomorrow, but I also want to finish my homework.\"",
+  "options": "\"I need to go to the beach\" , \"I feel like going to the beach\" , \"I intend to go to the beach\" , \"I am hoping to go to the beach\"",
+  "correctAnswer": "I intend to go to the beach",
+  "explanation": "In this sentence, 'want' expresses a desire and a planned action. ‘Intend’ is the closest synonym, conveying a deliberate intention to do something."
+}
+```
+2025-03-25 15:36:04.288 +03:00 [ERR] Error generating question for word 'want'
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 142
+2025-03-25 15:36:04.291 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:04.292 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:10.942 +03:00 [INF] Received HTTP response headers after 13245.9197ms - 200
+2025-03-25 15:36:10.946 +03:00 [INF] End processing HTTP request after 13253.5818ms - 200
+2025-03-25 15:36:10.950 +03:00 [WRN] LLM returned non-JSON response for quiz generation: '`' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 15:36:10.951 +03:00 [WRN] Response: ```json
+{
+  "question": "Sarah said, 'I want to go to the beach tomorrow,' implying she _______ a relaxing day by the sea.",
+  "options": ["need", "prefer", "require", "desire"],
+  "correctAnswer": "desire",
+  "explanation": "The word 'want' in this context expresses a strong feeling of desire or wish. 'Desire' is the closest synonym and accurately reflects the sentence's meaning. The other options – 'need,' 'prefer,' and 'require' – have different connotations related to necessity or choice."
+}
+```
+2025-03-25 15:36:10.954 +03:00 [ERR] Error generating question for word 'want'
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 142
+2025-03-25 15:36:10.956 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:10.957 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:18.021 +03:00 [INF] Received HTTP response headers after 13728.0045ms - 200
+2025-03-25 15:36:18.023 +03:00 [INF] End processing HTTP request after 13732.0035ms - 200
+2025-03-25 15:36:18.024 +03:00 [WRN] LLM returned non-JSON response for quiz generation: '`' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 15:36:18.025 +03:00 [WRN] Response: ```json
+{
+  "question": "Sarah told me her new puppy's name was Buster.  She explained that the name was chosen because Buster was very energetic and loved to...",
+  "options": ["...always sitting quietly.", "...enjoying long walks in the park.", "...eating all of her food quickly.", "...sleeping for most of the day."],
+  "correctAnswer": "eating all of his food quickly.",
+  "explanation": "The question tests understanding of 'name' as a label or identifier.  The correct answer (eating all of his food quickly) uses 'name' in the context of a descriptive characteristic associated with the puppy's identity."
+}
+```
+2025-03-25 15:36:18.027 +03:00 [ERR] Error generating question for word 'name'
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 142
+2025-03-25 15:36:18.030 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:18.031 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:25.442 +03:00 [INF] Received HTTP response headers after 14483.1985ms - 200
+2025-03-25 15:36:25.446 +03:00 [INF] End processing HTTP request after 14490.0275ms - 200
+2025-03-25 15:36:25.448 +03:00 [WRN] LLM returned non-JSON response for quiz generation: '`' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 15:36:25.449 +03:00 [WRN] Response: ```json
+{
+  "question": "Someone said, 'I'm really enjoying learning English – it's so rewarding!' What does this sentence primarily convey about 'English'?",
+  "options": ["It refers to a specific type of food.", "It describes a feeling of accomplishment and satisfaction.", "It indicates a dislike for the language.", "It denotes a particular geographical region, like England."],
+  "correctAnswer": "It describes a feeling of accomplishment and satisfaction.",
+  "explanation": "The sentence uses 'English' to describe a positive experience, indicating that learning the language is fulfilling. The other options present incorrect uses of the word – a food, a location, or a negative sentiment."
+}
+```
+2025-03-25 15:36:25.452 +03:00 [ERR] Error generating question for word 'english'
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 142
+2025-03-25 15:36:25.455 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:25.456 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:31.535 +03:00 [INF] Received HTTP response headers after 13502.3445ms - 200
+2025-03-25 15:36:31.537 +03:00 [INF] End processing HTTP request after 13507.0592ms - 200
+2025-03-25 15:36:31.539 +03:00 [WRN] LLM returned non-JSON response for quiz generation: '`' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 15:36:31.540 +03:00 [WRN] Response: ```json
+{
+  "question": "Maria spent hours studying for her music exam. She believed that consistent practice was the key to improving her performance.",
+  "options": ["recitation", "memorization", "performance", "assessment"],
+  "correctAnswer": "practice",
+  "explanation": "In this sentence, 'practice' refers to the act of repeatedly doing something to improve a skill, which is the core meaning of the word. The other options relate to specific methods of learning or evaluating performance, but don't capture the concept of repeated effort."
+}
+```
+2025-03-25 15:36:31.542 +03:00 [ERR] Error generating question for word 'practice'
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 142
+2025-03-25 15:36:31.545 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:31.547 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:38.929 +03:00 [INF] Received HTTP response headers after 13470.8631ms - 200
+2025-03-25 15:36:38.932 +03:00 [INF] End processing HTTP request after 13477.6172ms - 200
+2025-03-25 15:36:38.935 +03:00 [WRN] LLM returned non-JSON response for quiz generation: '`' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 15:36:38.936 +03:00 [WRN] Response: ```json
+{
+  "question": "You see a friend you haven't met before. Which of the following is the most appropriate way to start a conversation?",
+  "options": ["Offer them a detailed explanation of your life.", "Greet them with a friendly 'hello' and a smile.", "Ask them to write down their phone number.", "Immediately ask them about their favorite color."],
+  "correctAnswer": "Greet them with a friendly 'hello' and a smile.",
+  "explanation": "The word 'hello' is a standard greeting used to initiate a conversation and acknowledge someone's presence. The other options suggest inappropriate or overly formal ways to start a conversation."
+}
+```
+2025-03-25 15:36:38.938 +03:00 [ERR] Error generating question for word 'hello'
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 142
+2025-03-25 15:36:38.940 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:38.941 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:45.518 +03:00 [INF] Received HTTP response headers after 13970.2056ms - 200
+2025-03-25 15:36:45.522 +03:00 [INF] End processing HTTP request after 13977.0501ms - 200
+2025-03-25 15:36:45.524 +03:00 [WRN] LLM returned non-JSON response for quiz generation: '`' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 15:36:45.525 +03:00 [WRN] Response: ```json
+{
+  "question": "The author used a lot of complex vocabulary and sentence structures, making the novel quite difficult for a general reader to understand.  In this context, we could describe the novel as being…",
+  "options": ["accessible", "straightforward", "challenging", "simple"],
+  "correctAnswer": "challenging",
+  "explanation": "The word 'english' (used here to describe the novel) refers to its difficulty and complexity. 'Challenging' is the most appropriate synonym in this context, indicating something that requires effort to understand."
+}
+```
+2025-03-25 15:36:45.527 +03:00 [ERR] Error generating question for word 'english'
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 142
+2025-03-25 15:36:45.531 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:45.533 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:51.442 +03:00 [INF] Received HTTP response headers after 12499.4177ms - 200
+2025-03-25 15:36:51.446 +03:00 [INF] End processing HTTP request after 12506.0037ms - 200
+2025-03-25 15:36:51.449 +03:00 [WRN] LLM returned non-JSON response for quiz generation: '`' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 15:36:51.451 +03:00 [WRN] Response: ```json
+{
+  "question": "Sarah told me her new friend's full ______ was Michael Davies. She wanted to send him a birthday card.",
+  "options": ["title", "address", "nickname", "occupation"],
+  "correctAnswer": "name",
+  "explanation": "The question asks about identifying a person, and 'name' is the most appropriate word to use when referring to a person's identifier. The other options (title, address, occupation) relate to different aspects of a person, but not their primary identifier."
+}
+```
+2025-03-25 15:36:51.453 +03:00 [ERR] Error generating question for word 'name'
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 142
+2025-03-25 15:36:51.457 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:51.458 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:57.866 +03:00 [INF] Received HTTP response headers after 12331.163ms - 200
+2025-03-25 15:36:57.869 +03:00 [INF] End processing HTTP request after 12338.378ms - 200
+2025-03-25 15:36:57.872 +03:00 [WRN] LLM returned non-JSON response for quiz generation: '`' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 15:36:57.873 +03:00 [WRN] Response: ```json
+{
+  "question": "You see a friend you haven't met before. Which of the following is the most appropriate way to start a conversation with them?",
+  "options": ["Offer them your business card.", "Ask them about their favorite color.", "Say 'Hi, nice to meet you!'", "Request to borrow their pen."],
+  "correctAnswer": "Say 'Hi, nice to meet you!'",
+  "explanation": "‘Hello’ is a standard greeting used when meeting someone for the first time. The other options suggest different contexts or requests, not a typical initial greeting."
+}
+```
+2025-03-25 15:36:57.875 +03:00 [ERR] Error generating question for word 'hello'
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 142
+2025-03-25 15:36:57.878 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:36:57.879 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:37:05.562 +03:00 [INF] Received HTTP response headers after 14102.8399ms - 200
+2025-03-25 15:37:05.565 +03:00 [INF] End processing HTTP request after 14108.5369ms - 200
+2025-03-25 15:37:05.568 +03:00 [WRN] LLM returned non-JSON response for quiz generation: '`' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 15:37:05.569 +03:00 [WRN] Response: ```json
+{
+  "question": "A traditional Islamic greeting, often accompanied by a raised hand, is called a 'hamza'. Which of the following best describes the purpose of using a 'hamza' during a conversation?",
+  "options": ["To politely ask someone for their opinion.", "To express a feeling of excitement or joy.", "To acknowledge someone and show respect for their presence.", "To indicate that you are finished speaking."] ,
+  "correctAnswer": "To acknowledge someone and show respect for their presence.",
+  "explanation": "A 'hamza' is a gesture of greeting and acknowledgement in Islamic culture, signifying respect and recognition of the person being addressed. The other options describe different conversational actions."
+}
+```
+2025-03-25 15:37:05.571 +03:00 [ERR] Error generating question for word 'hamza'
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 142
+2025-03-25 15:37:13.368 +03:00 [INF] Received HTTP response headers after 15487.7548ms - 200
+2025-03-25 15:37:13.371 +03:00 [INF] End processing HTTP request after 15492.5357ms - 200
+2025-03-25 15:37:13.372 +03:00 [WRN] LLM returned non-JSON response for quiz generation: '`' is an invalid start of a value. LineNumber: 0 | BytePositionInLine: 0.
+2025-03-25 15:37:13.373 +03:00 [WRN] Response: ```json
+{
+  "question": "A traditional Islamic greeting, often pronounced ‘Hamza’, is best described as:",
+  "options": "A) A formal invitation to a dinner party. B) A polite request for assistance. C) A warm and enthusiastic welcome, expressing joy and goodwill. D) A quiet acknowledgement of someone’s presence.",
+  "correctAnswer": "C",
+  "explanation": "‘Hamza’ is a traditional Islamic greeting signifying a warm welcome and expression of joy. Option C accurately reflects this usage. The other options present alternative meanings of words that don’t align with the greeting’s context."
+}
+```
+2025-03-25 15:37:13.377 +03:00 [ERR] Error generating question for word 'hamza'
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)
+   at LanguageLearningApp.API.Application.Services.QuizService.GenerateVocabularyQuizAsync(Int32 userId, String level, Int32 questionCount) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 142
+2025-03-25 15:43:24.734 +03:00 [INF] Application is shutting down...
+2025-03-25 15:43:34.111 +03:00 [INF] Starting Language Learning API
+2025-03-25 15:43:34.182 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-25 15:43:34.185 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-25 15:43:34.186 +03:00 [INF] Hosting environment: Development
+2025-03-25 15:43:34.187 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-25 15:43:47.005 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:43:47.006 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:43:47.008 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:43:47.009 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:43:57.029 +03:00 [INF] Received HTTP response headers after 10015.1263ms - 200
+2025-03-25 15:43:57.036 +03:00 [INF] End processing HTTP request after 10033.864ms - 200
+2025-03-25 15:43:57.051 +03:00 [WRN] Question options is null for word 'practice'
+2025-03-25 15:43:57.054 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:43:57.056 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:02.775 +03:00 [INF] Received HTTP response headers after 15765.6778ms - 200
+2025-03-25 15:44:02.779 +03:00 [INF] End processing HTTP request after 15776.4753ms - 200
+2025-03-25 15:44:02.784 +03:00 [WRN] Question options is null for word 'english'
+2025-03-25 15:44:02.786 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:02.788 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:09.294 +03:00 [INF] Received HTTP response headers after 12236.098ms - 200
+2025-03-25 15:44:09.295 +03:00 [INF] End processing HTTP request after 12240.9664ms - 200
+2025-03-25 15:44:09.296 +03:00 [WRN] Question options is null for word 'hamza'
+2025-03-25 15:44:09.296 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:09.297 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:17.063 +03:00 [INF] Received HTTP response headers after 14273.5274ms - 200
+2025-03-25 15:44:17.067 +03:00 [INF] End processing HTTP request after 14280.9393ms - 200
+2025-03-25 15:44:17.069 +03:00 [WRN] Question options is null for word 'hamza'
+2025-03-25 15:44:17.070 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:17.071 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:22.436 +03:00 [INF] Received HTTP response headers after 13138.2973ms - 200
+2025-03-25 15:44:22.439 +03:00 [INF] End processing HTTP request after 13142.5657ms - 200
+2025-03-25 15:44:22.441 +03:00 [WRN] Question options is null for word 'english'
+2025-03-25 15:44:22.443 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:22.445 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:27.984 +03:00 [INF] Received HTTP response headers after 10911.8193ms - 200
+2025-03-25 15:44:27.987 +03:00 [INF] End processing HTTP request after 10917.5275ms - 200
+2025-03-25 15:44:27.989 +03:00 [WRN] Question options is null for word 'want'
+2025-03-25 15:44:27.990 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:27.991 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:34.546 +03:00 [INF] Received HTTP response headers after 12098.9987ms - 200
+2025-03-25 15:44:34.549 +03:00 [INF] End processing HTTP request after 12105.7592ms - 200
+2025-03-25 15:44:34.551 +03:00 [WRN] Question options is null for word 'name'
+2025-03-25 15:44:34.553 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:34.554 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:40.208 +03:00 [INF] Received HTTP response headers after 12215.1511ms - 200
+2025-03-25 15:44:40.212 +03:00 [INF] End processing HTTP request after 12222.5929ms - 200
+2025-03-25 15:44:40.214 +03:00 [WRN] Question options is null for word 'hello'
+2025-03-25 15:44:40.217 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:40.218 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:46.268 +03:00 [INF] Received HTTP response headers after 11713.2011ms - 200
+2025-03-25 15:44:46.273 +03:00 [INF] End processing HTTP request after 11720.2756ms - 200
+2025-03-25 15:44:46.276 +03:00 [WRN] Question options is null for word 'hello'
+2025-03-25 15:44:46.277 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:46.278 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:51.759 +03:00 [INF] Received HTTP response headers after 11539.1356ms - 200
+2025-03-25 15:44:51.761 +03:00 [INF] End processing HTTP request after 11544.5497ms - 200
+2025-03-25 15:44:51.763 +03:00 [WRN] Question options is null for word 'name'
+2025-03-25 15:44:51.764 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:51.765 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:44:57.758 +03:00 [INF] Received HTTP response headers after 11478.3867ms - 200
+2025-03-25 15:44:57.762 +03:00 [INF] End processing HTTP request after 11484.7128ms - 200
+2025-03-25 15:44:57.764 +03:00 [WRN] Question options is null for word 'want'
+2025-03-25 15:45:03.655 +03:00 [INF] Received HTTP response headers after 11887.9636ms - 200
+2025-03-25 15:45:03.658 +03:00 [INF] End processing HTTP request after 11893.4205ms - 200
+2025-03-25 15:45:03.659 +03:00 [WRN] Question options is null for word 'practice'
+2025-03-25 15:45:54.006 +03:00 [ERR] Error submitting quiz answers
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   at LanguageLearningApp.API.Application.Services.QuizService.SubmitQuizAnswersAsync(Int32 userId, SubmitQuizAnswerDto answers) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Application\Services\QuizService.cs:line 494
+   at LanguageLearningApp.API.Controllers.QuizController.SubmitQuizAnswers(SubmitQuizAnswerDto answerDto) in C:\Users\hmztp\Desktop\LanguageLearningApp.API\Controllers\QuizController.cs:line 93
+2025-03-25 15:46:02.594 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:46:02.594 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:46:02.596 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:46:02.597 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:46:05.719 +03:00 [INF] Application is shutting down...
+2025-03-25 15:46:11.716 +03:00 [INF] Received HTTP response headers after 9117.3363ms - 200
+2025-03-25 15:46:11.718 +03:00 [INF] End processing HTTP request after 9123.3039ms - 200
+2025-03-25 15:46:11.719 +03:00 [WRN] Question options is null for word 'want'
+2025-03-25 15:46:11.719 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:46:11.720 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:46:18.428 +03:00 [INF] Received HTTP response headers after 15828.1354ms - 200
+2025-03-25 15:46:18.430 +03:00 [INF] End processing HTTP request after 15835.4147ms - 200
+2025-03-25 15:46:18.431 +03:00 [WRN] Question options is null for word 'name'
+2025-03-25 15:46:18.432 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 15:46:18.433 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:05:20.314 +03:00 [INF] Starting Language Learning API
+2025-03-25 16:05:20.376 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-25 16:05:20.379 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-25 16:05:20.380 +03:00 [INF] Hosting environment: Development
+2025-03-25 16:05:20.381 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-25 16:05:51.565 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:05:51.568 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:00.658 +03:00 [INF] Received HTTP response headers after 9088.2259ms - 200
+2025-03-25 16:06:00.663 +03:00 [INF] End processing HTTP request after 9100.752ms - 200
+2025-03-25 16:06:00.673 +03:00 [WRN] LLM returned non-JSON response for error analysis
+2025-03-25 16:06:00.700 +03:00 [INF] Starting vocabulary processing for message: 'hi there how are you lets learn something new'
+2025-03-25 16:06:00.705 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:00.708 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:02.347 +03:00 [INF] Received HTTP response headers after 1637.4858ms - 200
+2025-03-25 16:06:02.350 +03:00 [INF] End processing HTTP request after 1645.1582ms - 200
+2025-03-25 16:06:02.355 +03:00 [INF] Extracted words: ["hi","you","learn","new"]
+2025-03-25 16:06:02.356 +03:00 [INF] Skipping short word: 'hi'
+2025-03-25 16:06:02.393 +03:00 [INF] Word 'you' exists in DB: False
+2025-03-25 16:06:02.395 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:02.398 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:02.871 +03:00 [INF] Received HTTP response headers after 470.8087ms - 200
+2025-03-25 16:06:02.874 +03:00 [INF] End processing HTTP request after 478.8218ms - 200
+2025-03-25 16:06:02.876 +03:00 [INF] Determined level for 'you': A1
+2025-03-25 16:06:02.889 +03:00 [INF] Added new word to vocabulary: 'you'
+2025-03-25 16:06:02.893 +03:00 [INF] Word 'learn' exists in DB: False
+2025-03-25 16:06:02.895 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:02.896 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:03.423 +03:00 [INF] Received HTTP response headers after 524.8568ms - 200
+2025-03-25 16:06:03.427 +03:00 [INF] End processing HTTP request after 532.2137ms - 200
+2025-03-25 16:06:03.429 +03:00 [INF] Determined level for 'learn': A1
+2025-03-25 16:06:03.430 +03:00 [INF] Added new word to vocabulary: 'learn'
+2025-03-25 16:06:03.433 +03:00 [INF] Word 'new' exists in DB: False
+2025-03-25 16:06:03.434 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:03.435 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:03.943 +03:00 [INF] Received HTTP response headers after 506.3485ms - 200
+2025-03-25 16:06:03.948 +03:00 [INF] End processing HTTP request after 514.6436ms - 200
+2025-03-25 16:06:03.950 +03:00 [INF] Determined level for 'new': A1
+2025-03-25 16:06:03.952 +03:00 [INF] Added new word to vocabulary: 'new'
+2025-03-25 16:06:03.987 +03:00 [INF] SaveChanges result: True, indicates True affected rows
+2025-03-25 16:06:03.993 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:03.997 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:10.313 +03:00 [INF] Received HTTP response headers after 6314.5608ms - 200
+2025-03-25 16:06:10.316 +03:00 [INF] End processing HTTP request after 6322.4969ms - 200
+2025-03-25 16:06:10.375 +03:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-03-25 16:06:27.395 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:27.396 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:27.399 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:27.401 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-25 16:06:49.500 +03:00 [INF] Received HTTP response headers after 22101.9274ms - 200
+2025-03-25 16:06:49.505 +03:00 [INF] End processing HTTP request after 22109.8817ms - 200
+2025-03-25 16:07:08.020 +03:00 [INF] Received HTTP response headers after 40618.4033ms - 200
+2025-03-25 16:07:08.022 +03:00 [INF] End processing HTTP request after 40622.482ms - 200
+2025-03-25 16:19:46.225 +03:00 [INF] Application is shutting down...

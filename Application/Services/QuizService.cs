@@ -39,14 +39,7 @@ namespace LanguageLearningApp.API.Application.Services
         public async Task<IEnumerable<QuizDto>> GetQuizzesByLevelAsync(string level)
         {
             var quizzes = await _quizRepository.GetQuizzesByLevelAsync(level);
-            var result = new List<QuizDto>();
-
-            foreach (var quiz in quizzes)
-            {
-                result.Add(MapQuizToDto(quiz));
-            }
-
-            return result;
+            return quizzes.Select(quiz => MapQuizToDto(quiz)).ToList();
         }
 
         public async Task<QuizDto> GetQuizByIdAsync(int quizId)
@@ -60,7 +53,7 @@ namespace LanguageLearningApp.API.Application.Services
             return MapQuizToDto(quiz);
         }
 
-        public async Task<QuizDto> GenerateVocabularyQuizAsync(int userId, string level, int questionCount = 10)
+        public async Task<QuizDto> GenerateVocabularyQuizAsync(int userId, string level, int questionCount = 5)
         {
             try
             {
@@ -98,55 +91,60 @@ namespace LanguageLearningApp.API.Application.Services
                     .Take(Math.Min(questionCount, vocabulary.Count))
                     .ToList();
 
-                // Generate questions for each selected word
-                foreach (var word in selectedWords)
+                // Get word list
+                var wordList = selectedWords.Select(v => v.Word).ToList();
+
+                // Generate quiz content from LLM
+                var quizContent = await _llmService.GenerateVocabularyQuizAsync(wordList, level, questionCount);
+
+                // Parse the quiz content
+                var parsedQuestions = ParseQuizContent(quizContent);
+
+                // Add questions to the quiz
+                foreach (var parsedQuestion in parsedQuestions)
                 {
-                    try
+                    var options = new[] 
                     {
-                        var questionJson = await _llmService.GenerateQuizQuestionAsync(word.Word, level);
-                        QuizQuestionData questionData = null;
+                        parsedQuestion.OptionA,
+                        parsedQuestion.OptionB,
+                        parsedQuestion.OptionC,
+                        parsedQuestion.OptionD
+                    };
 
-                        try
-                        {
-                            questionData = JsonSerializer.Deserialize<QuizQuestionData>(questionJson);
-                        }
-                        catch (JsonException)
-                        {
-                            _logger.LogWarning($"Failed to parse JSON response for word '{word.Word}'. Response: {questionJson}");
-
-                            // Manuel olarak JSON yanıtı ayıklamaya çalış
-                            string question = ExtractQuestionFromText(questionJson);
-                            string correctAnswer = ExtractCorrectAnswerFromText(questionJson);
-                            string[] options = ExtractOptionsFromText(questionJson);
-
-                            if (!string.IsNullOrEmpty(question) && !string.IsNullOrEmpty(correctAnswer) && options.Length > 0)
-                            {
-                                questionData = new QuizQuestionData
-                                {
-                                    Question = question,
-                                    CorrectAnswer = correctAnswer,
-                                    Options = options,
-                                    Explanation = $"This question is about the word '{word.Word}'."  // Varsayılan açıklama
-                                };
-                            }
-                        }
-
-                        if (questionData != null)
-                        {
-                            var quizQuestion = new QuizQuestion
-                            {
-                                Question = questionData.Question ?? $"What is the meaning of '{word.Word}'?",
-                                CorrectAnswer = questionData.CorrectAnswer ?? word.Word,
-                                Options = JsonSerializer.Serialize(questionData.Options ?? new string[] { word.Word, "Option 2", "Option 3", "Option 4" }),
-                                Explanation = questionData.Explanation ?? $"This question tests your knowledge of the word '{word.Word}'."
-                            };
-
-                            quiz.Questions.Add(quizQuestion);
-                        }
-                    }
-                    catch (Exception ex)
+                    string correctAnswer = parsedQuestion.CorrectOption switch
                     {
-                        _logger.LogError(ex, $"Error generating question for word '{word.Word}'");
+                        "a" => parsedQuestion.OptionA,
+                        "b" => parsedQuestion.OptionB,
+                        "c" => parsedQuestion.OptionC,
+                        "d" => parsedQuestion.OptionD,
+                        _ => parsedQuestion.OptionA // Default to first option
+                    };
+
+                    var quizQuestion = new QuizQuestion
+                    {
+                        Question = parsedQuestion.QuestionText,
+                        CorrectAnswer = correctAnswer,
+                        Options = JsonSerializer.Serialize(options),
+                        Explanation = $"This tests your knowledge of English vocabulary."
+                    };
+
+                    quiz.Questions.Add(quizQuestion);
+                }
+
+                // If parsing failed or insufficient questions were created, add fallback questions
+                if (quiz.Questions.Count < questionCount)
+                {
+                    int additionalNeeded = questionCount - quiz.Questions.Count;
+                    _logger.LogWarning($"Only {quiz.Questions.Count} questions were created, adding {additionalNeeded} fallback questions");
+                    
+                    for (int i = 0; i < additionalNeeded && i < selectedWords.Count; i++)
+                    {
+                        var word = selectedWords[i];
+                        if (!quiz.Questions.Any(q => q.Question.Contains(word.Word)))
+                        {
+                            var fallbackQuestion = CreateFallbackQuestion(word.Word, level);
+                            quiz.Questions.Add(fallbackQuestion);
+                        }
                     }
                 }
 
@@ -162,55 +160,7 @@ namespace LanguageLearningApp.API.Application.Services
                 throw;
             }
         }
-        private string ExtractQuestionFromText(string text)
-        {
-            // Basit bir regex ile soru cümlesini bulmaya çalış
-            var match = System.Text.RegularExpressions.Regex.Match(text, @"question[""']?\s*:\s*[""']([^""']+)[""']", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
-            if (match.Success)
-            {
-                return match.Groups[1].Value.Trim();
-            }
 
-            // Veya ilk soru işareti ile biten cümleyi al
-            match = System.Text.RegularExpressions.Regex.Match(text, @"([^.!?]+\?['""]?)");
-            if (match.Success)
-            {
-                return match.Groups[1].Value.Trim();
-            }
-
-            return null;
-        }
-
-        private string ExtractCorrectAnswerFromText(string text)
-        {
-            var match = System.Text.RegularExpressions.Regex.Match(text, @"correctAnswer[""']?\s*:\s*[""']([^""']+)[""']", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
-            if (match.Success)
-            {
-                return match.Groups[1].Value.Trim();
-            }
-
-            return null;
-        }
-
-        private string[] ExtractOptionsFromText(string text)
-        {
-            var match = System.Text.RegularExpressions.Regex.Match(text, @"options[""']?\s*:\s*\[(.*?)\]", System.Text.RegularExpressions.RegexOptions.IgnoreCase | System.Text.RegularExpressions.RegexOptions.Singleline);
-            if (match.Success)
-            {
-                var optionsText = match.Groups[1].Value;
-                var options = System.Text.RegularExpressions.Regex.Matches(optionsText, @"[""']([^""']+)[""']")
-                    .Cast<System.Text.RegularExpressions.Match>()
-                    .Select(m => m.Groups[1].Value.Trim())
-                    .ToArray();
-
-                if (options.Length > 0)
-                {
-                    return options;
-                }
-            }
-
-            return new string[0];
-        }
         public async Task<QuizResultDto> SubmitQuizAnswersAsync(int userId, SubmitQuizAnswerDto answers)
         {
             // Get the quiz
@@ -284,24 +234,18 @@ namespace LanguageLearningApp.API.Application.Services
         public async Task<IEnumerable<QuizResultDto>> GetUserQuizResultsAsync(int userId)
         {
             var quizResults = await _quizResultRepository.GetUserQuizResultsAsync(userId);
-            var result = new List<QuizResultDto>();
-
-            foreach (var quizResult in quizResults)
+            
+            return quizResults.Select(result => new QuizResultDto
             {
-                result.Add(new QuizResultDto
-                {
-                    Id = quizResult.Id,
-                    QuizId = quizResult.QuizId,
-                    QuizTitle = quizResult.Quiz?.Title ?? "Unknown Quiz",
-                    QuizLevel = quizResult.Quiz?.Level ?? "Unknown",
-                    Score = quizResult.Score,
-                    TotalQuestions = quizResult.TotalQuestions,
-                    CorrectAnswers = quizResult.CorrectAnswers,
-                    CompletedAt = quizResult.CompletedAt
-                });
-            }
-
-            return result;
+                Id = result.Id,
+                QuizId = result.QuizId,
+                QuizTitle = result.Quiz?.Title ?? "Unknown Quiz",
+                QuizLevel = result.Quiz?.Level ?? "Unknown",
+                Score = result.Score,
+                TotalQuestions = result.TotalQuestions,
+                CorrectAnswers = result.CorrectAnswers,
+                CompletedAt = result.CompletedAt
+            }).ToList();
         }
 
         public async Task<QuizDto> CreateQuizAsync(QuizDto quizDto)
@@ -335,6 +279,149 @@ namespace LanguageLearningApp.API.Application.Services
         }
 
         // Helper methods
+        private List<ParsedQuestion> ParseQuizContent(string quizContent)
+        {
+            var result = new List<ParsedQuestion>();
+            
+            // Split by "Question" to get individual question blocks
+            var questionBlocks = quizContent.Split(new[] { "Question" }, StringSplitOptions.RemoveEmptyEntries);
+            
+            foreach (var block in questionBlocks)
+            {
+                if (string.IsNullOrWhiteSpace(block))
+                    continue;
+                
+                try
+                {
+                    // Split into lines
+                    var lines = block.Split(new[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries)
+                                    .Select(l => l.Trim())
+                                    .Where(l => !string.IsNullOrWhiteSpace(l))
+                                    .ToList();
+                    
+                    if (lines.Count < 5) // We need at least the question and 4 options
+                        continue;
+                    
+                    // Extract question text
+                    string questionText = lines[0];
+                    if (questionText.Contains(":"))
+                        questionText = questionText.Substring(questionText.IndexOf(':') + 1).Trim();
+                    
+                    // Find options
+                    string optionA = FindOption(lines, "a)");
+                    string optionB = FindOption(lines, "b)");
+                    string optionC = FindOption(lines, "c)");
+                    string optionD = FindOption(lines, "d)");
+                    
+                    // Find correct answer
+                    string correctOption = "a"; // Default
+                    var correctLine = lines.FirstOrDefault(l => 
+                        l.Contains("Correct:") || 
+                        l.Contains("correct:") || 
+                        l.StartsWith("Correct") || 
+                        l.StartsWith("correct"));
+                    
+                    if (correctLine != null)
+                    {
+                        var parts = correctLine.Split(':');
+                        if (parts.Length > 1)
+                        {
+                            var answer = parts[1].Trim().ToLower();
+                            if (answer.Length > 0)
+                                correctOption = answer[0].ToString();
+                        }
+                    }
+                    
+                    if (!string.IsNullOrEmpty(questionText) && 
+                        !string.IsNullOrEmpty(optionA) && 
+                        !string.IsNullOrEmpty(optionB) && 
+                        !string.IsNullOrEmpty(optionC) && 
+                        !string.IsNullOrEmpty(optionD))
+                    {
+                        result.Add(new ParsedQuestion
+                        {
+                            QuestionText = questionText,
+                            OptionA = optionA,
+                            OptionB = optionB,
+                            OptionC = optionC,
+                            OptionD = optionD,
+                            CorrectOption = correctOption
+                        });
+                    }
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogWarning($"Error parsing question: {ex.Message}");
+                    // Continue to next question
+                }
+            }
+            
+            return result;
+        }
+        
+        private string FindOption(List<string> lines, string prefix)
+        {
+            var optionLine = lines.FirstOrDefault(l => l.TrimStart().StartsWith(prefix, StringComparison.OrdinalIgnoreCase));
+            if (optionLine == null)
+                return $"Option {prefix[0]}";
+                
+            int startIndex = optionLine.IndexOf(prefix) + prefix.Length;
+            return optionLine.Substring(startIndex).Trim();
+        }
+
+        private QuizQuestion CreateFallbackQuestion(string word, string level)
+        {
+            string[] options;
+            string correctAnswer;
+            string question;
+            
+            // Create based on level
+            if (level == "A1" || level == "A2")
+            {
+                question = $"What does '{word}' mean?";
+                correctAnswer = $"The correct meaning of '{word}'";
+                options = new[] 
+                {
+                    correctAnswer,
+                    "An incorrect meaning",
+                    "Another wrong meaning",
+                    "A different incorrect meaning"
+                };
+            }
+            else if (level == "B1" || level == "B2")
+            {
+                question = $"Which sentence uses '{word}' correctly?";
+                correctAnswer = $"This sentence uses '{word}' correctly.";
+                options = new[] 
+                {
+                    correctAnswer,
+                    $"This sentence uses '{word}' incorrectly.",
+                    $"This incorrect sentence has '{word}'.",
+                    $"'{word}' is used wrong here."
+                };
+            }
+            else // C1 or C2
+            {
+                question = $"Which word is closest in meaning to '{word}'?";
+                correctAnswer = "A synonym";
+                options = new[] 
+                {
+                    correctAnswer,
+                    "An antonym",
+                    "An unrelated word",
+                    "A different part of speech"
+                };
+            }
+            
+            return new QuizQuestion
+            {
+                Question = question,
+                CorrectAnswer = correctAnswer,
+                Options = JsonSerializer.Serialize(options),
+                Explanation = $"This tests your knowledge of the word '{word}'."
+            };
+        }
+
         private QuizDto MapQuizToDto(Quiz quiz)
         {
             var quizDto = new QuizDto
@@ -387,14 +474,16 @@ namespace LanguageLearningApp.API.Application.Services
                 _ => 3 // Default to B1
             };
         }
-    }
-
-    // Helper class for deserializing quiz question data from LLM
-    public class QuizQuestionData
-    {
-        public string Question { get; set; }
-        public string[] Options { get; set; }
-        public string CorrectAnswer { get; set; }
-        public string Explanation { get; set; }
+        
+        // Helper class for parsing LLM responses
+        private class ParsedQuestion
+        {
+            public string QuestionText { get; set; }
+            public string OptionA { get; set; }
+            public string OptionB { get; set; }
+            public string OptionC { get; set; }
+            public string OptionD { get; set; }
+            public string CorrectOption { get; set; }
+        }
     }
 }
