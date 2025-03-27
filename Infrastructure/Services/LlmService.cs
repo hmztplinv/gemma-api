@@ -169,111 +169,146 @@ namespace LanguageLearningApp.API.Infrastructure.Services
             }
         }
 
+        // İyileştirilmiş JSON temizleme fonksiyonu
+        private string CleanJsonResponse(string response)
+        {
+            _logger.LogDebug($"Cleaning JSON response: {response}");
+            
+            // Tüm yaygın başlangıç ve bitiş işaretlerini temizle
+            string[] unwantedPrefixes = new[] { "```json", "```", "JSON:" };
+            string[] unwantedSuffixes = new[] { "```" };
+            
+            string cleaned = response;
+            
+            // Başlangıç temizleme
+            foreach (var prefix in unwantedPrefixes)
+            {
+                if (cleaned.StartsWith(prefix, StringComparison.OrdinalIgnoreCase))
+                {
+                    cleaned = cleaned.Substring(prefix.Length).Trim();
+                }
+            }
+            
+            // Bitiş temizleme
+            foreach (var suffix in unwantedSuffixes)
+            {
+                if (cleaned.EndsWith(suffix, StringComparison.OrdinalIgnoreCase))
+                {
+                    cleaned = cleaned.Substring(0, cleaned.Length - suffix.Length).Trim();
+                }
+            }
+            
+            // JSON içeriğin başlangıç ve bitiş noktalarını bul
+            var startIdx = cleaned.IndexOf('{');
+            var endIdx = cleaned.LastIndexOf('}');
+            
+            if (startIdx >= 0 && endIdx > startIdx)
+            {
+                cleaned = cleaned.Substring(startIdx, endIdx - startIdx + 1);
+                _logger.LogDebug($"Extracted JSON object: {cleaned}");
+                return cleaned;
+            }
+            
+            _logger.LogWarning("Could not find valid JSON object in response");
+            return response; // Eğer düzgün JSON bulunamazsa, orijinal yanıtı döndür
+        }
+
         public async Task<string> GenerateQuizQuestionAsync(string word, string level)
         {
             try
             {
                 _logger.LogInformation($"Generating quiz question for word: '{word}' at level: {level}");
 
+                // İyileştirilmiş prompt - kesin format talimatları ile
                 var prompt = @$"
-            You are an English language teacher creating a vocabulary quiz for a c1 level student.
-            // You are an English language teacher creating a vocabulary quiz for a {level} level student.
+You are an English language teacher creating a vocabulary quiz for a {level} level student.
 
-            // Create ONE high-quality multiple-choice question about the word '{word}'. The question should be 'Which of these best describes the word '{word}'?' and the options should include:
+Create ONE multiple-choice question about the word '{word}'. 
 
-            // 1. The correct definition of the word
-            // 2. A sample sentence using the word correctly
-            // 3. An incorrect but plausible definition
-            // 4. A clearly incorrect definition or usage
+Your response MUST be a valid JSON object in this EXACT format:
+{{
+  ""question"": ""Which of these best describes the word '{word}'?"",
+  ""options"": [""[Correct definition]"", ""[Example sentence]"", ""[Plausible incorrect definition]"", ""[Clearly wrong definition]""],
+  ""correctAnswer"": ""[Correct definition]"",
+  ""explanation"": ""[Brief explanation of the word meaning]""
+}}
 
-            // EXAMPLES:
-            // - Word: 'interest'
-            // Question: 'Which of these best describes the word 'interest'?'
-            // Options: [
-            //     'The feeling of wanting to know or learn about something',
-            //     'She looked about her with interest',
-            //     'A type of financial payment that adds to your savings',
-            //     'To lose attention or focus on something'
-            // ]
-            // CorrectAnswer: 'The feeling of wanting to know or learn about something'
-            // Explanation: 'Interest means curiosity or attention given to something that you find important or appealing.'
-
-            // IMPORTANT: Your response must be ONLY a valid JSON object exactly in this format:
-            // {{
-            //   ""question"": ""Which of these best describes the word '{word}'?"",
-            //   ""options"": [""[Correct definition]"", ""[Example sentence]"", ""[Plausible incorrect definition]"", ""[Clearly wrong definition]""],
-            //   ""correctAnswer"": ""[Exact copy of the correct definition option]"",
-            //   ""explanation"": ""[Brief explanation of the word meaning]""
-            // }}
-
-            // DO NOT include any markdown formatting like ```json or ``` around your response. Return ONLY the raw JSON object.
-        ";
+The correctAnswer MUST exactly match one of the options.
+DO NOT include any text before or after the JSON.
+DO NOT wrap the JSON in code blocks (```).
+Return ONLY the raw JSON object.
+";
 
                 var response = await CallOllamaApiAsync(prompt);
-                _logger.LogInformation($"Quiz question raw response: {response}");
+                _logger.LogInformation($"Raw LLM response for word '{word}': {response}");
 
                 var cleanedResponse = CleanJsonResponse(response);
-                _logger.LogInformation($"Cleaned response: {cleanedResponse}");
+                _logger.LogInformation($"Cleaned JSON response for word '{word}': {cleanedResponse}");
 
-                try
+                // JSON doğrulaması yap
+                try 
                 {
-                    // Parse etmeye çalışıyoruz
-                    var quizQ = JsonSerializer.Deserialize<QuizQuestionData>(cleanedResponse);
-
-                    if (quizQ == null)
+                    // Deserialize edilebiliyorsa geçerli JSON'dur
+                    var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+                    var questionData = JsonSerializer.Deserialize<QuizQuestionData>(cleanedResponse, options);
+                    
+                    // Gerekli alanlar var mı kontrol et
+                    if (questionData?.Question == null || questionData?.Options == null || 
+                        questionData.Options.Length < 2 || string.IsNullOrEmpty(questionData.CorrectAnswer))
                     {
-                        _logger.LogWarning($"LLM returned JSON that deserialized to null for word '{word}'. Returning cleaned JSON anyway.");
-                        return cleanedResponse;
+                        _logger.LogWarning($"JSON structure is valid but content is incomplete for word '{word}'");
+                        throw new JsonException("Missing required fields in JSON");
                     }
-
-                    // **Artık field kontrolü yapmıyoruz**: question, options, correctAnswer, explanation vb.
-                    // LLM verisi bozuksa bile yine de geriye bu JSON'u döndürüyoruz.
-                    _logger.LogInformation("Quiz question generated with valid JSON format (no strict field checks). Returning as is.");
+                    
+                    // CorrectAnswer seçeneklerden biri mi?
+                    bool correctAnswerInOptions = false;
+                    foreach (var option in questionData.Options)
+                    {
+                        if (option.Equals(questionData.CorrectAnswer, StringComparison.OrdinalIgnoreCase))
+                        {
+                            correctAnswerInOptions = true;
+                            break;
+                        }
+                    }
+                    
+                    if (!correctAnswerInOptions)
+                    {
+                        _logger.LogWarning($"CorrectAnswer not found in options for word '{word}'");
+                        throw new JsonException("CorrectAnswer must match one of the options");
+                    }
+                    
+                    _logger.LogInformation($"JSON validation successful for word '{word}'");
                     return cleanedResponse;
                 }
                 catch (JsonException ex)
                 {
-                    // JSON tamamen parse edilemezse ham cleanedResponse'ı döndürüyoruz
-                    _logger.LogWarning($"Could not parse JSON for word '{word}': {ex.Message}. Returning cleanedResponse as is.");
-                    return cleanedResponse;
+                    _logger.LogWarning($"Invalid JSON for word '{word}': {ex.Message}");
+                    
+                    // JSON geçersizse, düzgün formatlı bir fallback oluştur
+                    var fallbackData = new QuizQuestionData
+                    {
+                        Question = $"Which of these best describes the word '{word}'?",
+                        Options = new string[] 
+                        { 
+                            $"The correct meaning of '{word}'", 
+                            $"A sentence using '{word}'", 
+                            $"A related concept to '{word}'", 
+                            $"An unrelated concept" 
+                        },
+                        CorrectAnswer = $"The correct meaning of '{word}'",
+                        Explanation = $"This question tests your understanding of the word '{word}'."
+                    };
+                    
+                    var fallbackJson = JsonSerializer.Serialize(fallbackData);
+                    _logger.LogInformation($"Created fallback JSON for word '{word}': {fallbackJson}");
+                    return fallbackJson;
                 }
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, $"Error generating quiz question for word: '{word}'");
-                // Fallback'ı tamamen kaldırmak istiyorsak, yakalayıp tekrar fırlatalım:
                 throw;
             }
-        }
-
-
-        // Markdown kod bloklarını temizleyen yardımcı metod
-        private string CleanJsonResponse(string response)
-        {
-            // JSON kod bloklarını temizle: ```json ve ``` işaretlerini kaldır
-            if (response.StartsWith("```json") || response.StartsWith("```JSON"))
-            {
-                var startIndex = response.IndexOf('{');
-                var endIndex = response.LastIndexOf('}');
-
-                if (startIndex >= 0 && endIndex >= 0 && endIndex > startIndex)
-                {
-                    return response.Substring(startIndex, endIndex - startIndex + 1);
-                }
-            }
-            else if (response.Contains("```") && response.Contains("{") && response.Contains("}"))
-            {
-                // Alternatif temizleme stratejisi - ilk { ve son } arasını al
-                var startIndex = response.IndexOf('{');
-                var endIndex = response.LastIndexOf('}');
-
-                if (startIndex >= 0 && endIndex >= 0 && endIndex > startIndex)
-                {
-                    return response.Substring(startIndex, endIndex - startIndex + 1);
-                }
-            }
-
-            return response; // Eğer kod bloğu formatı yoksa, orijinal yanıtı döndür
         }
 
         public async Task<List<QuizQuestionData>> GenerateVocabularyQuizAsync(List<string> words, string level, int questionCount = 3)
@@ -289,50 +324,61 @@ namespace LanguageLearningApp.API.Infrastructure.Services
                 try
                 {
                     var questionJson = await GenerateQuizQuestionAsync(word, level);
-                    _logger.LogInformation($"Generated question for word '{word}': {questionJson}");
+                    _logger.LogInformation($"Question JSON generated for word '{word}'");
 
                     try
                     {
-                        var questionData = JsonSerializer.Deserialize<QuizQuestionData>(questionJson);
-                        if (questionData != null &&
-                            !string.IsNullOrEmpty(questionData.Question) &&
-                            questionData.Options != null &&
-                            questionData.Options.Length >= 2 &&
-                            !string.IsNullOrEmpty(questionData.CorrectAnswer))
+                        var options = new JsonSerializerOptions 
+                        { 
+                            PropertyNameCaseInsensitive = true,
+                            AllowTrailingCommas = true
+                        };
+                        
+                        var questionData = JsonSerializer.Deserialize<QuizQuestionData>(questionJson, options);
+                        
+                        if (questionData != null)
                         {
+                            // Seçenekleri karıştır ve doğru cevabı takip et
+                            ShuffleOptions(questionData);
+                            
+                            // Deserialize başarılı olduysa ekle
                             result.Add(questionData);
+                            _logger.LogInformation($"Successfully added question for word '{word}'");
                         }
                         else
                         {
-                            _logger.LogWarning($"Invalid question data for word '{word}', using default format");
-
-                            // Create a fallback question if deserialization produces incomplete data
-                            result.Add(new QuizQuestionData
-                            {
-                                Question = $"Which of these best describes the word '{word}'?",
-                                Options = new string[] { "A common English word", "A rare medical term", "A type of food", "A place name" },
-                                CorrectAnswer = "A common English word",
-                                Explanation = $"The word '{word}' is a standard part of English vocabulary."
-                            });
+                            throw new JsonException("Deserialized to null object");
                         }
                     }
                     catch (JsonException jsonEx)
                     {
-                        _logger.LogError(jsonEx, $"Failed to parse question JSON for word '{word}'");
-
-                        // Create a fallback question if JSON parsing fails
-                        result.Add(new QuizQuestionData
+                        _logger.LogError(jsonEx, $"JSON parsing error for word '{word}'");
+                        
+                        // Bu durumda gerçekten anlamlı bir fallback soru kullan
+                        var fallbackData = new QuizQuestionData
                         {
-                            Question = $"What type of word is '{word}'?",
-                            Options = new string[] { "Noun", "Verb", "Adjective", "Adverb" },
-                            CorrectAnswer = "Noun", // Default to noun as safest guess
-                            Explanation = $"This is a default question format for the word '{word}'."
-                        });
+                            Question = $"Which of these best describes the word '{word}'?",
+                            Options = new string[] 
+                            { 
+                                $"A word commonly used in {level} level English", 
+                                "A rare technical term", 
+                                "A type of grammatical structure", 
+                                "A literary device" 
+                            },
+                            CorrectAnswer = $"A word commonly used in {level} level English",
+                            Explanation = $"'{word}' is a vocabulary word typically taught at {level} level."
+                        };
+                        
+                        // Fallback sorularında da seçenekleri karıştır
+                        ShuffleOptions(fallbackData);
+                        result.Add(fallbackData);
+                        _logger.LogInformation($"Added fallback question for word '{word}'");
                     }
                 }
                 catch (Exception ex)
                 {
-                    _logger.LogError(ex, $"Error generating question for word '{word}'");
+                    _logger.LogError(ex, $"Processing error for word '{word}'");
+                    // Bu kelimeyi atla ve devam et
                 }
             }
 
@@ -366,7 +412,31 @@ namespace LanguageLearningApp.API.Infrastructure.Services
             return sb.ToString();
         }
 
-        private async Task<string> CallOllamaApiAsync(string prompt)
+        // Seçenekleri karıştırıp doğru cevabı güncelleyen yardımcı fonksiyon
+private void ShuffleOptions(QuizQuestionData questionData)
+{
+    if (questionData?.Options == null || questionData.Options.Length < 2)
+        return;
+        
+    // Doğru cevabı bul ve indeksini kaydet
+    string correctAnswer = questionData.CorrectAnswer;
+    
+    // Seçenekleri karıştır
+    Random random = new Random();
+    string[] shuffledOptions = questionData.Options.OrderBy(x => random.Next()).ToArray();
+    
+    // Karıştırılmış dizide doğru cevabın yerini bul
+    int newCorrectIndex = Array.FindIndex(shuffledOptions, option => option.Equals(correctAnswer));
+    if (newCorrectIndex != -1)
+    {
+        // Options ve CorrectAnswer'ı güncelle
+        questionData.Options = shuffledOptions;
+        questionData.CorrectAnswer = shuffledOptions[newCorrectIndex];
+        _logger.LogDebug($"Options shuffled, correct answer is now at position {newCorrectIndex}");
+    }
+}
+
+private async Task<string> CallOllamaApiAsync(string prompt)
         {
             try
             {

@@ -19,7 +19,7 @@ namespace LanguageLearningApp.API.Application.Interfaces
         /// <summary>
         /// Generate a vocabulary quiz based on user's vocabulary
         /// </summary>
-        Task<QuizDto> GenerateVocabularyQuizAsync(int userId, string level, int questionCount = 3);
+        Task<QuizDto> GenerateVocabularyQuizAsync(int userId, string level, int questionCount = 5);
         
         /// <summary>
         /// Submit quiz answers and get results

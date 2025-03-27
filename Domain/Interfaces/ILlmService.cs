@@ -34,7 +34,7 @@ namespace LanguageLearningApp.API.Domain.Interfaces
         /// <summary>
         /// Generates multiple quiz questions for a list of vocabulary words
         /// </summary>
-        Task<List<QuizQuestionData>> GenerateVocabularyQuizAsync(List<string> words, string level, int questionCount = 3);
+        Task<List<QuizQuestionData>> GenerateVocabularyQuizAsync(List<string> words, string level, int questionCount = 5);
     }
 
     // Helper class for deserializing quiz question data from LLM
