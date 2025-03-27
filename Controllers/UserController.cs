@@ -20,18 +20,31 @@ namespace LanguageLearningApp.API.Controllers
         private readonly IUserVocabularyRepository _userVocabularyRepository;
         private readonly IUserProgressRepository _userProgressRepository;
         private readonly ILogger<UsersController> _logger;
+        private readonly IErrorAnalysisService _errorAnalysisService;
+        private readonly IGoalService _goalService;
+        private readonly IBadgeService _badgeService;
+        
 
         public UsersController(
             IUserRepository userRepository,
             IUserVocabularyRepository userVocabularyRepository,
             IUserProgressRepository userProgressRepository,
-            ILogger<UsersController> logger)
+            ILogger<UsersController> logger,
+            IErrorAnalysisService errorAnalysisService,
+            IGoalService goalService,
+            IBadgeService badgeService
+            )
         {
             _userRepository = userRepository;
             _userVocabularyRepository = userVocabularyRepository;
             _userProgressRepository = userProgressRepository;
             _logger = logger;
+            _errorAnalysisService = errorAnalysisService;
+            _goalService = goalService;
+            _badgeService = badgeService;
         }
+
+        
 
         [HttpGet("profile")]
         public async Task<ActionResult<UserProfileDto>> GetUserProfile()
@@ -119,6 +132,168 @@ namespace LanguageLearningApp.API.Controllers
             }
         }
 
+        // 1. Error Analysis için endpoint
+        [HttpGet("errors")]
+public async Task<ActionResult<object>> GetUserErrorAnalysis([FromQuery] string timeRange = "month")
+{
+    try
+    {
+        var userId = GetUserId();
+        var result = await _errorAnalysisService.GetUserErrorAnalysisAsync(userId, timeRange);
+        return Ok(result);
+    }
+    catch (KeyNotFoundException ex)
+    {
+        return NotFound(ex.Message);
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, "Error retrieving error analysis");
+        return StatusCode(500, "Error retrieving error analysis");
+    }
+}
+
+[HttpGet("goals")]
+public async Task<ActionResult<IEnumerable<GoalDto>>> GetUserGoals()
+{
+    try
+    {
+        var userId = GetUserId();
+        var goals = await _goalService.GetUserGoalsAsync(userId);
+        return Ok(goals);
+    }
+    catch (KeyNotFoundException ex)
+    {
+        return NotFound(ex.Message);
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, "Error retrieving goals");
+        return StatusCode(500, "Error retrieving goals");
+    }
+}
+
+[HttpGet("goals/{id}")]
+public async Task<ActionResult<GoalDto>> GetUserGoalById(int id)
+{
+    try
+    {
+        var userId = GetUserId();
+        var goal = await _goalService.GetUserGoalByIdAsync(userId, id);
+        return Ok(goal);
+    }
+    catch (KeyNotFoundException ex)
+    {
+        return NotFound(ex.Message);
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, $"Error retrieving goal {id}");
+        return StatusCode(500, $"Error retrieving goal {id}");
+    }
+}
+
+[HttpPost("goals")]
+public async Task<ActionResult<GoalDto>> CreateUserGoal([FromBody] GoalDto goalDto)
+{
+    try
+    {
+        var userId = GetUserId();
+        var goal = await _goalService.CreateUserGoalAsync(userId, goalDto);
+        return CreatedAtAction(nameof(GetUserGoalById), new { id = goal.Id }, goal);
+    }
+    catch (KeyNotFoundException ex)
+    {
+        return NotFound(ex.Message);
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, "Error creating goal");
+        return StatusCode(500, "Error creating goal");
+    }
+}
+
+[HttpPut("goals/{id}")]
+public async Task<ActionResult<GoalDto>> UpdateUserGoal(int id, [FromBody] GoalDto goalDto)
+{
+    try
+    {
+        var userId = GetUserId();
+        goalDto.Id = id; // ID'yi DTO içerisine ata
+        var goal = await _goalService.UpdateUserGoalAsync(userId, id, goalDto);
+        return Ok(goal);
+    }
+    catch (KeyNotFoundException ex)
+    {
+        return NotFound(ex.Message);
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, $"Error updating goal {id}");
+        return StatusCode(500, $"Error updating goal {id}");
+    }
+}
+
+[HttpDelete("goals/{id}")]
+public async Task<ActionResult> DeleteUserGoal(int id)
+{
+    try
+    {
+        var userId = GetUserId();
+        var result = await _goalService.DeleteUserGoalAsync(userId, id);
+        if (!result)
+        {
+            return NotFound($"Goal with ID {id} not found");
+        }
+        return NoContent();
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, $"Error deleting goal {id}");
+        return StatusCode(500, $"Error deleting goal {id}");
+    }
+}
+
+[HttpGet("badges")]
+public async Task<ActionResult<IEnumerable<BadgeDto>>> GetUserBadges()
+{
+    try
+    {
+        var userId = GetUserId();
+        var badges = await _badgeService.GetUserBadgesAsync(userId);
+        return Ok(badges);
+    }
+    catch (KeyNotFoundException ex)
+    {
+        return NotFound(ex.Message);
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, "Error retrieving badges");
+        return StatusCode(500, "Error retrieving badges");
+    }
+}
+
+[HttpGet("badges/{id}")]
+public async Task<ActionResult<BadgeDto>> GetUserBadgeById(int id)
+{
+    try
+    {
+        var userId = GetUserId();
+        var badge = await _badgeService.GetUserBadgeByIdAsync(userId, id);
+        return Ok(badge);
+    }
+    catch (KeyNotFoundException ex)
+    {
+        return NotFound(ex.Message);
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, $"Error retrieving badge {id}");
+        return StatusCode(500, $"Error retrieving badge {id}");
+    }
+}
+
         [HttpGet("vocabulary")]
         public async Task<ActionResult<IEnumerable<VocabularyItemDto>>> GetUserVocabulary()
         {
@@ -128,7 +303,7 @@ namespace LanguageLearningApp.API.Controllers
                 var vocabulary = await _userVocabularyRepository.GetUserVocabularyAsync(userId);
 
                 var vocabularyDtos = new List<VocabularyItemDto>();
-                
+
                 foreach (var item in vocabulary)
                 {
                     vocabularyDtos.Add(new VocabularyItemDto

@@ -83,6 +83,16 @@ builder.Services.AddScoped<IConversationService, ConversationService>();
 builder.Services.AddScoped<IUserVocabularyService, UserVocabularyService>();
 builder.Services.AddScoped<IQuizService, QuizService>();
 
+// Repositories
+builder.Services.AddScoped<IUserGoalRepository, UserGoalRepository>();
+builder.Services.AddScoped<IUserBadgeRepository, UserBadgeRepository>();
+builder.Services.AddScoped<IBadgeRepository, BadgeRepository>();
+
+// Services
+builder.Services.AddScoped<IErrorAnalysisService, ErrorAnalysisService>();
+builder.Services.AddScoped<IGoalService, GoalService>();
+builder.Services.AddScoped<IBadgeService, BadgeService>();
+
 // Configure authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>

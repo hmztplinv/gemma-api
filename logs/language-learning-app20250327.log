@@ -7166,3 +7166,15 @@ System.Collections.Generic.KeyNotFoundException: The given key was not present i
 2025-03-27 15:25:20.594 +03:00 [INF] Fetching quiz result - ResultId: 17, UserId: 3
 2025-03-27 15:25:20.598 +03:00 [INF] Successfully processed 0 answer details
 2025-03-27 15:25:27.461 +03:00 [INF] Application is shutting down...
+2025-03-27 15:47:33.226 +03:00 [INF] Starting Language Learning API
+2025-03-27 15:47:33.292 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-27 15:47:33.295 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-27 15:47:33.296 +03:00 [INF] Hosting environment: Development
+2025-03-27 15:47:33.296 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-27 16:08:35.664 +03:00 [INF] Application is shutting down...
+2025-03-27 16:08:42.283 +03:00 [INF] Starting Language Learning API
+2025-03-27 16:08:42.360 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-27 16:08:42.364 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-27 16:08:42.365 +03:00 [INF] Hosting environment: Development
+2025-03-27 16:08:42.365 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-27 16:11:11.647 +03:00 [INF] Application is shutting down...
