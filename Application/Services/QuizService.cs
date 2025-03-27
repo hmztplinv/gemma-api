@@ -54,6 +54,98 @@ namespace LanguageLearningApp.API.Application.Services
             return result;
         }
 
+        public async Task<QuizResultDto> GetQuizResultByIdAsync(int resultId, int userId)
+{
+    try
+    {
+        _logger.LogInformation($"Fetching quiz result - ResultId: {resultId}, UserId: {userId}");
+        
+        var quizResult = await _quizResultRepository.GetByIdAsync(resultId);
+        
+        if (quizResult == null || quizResult.UserId != userId)
+        {
+            _logger.LogWarning($"Quiz result not found or access denied - ResultId: {resultId}, UserId: {userId}");
+            throw new KeyNotFoundException($"Quiz result with ID {resultId} not found");
+        }
+
+        var quiz = await _quizRepository.GetByIdAsync(quizResult.QuizId);
+        if (quiz == null)
+        {
+            _logger.LogWarning($"Associated quiz not found - QuizId: {quizResult.QuizId}");
+            throw new KeyNotFoundException($"Associated quiz not found");
+        }
+
+        // Create the DTO with basic information
+        var resultDto = new QuizResultDto
+        {
+            Id = quizResult.Id,
+            QuizId = quizResult.QuizId,
+            QuizTitle = quiz.Title,
+            QuizLevel = quiz.Level,
+            Score = quizResult.Score,
+            TotalQuestions = quizResult.TotalQuestions,
+            CorrectAnswers = quizResult.CorrectAnswers,
+            CompletedAt = quizResult.CompletedAt
+        };
+
+        // Create a dictionary of questions for quick lookup
+        var questions = quiz.Questions.ToDictionary(q => q.Id, q => q);
+
+        // Parse the answer details JSON if available
+        if (!string.IsNullOrEmpty(quizResult.AnswerDetails))
+        {
+            try
+            {
+                // Deserialize to a list of objects that match the structure
+                var answerDetails = JsonSerializer.Deserialize<List<JsonElement>>(quizResult.AnswerDetails);
+                
+                if (answerDetails != null)
+                {
+                    foreach (var detail in answerDetails)
+                    {
+                        if (detail.TryGetProperty("questionId", out var questionIdElement) &&
+                            detail.TryGetProperty("userAnswer", out var userAnswerElement) &&
+                            detail.TryGetProperty("correctAnswer", out var correctAnswerElement) &&
+                            detail.TryGetProperty("isCorrect", out var isCorrectElement))
+                        {
+                            int questionId = questionIdElement.GetInt32();
+                            
+                            if (questions.TryGetValue(questionId, out var question))
+                            {
+                                resultDto.Answers.Add(new QuizAnswerDetailDto
+                                {
+                                    QuestionId = questionId,
+                                    Question = question.Question,
+                                    UserAnswer = userAnswerElement.GetString() ?? string.Empty,
+                                    CorrectAnswer = correctAnswerElement.GetString() ?? string.Empty,
+                                    IsCorrect = isCorrectElement.GetBoolean()
+                                });
+                            }
+                        }
+                    }
+                }
+                
+                _logger.LogInformation($"Successfully processed {resultDto.Answers.Count} answer details");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error parsing or enhancing answer details");
+            }
+        }
+
+        return resultDto;
+    }
+    catch (KeyNotFoundException)
+    {
+        throw;
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, $"Error fetching quiz result - ResultId: {resultId}, UserId: {userId}");
+        throw;
+    }
+}
+
         public async Task<QuizDto> GetQuizByIdAsync(int quizId)
         {
             var quiz = await _quizRepository.GetByIdAsync(quizId);

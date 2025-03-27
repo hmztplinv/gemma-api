@@ -15,6 +15,8 @@ namespace LanguageLearningApp.API.Application.Interfaces
         /// Get a specific quiz by ID
         /// </summary>
         Task<QuizDto> GetQuizByIdAsync(int quizId);
+
+        Task<QuizResultDto> GetQuizResultByIdAsync(int resultId, int userId);
         
         /// <summary>
         /// Generate a vocabulary quiz based on user's vocabulary

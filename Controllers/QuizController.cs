@@ -120,7 +120,26 @@ namespace LanguageLearningApp.API.Controllers
             }
         }
 
-         
+        [HttpGet("results/{id}")]
+        public async Task<ActionResult<QuizResultDto>> GetQuizResult(int id)
+        {
+            try
+            {
+                var userId = GetUserId();
+                var result = await _quizService.GetQuizResultByIdAsync(id, userId);
+                return Ok(result);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error retrieving quiz result");
+                return StatusCode(500, "Failed to retrieve quiz result");
+            }
+        }
+
         [HttpPost]
         [Authorize(Roles = "Admin")] // Optional: restrict quiz creation to admins
         public async Task<ActionResult<QuizDto>> CreateQuiz([FromBody] QuizDto quizDto)
