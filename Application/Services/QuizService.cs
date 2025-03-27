@@ -65,6 +65,10 @@ namespace LanguageLearningApp.API.Application.Services
             return MapQuizToDto(quiz);
         }
 
+        // create GetQuizResultByIdAsync method here
+
+        
+
         public async Task<QuizDto> GenerateVocabularyQuizAsync(int userId, string level, int questionCount = 5)
         {
             try
