@@ -1,0 +1,2772 @@
+2025-03-27 09:00:26.002 +03:00 [INF] Starting Language Learning API
+2025-03-27 09:00:26.243 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-27 09:00:26.247 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-27 09:00:26.247 +03:00 [INF] Hosting environment: Development
+2025-03-27 09:00:26.248 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-27 09:04:38.405 +03:00 [INF] Starting to generate vocabulary quiz for user 1 at level B1
+2025-03-27 09:04:38.404 +03:00 [INF] Starting to generate vocabulary quiz for user 1 at level B1
+2025-03-27 09:04:38.682 +03:00 [INF] Selected 10 words for quiz generation
+2025-03-27 09:04:38.682 +03:00 [INF] Selected 10 words for quiz generation
+2025-03-27 09:04:38.685 +03:00 [INF] Generating vocabulary quiz with 10 words at level B1
+2025-03-27 09:04:38.685 +03:00 [INF] Generating vocabulary quiz with 10 words at level B1
+2025-03-27 09:04:38.687 +03:00 [INF] Generating quiz question for word: 'Simply' at level: B1
+2025-03-27 09:04:38.687 +03:00 [INF] Generating quiz question for word: 'interested' at level: B1
+2025-03-27 09:04:38.715 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:04:38.715 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:04:38.718 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:04:38.719 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:04:54.351 +03:00 [INF] Received HTTP response headers after 15629.0826ms - 200
+2025-03-27 09:04:54.355 +03:00 [INF] End processing HTTP request after 15643.0508ms - 200
+2025-03-27 09:04:54.364 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'interested'?",
+  "options": [
+    "Having a desire to learn about or engage with something",
+    "To be completely unaware of something happening around you",
+    "A state of boredom or disengagement",
+    "To intentionally mislead someone"
+  ],
+  "correctAnswer": "Having a desire to learn about or engage with something",
+  "explanation": "‘Interested’ means having a feeling of curiosity or wanting to know more about something. It implies a positive engagement with a subject or activity."
+}
+
+2025-03-27 09:04:54.368 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'interested'?",
+  "options": [
+    "Having a desire to learn about or engage with something",
+    "To be completely unaware of something happening around you",
+    "A state of boredom or disengagement",
+    "To intentionally mislead someone"
+  ],
+  "correctAnswer": "Having a desire to learn about or engage with something",
+  "explanation": "‘Interested’ means having a feeling of curiosity or wanting to know more about something. It implies a positive engagement with a subject or activity."
+}
+
+2025-03-27 09:04:54.377 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:04:54.378 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:04:54.380 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:04:54.381 +03:00 [INF] Generated question for word 'interested': { 
+                "question": "Which of these best describes the word 'interested'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'interested' is a standard word in English vocabulary."
+            }
+2025-03-27 09:04:54.383 +03:00 [WRN] Invalid question data for word 'interested', using default format
+2025-03-27 09:04:54.385 +03:00 [INF] Generating quiz question for word: 'english' at level: B1
+2025-03-27 09:04:54.386 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:04:54.388 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:00.067 +03:00 [INF] Received HTTP response headers after 21345.5351ms - 200
+2025-03-27 09:05:00.072 +03:00 [INF] End processing HTTP request after 21360.6063ms - 200
+2025-03-27 09:05:00.076 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'Simply'?",
+  "options": [
+    "Expressing something in a straightforward and uncomplicated manner.",
+    "To add a complex detail or complication to a situation.",
+    "A decorative embellishment used to make something look more attractive.",
+    "To confuse or bewilder someone with unnecessary details."
+  ],
+  "correctAnswer": "Expressing something in a straightforward and uncomplicated manner.",
+  "explanation": "The word 'simply' means in a basic or uncomplicated way; without complexity or difficulty."
+}
+
+2025-03-27 09:05:00.079 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Simply'?",
+  "options": [
+    "Expressing something in a straightforward and uncomplicated manner.",
+    "To add a complex detail or complication to a situation.",
+    "A decorative embellishment used to make something look more attractive.",
+    "To confuse or bewilder someone with unnecessary details."
+  ],
+  "correctAnswer": "Expressing something in a straightforward and uncomplicated manner.",
+  "explanation": "The word 'simply' means in a basic or uncomplicated way; without complexity or difficulty."
+}
+
+2025-03-27 09:05:00.081 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:05:00.082 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:05:00.083 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:05:00.084 +03:00 [INF] Generated question for word 'Simply': { 
+                "question": "Which of these best describes the word 'Simply'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'Simply' is a standard word in English vocabulary."
+            }
+2025-03-27 09:05:00.087 +03:00 [WRN] Invalid question data for word 'Simply', using default format
+2025-03-27 09:05:00.088 +03:00 [INF] Generating quiz question for word: 'language' at level: B1
+2025-03-27 09:05:00.089 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:00.090 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:06.033 +03:00 [INF] Received HTTP response headers after 11642.9964ms - 200
+2025-03-27 09:05:06.038 +03:00 [INF] End processing HTTP request after 11651.7472ms - 200
+2025-03-27 09:05:06.039 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'english'?",
+  "options": [
+    "Relating to or characteristic of England or its people.",
+    "He used English to communicate with the tourists.",
+    "A type of sweet treat enjoyed during tea time.",
+    "A complex mathematical equation involving calculus."
+  ],
+  "correctAnswer": "Relating to or characteristic of England or its people.",
+  "explanation": "The word 'english' primarily refers to things associated with England, its language, culture, or people."
+}
+
+2025-03-27 09:05:06.042 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'english'?",
+  "options": [
+    "Relating to or characteristic of England or its people.",
+    "He used English to communicate with the tourists.",
+    "A type of sweet treat enjoyed during tea time.",
+    "A complex mathematical equation involving calculus."
+  ],
+  "correctAnswer": "Relating to or characteristic of England or its people.",
+  "explanation": "The word 'english' primarily refers to things associated with England, its language, culture, or people."
+}
+
+2025-03-27 09:05:06.044 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:05:06.045 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:05:06.046 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:05:06.047 +03:00 [INF] Generated question for word 'english': { 
+                "question": "Which of these best describes the word 'english'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'english' is a standard word in English vocabulary."
+            }
+2025-03-27 09:05:06.049 +03:00 [WRN] Invalid question data for word 'english', using default format
+2025-03-27 09:05:06.050 +03:00 [INF] Generating quiz question for word: 'Simply' at level: B1
+2025-03-27 09:05:06.052 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:06.053 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:12.816 +03:00 [INF] Received HTTP response headers after 12724.2994ms - 200
+2025-03-27 09:05:12.819 +03:00 [INF] End processing HTTP request after 12730.5116ms - 200
+2025-03-27 09:05:12.822 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'language'?",
+  "options": [
+    "A system of communication using words, symbols, and grammar.",
+    "He struggled to learn a new language quickly.",
+    "A type of computer programming code.",
+    "A collection of rocks and minerals found in a particular area."
+  ],
+  "correctAnswer": "A system of communication using words, symbols, and grammar.",
+  "explanation": "Language refers to the methods humans use to convey meaning through spoken or written words. It encompasses grammar, vocabulary, and the ability to understand and be understood."
+}
+```
+2025-03-27 09:05:12.824 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'language'?",
+  "options": [
+    "A system of communication using words, symbols, and grammar.",
+    "He struggled to learn a new language quickly.",
+    "A type of computer programming code.",
+    "A collection of rocks and minerals found in a particular area."
+  ],
+  "correctAnswer": "A system of communication using words, symbols, and grammar.",
+  "explanation": "Language refers to the methods humans use to convey meaning through spoken or written words. It encompasses grammar, vocabulary, and the ability to understand and be understood."
+}
+2025-03-27 09:05:12.825 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:05:12.827 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:05:12.828 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:05:12.829 +03:00 [INF] Generated question for word 'language': { 
+                "question": "Which of these best describes the word 'language'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'language' is a standard word in English vocabulary."
+            }
+2025-03-27 09:05:12.830 +03:00 [WRN] Invalid question data for word 'language', using default format
+2025-03-27 09:05:12.831 +03:00 [INF] Generating quiz question for word: 'name' at level: B1
+2025-03-27 09:05:12.833 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:12.835 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:18.685 +03:00 [INF] Received HTTP response headers after 12630.1745ms - 200
+2025-03-27 09:05:18.686 +03:00 [INF] End processing HTTP request after 12633.919ms - 200
+2025-03-27 09:05:18.687 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'Simply'?",
+  "options": [
+    "Expressing something in a straightforward and uncomplicated manner.",
+    "To make a complex problem easier to understand.",
+    "A type of decorative knot used in sailing.",
+    "To create a confusing situation deliberately."
+  ],
+  "correctAnswer": "Expressing something in a straightforward and uncomplicated manner.",
+  "explanation": "The word 'simply' means in a basic or uncomplicated way; without unnecessary complexity."
+}
+
+2025-03-27 09:05:18.689 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Simply'?",
+  "options": [
+    "Expressing something in a straightforward and uncomplicated manner.",
+    "To make a complex problem easier to understand.",
+    "A type of decorative knot used in sailing.",
+    "To create a confusing situation deliberately."
+  ],
+  "correctAnswer": "Expressing something in a straightforward and uncomplicated manner.",
+  "explanation": "The word 'simply' means in a basic or uncomplicated way; without unnecessary complexity."
+}
+
+2025-03-27 09:05:18.690 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:05:18.691 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:05:18.692 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:05:18.693 +03:00 [INF] Generated question for word 'Simply': { 
+                "question": "Which of these best describes the word 'Simply'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'Simply' is a standard word in English vocabulary."
+            }
+2025-03-27 09:05:18.694 +03:00 [WRN] Invalid question data for word 'Simply', using default format
+2025-03-27 09:05:18.695 +03:00 [INF] Generating quiz question for word: 'new' at level: B1
+2025-03-27 09:05:18.696 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:18.697 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:24.703 +03:00 [INF] Received HTTP response headers after 11865.8498ms - 200
+2025-03-27 09:05:24.705 +03:00 [INF] End processing HTTP request after 11872.2681ms - 200
+2025-03-27 09:05:24.707 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'name'?",
+  "options": [
+    "A label or identifier given to a person, place, or thing.",
+    "He gave her his name and contact information.",
+    "To rename something to give it a new identity.",
+    "A type of musical instrument played with a name."
+  ],
+  "correctAnswer": "A label or identifier given to a person, place, or thing.",
+  "explanation": "The word 'name' refers to a unique identifier used to distinguish something or someone."
+}
+
+2025-03-27 09:05:24.709 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'name'?",
+  "options": [
+    "A label or identifier given to a person, place, or thing.",
+    "He gave her his name and contact information.",
+    "To rename something to give it a new identity.",
+    "A type of musical instrument played with a name."
+  ],
+  "correctAnswer": "A label or identifier given to a person, place, or thing.",
+  "explanation": "The word 'name' refers to a unique identifier used to distinguish something or someone."
+}
+
+2025-03-27 09:05:24.711 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:05:24.712 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:05:24.713 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:05:24.714 +03:00 [INF] Generated question for word 'name': { 
+                "question": "Which of these best describes the word 'name'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'name' is a standard word in English vocabulary."
+            }
+2025-03-27 09:05:24.715 +03:00 [WRN] Invalid question data for word 'name', using default format
+2025-03-27 09:05:24.716 +03:00 [INF] Generating quiz question for word: 'want' at level: B1
+2025-03-27 09:05:24.718 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:24.720 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:31.166 +03:00 [INF] Received HTTP response headers after 12467.5846ms - 200
+2025-03-27 09:05:31.168 +03:00 [INF] End processing HTTP request after 12472.3901ms - 200
+2025-03-27 09:05:31.170 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'new'?",
+  "options": [
+    "Something recently made, discovered, or experienced; not existing before.",
+    "The company released a new product last month.",
+    "A period of time, typically a year.",
+    "To make something older or more worn."
+  ],
+  "correctAnswer": "Something recently made, discovered, or experienced; not existing before.",
+  "explanation": "The word 'new' refers to something that is recently created, found, or experienced, and therefore doesn't exist previously."
+}
+2025-03-27 09:05:31.171 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'new'?",
+  "options": [
+    "Something recently made, discovered, or experienced; not existing before.",
+    "The company released a new product last month.",
+    "A period of time, typically a year.",
+    "To make something older or more worn."
+  ],
+  "correctAnswer": "Something recently made, discovered, or experienced; not existing before.",
+  "explanation": "The word 'new' refers to something that is recently created, found, or experienced, and therefore doesn't exist previously."
+}
+2025-03-27 09:05:31.173 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:05:31.174 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:05:31.175 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:05:31.175 +03:00 [INF] Generated question for word 'new': { 
+                "question": "Which of these best describes the word 'new'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'new' is a standard word in English vocabulary."
+            }
+2025-03-27 09:05:31.177 +03:00 [WRN] Invalid question data for word 'new', using default format
+2025-03-27 09:05:31.178 +03:00 [INF] Generating quiz question for word: 'influential' at level: B1
+2025-03-27 09:05:31.179 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:31.180 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:37.341 +03:00 [INF] Received HTTP response headers after 12619.9735ms - 200
+2025-03-27 09:05:37.345 +03:00 [INF] End processing HTTP request after 12627.4835ms - 200
+2025-03-27 09:05:37.349 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'want'?",
+  "options": [
+    "To have a desire or need for something",
+    "The act of purchasing goods or services",
+    "A state of complete satisfaction and contentment",
+    "To observe something carefully and attentively"
+  ],
+  "correctAnswer": "To have a desire or need for something",
+  "explanation": "‘Want’ expresses a feeling of needing or desiring something – a wish or craving. It’s distinct from ‘need,’ which implies a necessity."
+}
+
+2025-03-27 09:05:37.351 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'want'?",
+  "options": [
+    "To have a desire or need for something",
+    "The act of purchasing goods or services",
+    "A state of complete satisfaction and contentment",
+    "To observe something carefully and attentively"
+  ],
+  "correctAnswer": "To have a desire or need for something",
+  "explanation": "‘Want’ expresses a feeling of needing or desiring something – a wish or craving. It’s distinct from ‘need,’ which implies a necessity."
+}
+
+2025-03-27 09:05:37.353 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:05:37.354 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:05:37.356 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:05:37.357 +03:00 [INF] Generated question for word 'want': { 
+                "question": "Which of these best describes the word 'want'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'want' is a standard word in English vocabulary."
+            }
+2025-03-27 09:05:37.359 +03:00 [WRN] Invalid question data for word 'want', using default format
+2025-03-27 09:05:37.360 +03:00 [INF] Generating quiz question for word: 'influential' at level: B1
+2025-03-27 09:05:37.361 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:37.362 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:43.522 +03:00 [INF] Received HTTP response headers after 12341.4603ms - 200
+2025-03-27 09:05:43.528 +03:00 [INF] End processing HTTP request after 12349.494ms - 200
+2025-03-27 09:05:43.532 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'influential'?",
+  "options": [
+    "Having a significant influence on others or events.",
+    "A small, decorative object used to add flair to a room.",
+    "A period of time when the weather is particularly cold.",
+    "A type of musical instrument played with a bow."
+  ],
+  "correctAnswer": "Having a significant influence on others or events.",
+  "explanation": "Influentual means to have a powerful or considerable effect on someone or something. It describes someone or something that is influential."
+}
+
+2025-03-27 09:05:43.534 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'influential'?",
+  "options": [
+    "Having a significant influence on others or events.",
+    "A small, decorative object used to add flair to a room.",
+    "A period of time when the weather is particularly cold.",
+    "A type of musical instrument played with a bow."
+  ],
+  "correctAnswer": "Having a significant influence on others or events.",
+  "explanation": "Influentual means to have a powerful or considerable effect on someone or something. It describes someone or something that is influential."
+}
+
+2025-03-27 09:05:43.535 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:05:43.537 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:05:43.538 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:05:43.539 +03:00 [INF] Generated question for word 'influential': { 
+                "question": "Which of these best describes the word 'influential'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'influential' is a standard word in English vocabulary."
+            }
+2025-03-27 09:05:43.541 +03:00 [WRN] Invalid question data for word 'influential', using default format
+2025-03-27 09:05:43.542 +03:00 [INF] Generating quiz question for word: 'name' at level: B1
+2025-03-27 09:05:43.543 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:43.545 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:50.097 +03:00 [INF] Received HTTP response headers after 12733.2432ms - 200
+2025-03-27 09:05:50.099 +03:00 [INF] End processing HTTP request after 12738.3855ms - 200
+2025-03-27 09:05:50.100 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'influential'?",
+  "options": [
+    "Having a significant effect on people or things; exerting considerable influence.",
+    "A small, decorative object used to add beauty to a room.",
+    "A period of time when it rains heavily.",
+    "A type of musical instrument played with keys."
+  ],
+  "correctAnswer": "Having a significant effect on people or things; exerting considerable influence.",
+  "explanation": "Influentual means having a powerful or important effect; it describes someone or something that has a notable impact or influence."
+}
+```
+2025-03-27 09:05:50.101 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'influential'?",
+  "options": [
+    "Having a significant effect on people or things; exerting considerable influence.",
+    "A small, decorative object used to add beauty to a room.",
+    "A period of time when it rains heavily.",
+    "A type of musical instrument played with keys."
+  ],
+  "correctAnswer": "Having a significant effect on people or things; exerting considerable influence.",
+  "explanation": "Influentual means having a powerful or important effect; it describes someone or something that has a notable impact or influence."
+}
+2025-03-27 09:05:50.102 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:05:50.103 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:05:50.104 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:05:50.105 +03:00 [INF] Generated question for word 'influential': { 
+                "question": "Which of these best describes the word 'influential'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'influential' is a standard word in English vocabulary."
+            }
+2025-03-27 09:05:50.106 +03:00 [WRN] Invalid question data for word 'influential', using default format
+2025-03-27 09:05:50.107 +03:00 [INF] Generating quiz question for word: 'like' at level: B1
+2025-03-27 09:05:50.108 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:50.109 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:56.617 +03:00 [INF] Received HTTP response headers after 13070.7028ms - 200
+2025-03-27 09:05:56.619 +03:00 [INF] End processing HTTP request after 13076.0912ms - 200
+2025-03-27 09:05:56.622 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'name'?",
+  "options": [
+    "A label or identifier given to a person, place, or thing.",
+    "He gave his dog the name Buster.",
+    "To rename something to give it a new identity.",
+    "A type of musical instrument played with a name."
+  ],
+  "correctAnswer": "A label or identifier given to a person, place, or thing.",
+  "explanation": "The word 'name' refers to the unique identifier assigned to something, whether it's a person's given name or the designation of a location."
+}
+
+2025-03-27 09:05:56.623 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'name'?",
+  "options": [
+    "A label or identifier given to a person, place, or thing.",
+    "He gave his dog the name Buster.",
+    "To rename something to give it a new identity.",
+    "A type of musical instrument played with a name."
+  ],
+  "correctAnswer": "A label or identifier given to a person, place, or thing.",
+  "explanation": "The word 'name' refers to the unique identifier assigned to something, whether it's a person's given name or the designation of a location."
+}
+
+2025-03-27 09:05:56.625 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:05:56.626 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:05:56.627 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:05:56.628 +03:00 [INF] Generated question for word 'name': { 
+                "question": "Which of these best describes the word 'name'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'name' is a standard word in English vocabulary."
+            }
+2025-03-27 09:05:56.629 +03:00 [WRN] Invalid question data for word 'name', using default format
+2025-03-27 09:05:56.630 +03:00 [INF] Generating quiz question for word: 'want' at level: B1
+2025-03-27 09:05:56.631 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:05:56.633 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:04.091 +03:00 [INF] Received HTTP response headers after 13981.1219ms - 200
+2025-03-27 09:06:04.092 +03:00 [INF] End processing HTTP request after 13984.4557ms - 200
+2025-03-27 09:06:04.095 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'like'?",
+  "options": [
+    "To have a preference for something or someone.",
+    "I really like chocolate cake, it's delicious!",
+    "To resemble or be similar to something.",
+    "To move quickly and deliberately"
+  ],
+  "correctAnswer": "To have a preference for something or someone.",
+  "explanation": "The word 'like' is most commonly used to express a fondness or preference. It can also mean 'similar to' but this is a secondary usage."
+}
+
+2025-03-27 09:06:04.097 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'like'?",
+  "options": [
+    "To have a preference for something or someone.",
+    "I really like chocolate cake, it's delicious!",
+    "To resemble or be similar to something.",
+    "To move quickly and deliberately"
+  ],
+  "correctAnswer": "To have a preference for something or someone.",
+  "explanation": "The word 'like' is most commonly used to express a fondness or preference. It can also mean 'similar to' but this is a secondary usage."
+}
+
+2025-03-27 09:06:04.099 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:06:04.101 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:06:04.102 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:06:04.104 +03:00 [INF] Generated question for word 'like': { 
+                "question": "Which of these best describes the word 'like'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'like' is a standard word in English vocabulary."
+            }
+2025-03-27 09:06:04.105 +03:00 [WRN] Invalid question data for word 'like', using default format
+2025-03-27 09:06:04.106 +03:00 [INF] Generating quiz question for word: 'hamza' at level: B1
+2025-03-27 09:06:04.108 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:04.109 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:09.690 +03:00 [INF] Received HTTP response headers after 13056.3116ms - 200
+2025-03-27 09:06:09.695 +03:00 [INF] End processing HTTP request after 13063.2989ms - 200
+2025-03-27 09:06:09.696 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'want'?",
+  "options": [
+    "To feel a desire or need for something",
+    "The act of purchasing goods or services",
+    "A state of being content and satisfied with one's situation",
+    "To deliberately avoid something or someone"
+  ],
+  "correctAnswer": "To feel a desire or need for something",
+  "explanation": "‘Want’ expresses a longing or need for something – a feeling of desire or necessity."
+}
+
+2025-03-27 09:06:09.698 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'want'?",
+  "options": [
+    "To feel a desire or need for something",
+    "The act of purchasing goods or services",
+    "A state of being content and satisfied with one's situation",
+    "To deliberately avoid something or someone"
+  ],
+  "correctAnswer": "To feel a desire or need for something",
+  "explanation": "‘Want’ expresses a longing or need for something – a feeling of desire or necessity."
+}
+
+2025-03-27 09:06:09.700 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:06:09.700 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:06:09.702 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:06:09.703 +03:00 [INF] Generated question for word 'want': { 
+                "question": "Which of these best describes the word 'want'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'want' is a standard word in English vocabulary."
+            }
+2025-03-27 09:06:09.704 +03:00 [WRN] Invalid question data for word 'want', using default format
+2025-03-27 09:06:09.705 +03:00 [INF] Generating quiz question for word: 'language' at level: B1
+2025-03-27 09:06:09.706 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:09.707 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:17.993 +03:00 [INF] Received HTTP response headers after 13882.9499ms - 200
+2025-03-27 09:06:17.997 +03:00 [INF] End processing HTTP request after 13888.929ms - 200
+2025-03-27 09:06:17.999 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'hamza'?",
+  "options": [
+    "A short, emphatic interjection, often used to express surprise or frustration.",
+    "The hamza is a prominent feature on the forehead of some individuals, believed to bring good luck.",
+    "A type of highly processed cheese commonly used in sandwiches.",
+    "A complex mathematical equation used in theoretical physics."
+  ],
+  "correctAnswer": "A short, emphatic interjection, often used to express surprise or frustration.",
+  "explanation": "A hamza (also spelled hamza) is a small, fleshy protrusion from the sides of the nostrils. It is a common feature in many people, particularly those of Middle Eastern or North African descent. It’s often used as a word to describe this feature."
+}
+```
+2025-03-27 09:06:18.002 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'hamza'?",
+  "options": [
+    "A short, emphatic interjection, often used to express surprise or frustration.",
+    "The hamza is a prominent feature on the forehead of some individuals, believed to bring good luck.",
+    "A type of highly processed cheese commonly used in sandwiches.",
+    "A complex mathematical equation used in theoretical physics."
+  ],
+  "correctAnswer": "A short, emphatic interjection, often used to express surprise or frustration.",
+  "explanation": "A hamza (also spelled hamza) is a small, fleshy protrusion from the sides of the nostrils. It is a common feature in many people, particularly those of Middle Eastern or North African descent. It’s often used as a word to describe this feature."
+}
+2025-03-27 09:06:18.004 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:06:18.005 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:06:18.006 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:06:18.007 +03:00 [INF] Generated question for word 'hamza': { 
+                "question": "Which of these best describes the word 'hamza'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'hamza' is a standard word in English vocabulary."
+            }
+2025-03-27 09:06:18.009 +03:00 [WRN] Invalid question data for word 'hamza', using default format
+2025-03-27 09:06:18.011 +03:00 [INF] Generating quiz question for word: 'learn' at level: B1
+2025-03-27 09:06:18.012 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:18.014 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:24.492 +03:00 [INF] Received HTTP response headers after 14783.3016ms - 200
+2025-03-27 09:06:24.496 +03:00 [INF] End processing HTTP request after 14790.029ms - 200
+2025-03-27 09:06:24.497 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'language'?",
+  "options": [
+    "A system of communication using words, grammar, and pronunciation.",
+    "He struggled to learn a new language in a short amount of time.",
+    "A type of software used for translating text from one form to another.",
+    "The act of physically moving or traveling from one place to another."
+  ],
+  "correctAnswer": "A system of communication using words, grammar, and pronunciation.",
+  "explanation": "Language refers to a method of conveying meaning through spoken or written words. It involves a structured system of rules and vocabulary."
+}
+```
+2025-03-27 09:06:24.500 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'language'?",
+  "options": [
+    "A system of communication using words, grammar, and pronunciation.",
+    "He struggled to learn a new language in a short amount of time.",
+    "A type of software used for translating text from one form to another.",
+    "The act of physically moving or traveling from one place to another."
+  ],
+  "correctAnswer": "A system of communication using words, grammar, and pronunciation.",
+  "explanation": "Language refers to a method of conveying meaning through spoken or written words. It involves a structured system of rules and vocabulary."
+}
+2025-03-27 09:06:24.501 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:06:24.501 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:06:24.502 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:06:24.503 +03:00 [INF] Generated question for word 'language': { 
+                "question": "Which of these best describes the word 'language'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'language' is a standard word in English vocabulary."
+            }
+2025-03-27 09:06:24.504 +03:00 [WRN] Invalid question data for word 'language', using default format
+2025-03-27 09:06:24.505 +03:00 [INF] Generating quiz question for word: 'practice' at level: B1
+2025-03-27 09:06:24.506 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:24.507 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:30.149 +03:00 [INF] Received HTTP response headers after 12133.2274ms - 200
+2025-03-27 09:06:30.154 +03:00 [INF] End processing HTTP request after 12141.4519ms - 200
+2025-03-27 09:06:30.158 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'learn'?",
+  "options": [
+    "To acquire knowledge or skill through study or experience.",
+    "I learned the new language very quickly.",
+    "To make a mistake or misinterpret something.",
+    "A period of time spent in a school or educational institution."
+  ],
+  "correctAnswer": "To acquire knowledge or skill through study or experience.",
+  "explanation": "‘Learn’ means to gain knowledge or skill by studying or experiencing something. It’s about the process of gaining understanding."
+}
+
+2025-03-27 09:06:30.160 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'learn'?",
+  "options": [
+    "To acquire knowledge or skill through study or experience.",
+    "I learned the new language very quickly.",
+    "To make a mistake or misinterpret something.",
+    "A period of time spent in a school or educational institution."
+  ],
+  "correctAnswer": "To acquire knowledge or skill through study or experience.",
+  "explanation": "‘Learn’ means to gain knowledge or skill by studying or experiencing something. It’s about the process of gaining understanding."
+}
+
+2025-03-27 09:06:30.161 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:06:30.162 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:06:30.163 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:06:30.164 +03:00 [INF] Generated question for word 'learn': { 
+                "question": "Which of these best describes the word 'learn'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'learn' is a standard word in English vocabulary."
+            }
+2025-03-27 09:06:30.166 +03:00 [WRN] Invalid question data for word 'learn', using default format
+2025-03-27 09:06:30.167 +03:00 [INF] Generating quiz question for word: 'english' at level: B1
+2025-03-27 09:06:30.168 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:30.169 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:36.200 +03:00 [INF] Received HTTP response headers after 11691.8207ms - 200
+2025-03-27 09:06:36.202 +03:00 [INF] End processing HTTP request after 11696.4859ms - 200
+2025-03-27 09:06:36.204 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'practice'?",
+  "options": [
+    "The habitual or regular performance of an activity for improvement or maintenance.",
+    "He practiced his scales diligently before the concert.",
+    "To consider something carefully before making a decision.",
+    "A type of musical instrument played with keys."
+  ],
+  "correctAnswer": "The habitual or regular performance of an activity for improvement or maintenance.",
+  "explanation": "‘Practice’ refers to the repeated performance of an activity to improve skill or maintain a habit. It’s about repetition for betterment."
+}
+
+2025-03-27 09:06:36.207 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'practice'?",
+  "options": [
+    "The habitual or regular performance of an activity for improvement or maintenance.",
+    "He practiced his scales diligently before the concert.",
+    "To consider something carefully before making a decision.",
+    "A type of musical instrument played with keys."
+  ],
+  "correctAnswer": "The habitual or regular performance of an activity for improvement or maintenance.",
+  "explanation": "‘Practice’ refers to the repeated performance of an activity to improve skill or maintain a habit. It’s about repetition for betterment."
+}
+
+2025-03-27 09:06:36.209 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:06:36.210 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:06:36.211 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:06:36.212 +03:00 [INF] Generated question for word 'practice': { 
+                "question": "Which of these best describes the word 'practice'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'practice' is a standard word in English vocabulary."
+            }
+2025-03-27 09:06:36.213 +03:00 [WRN] Invalid question data for word 'practice', using default format
+2025-03-27 09:06:36.214 +03:00 [INF] Generating quiz question for word: 'Interest' at level: B1
+2025-03-27 09:06:36.215 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:36.216 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:42.517 +03:00 [INF] Received HTTP response headers after 12346.1344ms - 200
+2025-03-27 09:06:42.519 +03:00 [INF] End processing HTTP request after 12350.7393ms - 200
+2025-03-27 09:06:42.521 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'english'?",
+  "options": [
+    "Relating to England or its people; the language spoken in England.",
+    "To examine something carefully and thoroughly.",
+    "A type of small, decorative knot used in embroidery.",
+    "A measurement of temperature using a Fahrenheit scale."
+  ],
+  "correctAnswer": "Relating to England or its people; the language spoken in England.",
+  "explanation": "The word 'english' primarily refers to things related to England, its culture, or the English language."
+}
+```
+2025-03-27 09:06:42.524 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'english'?",
+  "options": [
+    "Relating to England or its people; the language spoken in England.",
+    "To examine something carefully and thoroughly.",
+    "A type of small, decorative knot used in embroidery.",
+    "A measurement of temperature using a Fahrenheit scale."
+  ],
+  "correctAnswer": "Relating to England or its people; the language spoken in England.",
+  "explanation": "The word 'english' primarily refers to things related to England, its culture, or the English language."
+}
+2025-03-27 09:06:42.526 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:06:42.527 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:06:42.529 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:06:42.530 +03:00 [INF] Generated question for word 'english': { 
+                "question": "Which of these best describes the word 'english'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'english' is a standard word in English vocabulary."
+            }
+2025-03-27 09:06:42.531 +03:00 [WRN] Invalid question data for word 'english', using default format
+2025-03-27 09:06:42.532 +03:00 [INF] Generating quiz question for word: 'Interest' at level: B1
+2025-03-27 09:06:42.533 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:42.535 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:06:48.687 +03:00 [INF] Received HTTP response headers after 12469.1567ms - 200
+2025-03-27 09:06:48.690 +03:00 [INF] End processing HTTP request after 12474.712ms - 200
+2025-03-27 09:06:48.695 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "The feeling of wanting to know or learn about something",
+    "He showed a great interest in the history of the Roman Empire.",
+    "To be concerned with a particular subject or activity, often negatively.",
+    "A physical object that attracts attention."
+  ],
+  "correctAnswer": "The feeling of wanting to know or learn about something",
+  "explanation": "Interest refers to a desire to learn or engage with a subject or activity. It’s a feeling of curiosity and attention."
+}
+
+2025-03-27 09:06:48.697 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "The feeling of wanting to know or learn about something",
+    "He showed a great interest in the history of the Roman Empire.",
+    "To be concerned with a particular subject or activity, often negatively.",
+    "A physical object that attracts attention."
+  ],
+  "correctAnswer": "The feeling of wanting to know or learn about something",
+  "explanation": "Interest refers to a desire to learn or engage with a subject or activity. It’s a feeling of curiosity and attention."
+}
+
+2025-03-27 09:06:48.699 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:06:48.701 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:06:48.702 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:06:48.705 +03:00 [INF] Generated question for word 'Interest': { 
+                "question": "Which of these best describes the word 'Interest'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'Interest' is a standard word in English vocabulary."
+            }
+2025-03-27 09:06:48.707 +03:00 [WRN] Invalid question data for word 'Interest', using default format
+2025-03-27 09:06:48.708 +03:00 [INF] Successfully generated 10 questions for vocabulary quiz
+2025-03-27 09:06:48.709 +03:00 [INF] Generated 10 question data items
+2025-03-27 09:06:48.711 +03:00 [INF] Added question about 'interested' to quiz
+2025-03-27 09:06:48.714 +03:00 [INF] Added question about 'english' to quiz
+2025-03-27 09:06:48.715 +03:00 [INF] Added question about 'Simply' to quiz
+2025-03-27 09:06:48.715 +03:00 [INF] Added question about 'new' to quiz
+2025-03-27 09:06:48.716 +03:00 [INF] Added question about 'influential' to quiz
+2025-03-27 09:06:48.717 +03:00 [INF] Added question about 'name' to quiz
+2025-03-27 09:06:48.717 +03:00 [INF] Added question about 'want' to quiz
+2025-03-27 09:06:48.719 +03:00 [INF] Added question about 'language' to quiz
+2025-03-27 09:06:48.720 +03:00 [INF] Added question about 'practice' to quiz
+2025-03-27 09:06:48.721 +03:00 [INF] Added question about 'Interest' to quiz
+2025-03-27 09:06:48.944 +03:00 [INF] Quiz saved with ID 33
+2025-03-27 09:06:54.770 +03:00 [INF] Received HTTP response headers after 12233.1034ms - 200
+2025-03-27 09:06:54.773 +03:00 [INF] End processing HTTP request after 12239.3143ms - 200
+2025-03-27 09:06:54.776 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "The feeling of wanting to know or learn about something",
+    "He showed a great interest in the history of the local area.",
+    "To be involved in a legal dispute or court case.",
+    "A period of time when someone is not working."
+  ],
+  "correctAnswer": "The feeling of wanting to know or learn about something",
+  "explanation": "Interest refers to a feeling of curiosity or attention given to something that you find important or appealing. It’s about having a desire to learn more."
+}
+
+2025-03-27 09:06:54.779 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "The feeling of wanting to know or learn about something",
+    "He showed a great interest in the history of the local area.",
+    "To be involved in a legal dispute or court case.",
+    "A period of time when someone is not working."
+  ],
+  "correctAnswer": "The feeling of wanting to know or learn about something",
+  "explanation": "Interest refers to a feeling of curiosity or attention given to something that you find important or appealing. It’s about having a desire to learn more."
+}
+
+2025-03-27 09:06:54.781 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:06:54.782 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:06:54.783 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:06:54.784 +03:00 [INF] Generated question for word 'Interest': { 
+                "question": "Which of these best describes the word 'Interest'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'Interest' is a standard word in English vocabulary."
+            }
+2025-03-27 09:06:54.785 +03:00 [WRN] Invalid question data for word 'Interest', using default format
+2025-03-27 09:06:54.786 +03:00 [INF] Successfully generated 10 questions for vocabulary quiz
+2025-03-27 09:06:54.787 +03:00 [INF] Generated 10 question data items
+2025-03-27 09:06:54.788 +03:00 [INF] Added question about 'Simply' to quiz
+2025-03-27 09:06:54.789 +03:00 [INF] Added question about 'language' to quiz
+2025-03-27 09:06:54.790 +03:00 [INF] Added question about 'name' to quiz
+2025-03-27 09:06:54.791 +03:00 [INF] Added question about 'want' to quiz
+2025-03-27 09:06:54.792 +03:00 [INF] Added question about 'influential' to quiz
+2025-03-27 09:06:54.792 +03:00 [INF] Added question about 'like' to quiz
+2025-03-27 09:06:54.793 +03:00 [INF] Added question about 'hamza' to quiz
+2025-03-27 09:06:54.794 +03:00 [INF] Added question about 'learn' to quiz
+2025-03-27 09:06:54.795 +03:00 [INF] Added question about 'english' to quiz
+2025-03-27 09:06:54.796 +03:00 [INF] Added question about 'Interest' to quiz
+2025-03-27 09:06:54.815 +03:00 [INF] Quiz saved with ID 34
+2025-03-27 09:18:51.942 +03:00 [INF] Application is shutting down...
+2025-03-27 09:18:58.035 +03:00 [INF] Starting Language Learning API
+2025-03-27 09:18:58.097 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-27 09:18:58.100 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-27 09:18:58.101 +03:00 [INF] Hosting environment: Development
+2025-03-27 09:18:58.101 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-27 09:19:05.130 +03:00 [INF] Starting to generate vocabulary quiz for user 1 at level B1
+2025-03-27 09:19:05.130 +03:00 [INF] Starting to generate vocabulary quiz for user 1 at level B1
+2025-03-27 09:19:05.347 +03:00 [INF] Selected 10 words for quiz generation
+2025-03-27 09:19:05.347 +03:00 [INF] Selected 10 words for quiz generation
+2025-03-27 09:19:05.349 +03:00 [INF] Generating vocabulary quiz with 10 words at level B1
+2025-03-27 09:19:05.349 +03:00 [INF] Generating vocabulary quiz with 10 words at level B1
+2025-03-27 09:19:05.351 +03:00 [INF] Generating quiz question for word: 'want' at level: B1
+2025-03-27 09:19:05.351 +03:00 [INF] Generating quiz question for word: 'Study' at level: B1
+2025-03-27 09:19:05.373 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:05.372 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:05.375 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:05.375 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:15.611 +03:00 [INF] Received HTTP response headers after 10231.9778ms - 200
+2025-03-27 09:19:15.618 +03:00 [INF] End processing HTTP request after 10248.0041ms - 200
+2025-03-27 09:19:15.628 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'want'?",
+  "options": [
+    "To have a desire or need for something",
+    "The act of purchasing goods or services",
+    "A strong feeling of regret or sorrow",
+    "To deliberately mislead someone"
+  ],
+  "correctAnswer": "To have a desire or need for something",
+  "explanation": "‘Want’ expresses a wish or need for something – it’s a feeling of desire or necessity."
+}
+
+2025-03-27 09:19:15.630 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'want'?",
+  "options": [
+    "To have a desire or need for something",
+    "The act of purchasing goods or services",
+    "A strong feeling of regret or sorrow",
+    "To deliberately mislead someone"
+  ],
+  "correctAnswer": "To have a desire or need for something",
+  "explanation": "‘Want’ expresses a wish or need for something – it’s a feeling of desire or necessity."
+}
+
+2025-03-27 09:19:15.641 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'want'. Returning as is.
+2025-03-27 09:19:15.643 +03:00 [INF] Generated question for word 'want': {
+  "question": "Which of these best describes the word 'want'?",
+  "options": [
+    "To have a desire or need for something",
+    "The act of purchasing goods or services",
+    "A strong feeling of regret or sorrow",
+    "To deliberately mislead someone"
+  ],
+  "correctAnswer": "To have a desire or need for something",
+  "explanation": "‘Want’ expresses a wish or need for something – it’s a feeling of desire or necessity."
+}
+
+2025-03-27 09:19:15.644 +03:00 [INF] Generating quiz question for word: 'practice' at level: B1
+2025-03-27 09:19:15.645 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:15.647 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:22.548 +03:00 [INF] Received HTTP response headers after 17172.2942ms - 200
+2025-03-27 09:19:22.552 +03:00 [INF] End processing HTTP request after 17182.4808ms - 200
+2025-03-27 09:19:22.554 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'Study'?",
+  "options": [
+    "The act of learning through focused attention and investigation, typically involving books or materials.",
+    "To examine something carefully in order to understand it better.",
+    "To spend time relaxing and enjoying oneself, often with friends.",
+    "A type of musical instrument played with keys."
+  ],
+  "correctAnswer": "The act of learning through focused attention and investigation, typically involving books or materials.",
+  "explanation": "To study means to engage in a systematic process of learning by carefully examining and analyzing information, often with the purpose of gaining knowledge or understanding."
+}
+```
+2025-03-27 09:19:22.556 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Study'?",
+  "options": [
+    "The act of learning through focused attention and investigation, typically involving books or materials.",
+    "To examine something carefully in order to understand it better.",
+    "To spend time relaxing and enjoying oneself, often with friends.",
+    "A type of musical instrument played with keys."
+  ],
+  "correctAnswer": "The act of learning through focused attention and investigation, typically involving books or materials.",
+  "explanation": "To study means to engage in a systematic process of learning by carefully examining and analyzing information, often with the purpose of gaining knowledge or understanding."
+}
+2025-03-27 09:19:22.558 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'Study'. Returning as is.
+2025-03-27 09:19:22.559 +03:00 [INF] Generated question for word 'Study': {
+  "question": "Which of these best describes the word 'Study'?",
+  "options": [
+    "The act of learning through focused attention and investigation, typically involving books or materials.",
+    "To examine something carefully in order to understand it better.",
+    "To spend time relaxing and enjoying oneself, often with friends.",
+    "A type of musical instrument played with keys."
+  ],
+  "correctAnswer": "The act of learning through focused attention and investigation, typically involving books or materials.",
+  "explanation": "To study means to engage in a systematic process of learning by carefully examining and analyzing information, often with the purpose of gaining knowledge or understanding."
+}
+2025-03-27 09:19:22.560 +03:00 [INF] Generating quiz question for word: 'name' at level: B1
+2025-03-27 09:19:22.562 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:22.563 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:28.568 +03:00 [INF] Received HTTP response headers after 12920.5472ms - 200
+2025-03-27 09:19:28.570 +03:00 [INF] End processing HTTP request after 12924.7978ms - 200
+2025-03-27 09:19:28.572 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'practice'?",
+  "options": [
+    "The repetition of an activity or skill to improve proficiency.",
+    "He practiced his piano playing before the concert.",
+    "To formally observe or investigate a situation.",
+    "A small, wooden block used for building."
+  ],
+  "correctAnswer": "The repetition of an activity or skill to improve proficiency.",
+  "explanation": "‘Practice’ refers to the act of repeatedly doing something to improve a skill or habit. It’s about consistent effort and repetition."
+}
+
+2025-03-27 09:19:28.573 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'practice'?",
+  "options": [
+    "The repetition of an activity or skill to improve proficiency.",
+    "He practiced his piano playing before the concert.",
+    "To formally observe or investigate a situation.",
+    "A small, wooden block used for building."
+  ],
+  "correctAnswer": "The repetition of an activity or skill to improve proficiency.",
+  "explanation": "‘Practice’ refers to the act of repeatedly doing something to improve a skill or habit. It’s about consistent effort and repetition."
+}
+
+2025-03-27 09:19:28.575 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'practice'. Returning as is.
+2025-03-27 09:19:28.576 +03:00 [INF] Generated question for word 'practice': {
+  "question": "Which of these best describes the word 'practice'?",
+  "options": [
+    "The repetition of an activity or skill to improve proficiency.",
+    "He practiced his piano playing before the concert.",
+    "To formally observe or investigate a situation.",
+    "A small, wooden block used for building."
+  ],
+  "correctAnswer": "The repetition of an activity or skill to improve proficiency.",
+  "explanation": "‘Practice’ refers to the act of repeatedly doing something to improve a skill or habit. It’s about consistent effort and repetition."
+}
+
+2025-03-27 09:19:28.578 +03:00 [INF] Generating quiz question for word: 'interested' at level: B1
+2025-03-27 09:19:28.581 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:28.583 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:34.750 +03:00 [INF] Received HTTP response headers after 12186.1226ms - 200
+2025-03-27 09:19:34.753 +03:00 [INF] End processing HTTP request after 12191.3007ms - 200
+2025-03-27 09:19:34.755 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'name'?",
+  "options": [
+    "A label or identifier given to a person, place, or thing.",
+    "He gave the baby the name William.",
+    "To rename something to give it a new identity.",
+    "A type of musical instrument played with a name."
+  ],
+  "correctAnswer": "A label or identifier given to a person, place, or thing.",
+  "explanation": "The word 'name' refers to the unique identifier assigned to something, be it a person, a location, or an object."
+}
+
+2025-03-27 09:19:34.757 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'name'?",
+  "options": [
+    "A label or identifier given to a person, place, or thing.",
+    "He gave the baby the name William.",
+    "To rename something to give it a new identity.",
+    "A type of musical instrument played with a name."
+  ],
+  "correctAnswer": "A label or identifier given to a person, place, or thing.",
+  "explanation": "The word 'name' refers to the unique identifier assigned to something, be it a person, a location, or an object."
+}
+
+2025-03-27 09:19:34.759 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'name'. Returning as is.
+2025-03-27 09:19:34.761 +03:00 [INF] Generated question for word 'name': {
+  "question": "Which of these best describes the word 'name'?",
+  "options": [
+    "A label or identifier given to a person, place, or thing.",
+    "He gave the baby the name William.",
+    "To rename something to give it a new identity.",
+    "A type of musical instrument played with a name."
+  ],
+  "correctAnswer": "A label or identifier given to a person, place, or thing.",
+  "explanation": "The word 'name' refers to the unique identifier assigned to something, be it a person, a location, or an object."
+}
+
+2025-03-27 09:19:34.763 +03:00 [INF] Generating quiz question for word: 'english' at level: B1
+2025-03-27 09:19:34.764 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:34.766 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:40.479 +03:00 [INF] Received HTTP response headers after 11894.8449ms - 200
+2025-03-27 09:19:40.484 +03:00 [INF] End processing HTTP request after 11903.5768ms - 200
+2025-03-27 09:19:40.487 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'interested'?",
+  "options": [
+    "Having or showing a desire or attention to something",
+    "She was interested in the outcome of the election.",
+    "To be bored or uninterested in something.",
+    "A small, round object used for decoration."
+  ],
+  "correctAnswer": "Having or showing a desire or attention to something",
+  "explanation": "‘Interested’ means having or showing curiosity or attention towards something that you find engaging or important."
+}
+```
+2025-03-27 09:19:40.488 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'interested'?",
+  "options": [
+    "Having or showing a desire or attention to something",
+    "She was interested in the outcome of the election.",
+    "To be bored or uninterested in something.",
+    "A small, round object used for decoration."
+  ],
+  "correctAnswer": "Having or showing a desire or attention to something",
+  "explanation": "‘Interested’ means having or showing curiosity or attention towards something that you find engaging or important."
+}
+2025-03-27 09:19:40.490 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'interested'. Returning as is.
+2025-03-27 09:19:40.491 +03:00 [INF] Generated question for word 'interested': {
+  "question": "Which of these best describes the word 'interested'?",
+  "options": [
+    "Having or showing a desire or attention to something",
+    "She was interested in the outcome of the election.",
+    "To be bored or uninterested in something.",
+    "A small, round object used for decoration."
+  ],
+  "correctAnswer": "Having or showing a desire or attention to something",
+  "explanation": "‘Interested’ means having or showing curiosity or attention towards something that you find engaging or important."
+}
+2025-03-27 09:19:40.493 +03:00 [INF] Generating quiz question for word: 'new' at level: B1
+2025-03-27 09:19:40.494 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:40.496 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:46.929 +03:00 [INF] Received HTTP response headers after 12161.8315ms - 200
+2025-03-27 09:19:46.932 +03:00 [INF] End processing HTTP request after 12168.1015ms - 200
+2025-03-27 09:19:46.934 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'english'?",
+  "options": [
+    "A variety of languages spoken primarily in England and former British colonies.",
+    "He enjoyed an English breakfast with toast, bacon, and eggs.",
+    "A state of being completely confused or disoriented.",
+    "The process of translating a foreign language into English."
+  ],
+  "correctAnswer": "A variety of languages spoken primarily in England and former British colonies.",
+  "explanation": "The word 'English' primarily refers to the English language itself, but also to the languages that developed from it and are spoken in countries formerly part of the British Empire."
+}
+```
+2025-03-27 09:19:46.936 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'english'?",
+  "options": [
+    "A variety of languages spoken primarily in England and former British colonies.",
+    "He enjoyed an English breakfast with toast, bacon, and eggs.",
+    "A state of being completely confused or disoriented.",
+    "The process of translating a foreign language into English."
+  ],
+  "correctAnswer": "A variety of languages spoken primarily in England and former British colonies.",
+  "explanation": "The word 'English' primarily refers to the English language itself, but also to the languages that developed from it and are spoken in countries formerly part of the British Empire."
+}
+2025-03-27 09:19:46.937 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'english'. Returning as is.
+2025-03-27 09:19:46.938 +03:00 [INF] Generated question for word 'english': {
+  "question": "Which of these best describes the word 'english'?",
+  "options": [
+    "A variety of languages spoken primarily in England and former British colonies.",
+    "He enjoyed an English breakfast with toast, bacon, and eggs.",
+    "A state of being completely confused or disoriented.",
+    "The process of translating a foreign language into English."
+  ],
+  "correctAnswer": "A variety of languages spoken primarily in England and former British colonies.",
+  "explanation": "The word 'English' primarily refers to the English language itself, but also to the languages that developed from it and are spoken in countries formerly part of the British Empire."
+}
+2025-03-27 09:19:46.939 +03:00 [INF] Generating quiz question for word: 'Interest' at level: B1
+2025-03-27 09:19:46.940 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:46.941 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:52.138 +03:00 [INF] Received HTTP response headers after 11641.17ms - 200
+2025-03-27 09:19:52.143 +03:00 [INF] End processing HTTP request after 11648.9382ms - 200
+2025-03-27 09:19:52.144 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'new'?",
+  "options": [
+    "Something that has recently appeared or been made",
+    "To experience a sudden change in opinion or feeling",
+    "An old, outdated item",
+    "A type of musical instrument"
+  ],
+  "correctAnswer": "Something that has recently appeared or been made",
+  "explanation": "The word 'new' refers to something that is recently created, introduced, or has just come into existence."
+}
+```
+2025-03-27 09:19:52.145 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'new'?",
+  "options": [
+    "Something that has recently appeared or been made",
+    "To experience a sudden change in opinion or feeling",
+    "An old, outdated item",
+    "A type of musical instrument"
+  ],
+  "correctAnswer": "Something that has recently appeared or been made",
+  "explanation": "The word 'new' refers to something that is recently created, introduced, or has just come into existence."
+}
+2025-03-27 09:19:52.146 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'new'. Returning as is.
+2025-03-27 09:19:52.147 +03:00 [INF] Generated question for word 'new': {
+  "question": "Which of these best describes the word 'new'?",
+  "options": [
+    "Something that has recently appeared or been made",
+    "To experience a sudden change in opinion or feeling",
+    "An old, outdated item",
+    "A type of musical instrument"
+  ],
+  "correctAnswer": "Something that has recently appeared or been made",
+  "explanation": "The word 'new' refers to something that is recently created, introduced, or has just come into existence."
+}
+2025-03-27 09:19:52.148 +03:00 [INF] Generating quiz question for word: 'Anyone' at level: B1
+2025-03-27 09:19:52.149 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:52.150 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:58.525 +03:00 [INF] Received HTTP response headers after 11583.3473ms - 200
+2025-03-27 09:19:58.530 +03:00 [INF] End processing HTTP request after 11589.9589ms - 200
+2025-03-27 09:19:58.531 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "A strong feeling of wanting to learn about or engage with a particular subject or activity.",
+    "He expressed great interest in the upcoming election.",
+    "The amount of money someone pays to borrow money from a bank.",
+    "A state of being bored or lacking enthusiasm"
+  ],
+  "correctAnswer": "A strong feeling of wanting to learn about or engage with a particular subject or activity.",
+  "explanation": "Interest refers to a feeling of curiosity, attention, or enthusiasm towards something. It’s about wanting to know more or participate in it."
+}
+
+2025-03-27 09:19:58.534 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "A strong feeling of wanting to learn about or engage with a particular subject or activity.",
+    "He expressed great interest in the upcoming election.",
+    "The amount of money someone pays to borrow money from a bank.",
+    "A state of being bored or lacking enthusiasm"
+  ],
+  "correctAnswer": "A strong feeling of wanting to learn about or engage with a particular subject or activity.",
+  "explanation": "Interest refers to a feeling of curiosity, attention, or enthusiasm towards something. It’s about wanting to know more or participate in it."
+}
+
+2025-03-27 09:19:58.536 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'Interest'. Returning as is.
+2025-03-27 09:19:58.537 +03:00 [INF] Generated question for word 'Interest': {
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "A strong feeling of wanting to learn about or engage with a particular subject or activity.",
+    "He expressed great interest in the upcoming election.",
+    "The amount of money someone pays to borrow money from a bank.",
+    "A state of being bored or lacking enthusiasm"
+  ],
+  "correctAnswer": "A strong feeling of wanting to learn about or engage with a particular subject or activity.",
+  "explanation": "Interest refers to a feeling of curiosity, attention, or enthusiasm towards something. It’s about wanting to know more or participate in it."
+}
+
+2025-03-27 09:19:58.539 +03:00 [INF] Generating quiz question for word: 'influential' at level: B1
+2025-03-27 09:19:58.540 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:19:58.541 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:04.807 +03:00 [INF] Received HTTP response headers after 12655.9632ms - 200
+2025-03-27 09:20:04.812 +03:00 [INF] End processing HTTP request after 12662.901ms - 200
+2025-03-27 09:20:04.812 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'Anyone'?",
+  "options": [
+    "Any person or people, regardless of identity or specific knowledge.",
+    "I asked anyone if they had seen my keys.",
+    "A specific individual identified by a name or title.",
+    "To complete a task without any assistance."
+  ],
+  "correctAnswer": "Any person or people, regardless of identity or specific knowledge.",
+  "explanation": "‘Anyone’ is an indefinite pronoun that refers to an unspecified person or people. It indicates that the speaker doesn’t know or care who is being referred to."
+}
+```
+2025-03-27 09:20:04.814 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Anyone'?",
+  "options": [
+    "Any person or people, regardless of identity or specific knowledge.",
+    "I asked anyone if they had seen my keys.",
+    "A specific individual identified by a name or title.",
+    "To complete a task without any assistance."
+  ],
+  "correctAnswer": "Any person or people, regardless of identity or specific knowledge.",
+  "explanation": "‘Anyone’ is an indefinite pronoun that refers to an unspecified person or people. It indicates that the speaker doesn’t know or care who is being referred to."
+}
+2025-03-27 09:20:04.816 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'Anyone'. Returning as is.
+2025-03-27 09:20:04.817 +03:00 [INF] Generated question for word 'Anyone': {
+  "question": "Which of these best describes the word 'Anyone'?",
+  "options": [
+    "Any person or people, regardless of identity or specific knowledge.",
+    "I asked anyone if they had seen my keys.",
+    "A specific individual identified by a name or title.",
+    "To complete a task without any assistance."
+  ],
+  "correctAnswer": "Any person or people, regardless of identity or specific knowledge.",
+  "explanation": "‘Anyone’ is an indefinite pronoun that refers to an unspecified person or people. It indicates that the speaker doesn’t know or care who is being referred to."
+}
+2025-03-27 09:20:04.818 +03:00 [INF] Generating quiz question for word: 'hamza' at level: B1
+2025-03-27 09:20:04.819 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:04.821 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:10.909 +03:00 [INF] Received HTTP response headers after 12367.0394ms - 200
+2025-03-27 09:20:10.912 +03:00 [INF] End processing HTTP request after 12371.7408ms - 200
+2025-03-27 09:20:10.914 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'influential'?",
+  "options": [
+    "Having a significant influence or impact on others.",
+    "A small, decorative item used to add flair to a room.",
+    "A legal document outlining the terms of a contract.",
+    "Expressing a strong dislike or opposition to something."
+  ],
+  "correctAnswer": "Having a significant influence or impact on others.",
+  "explanation": "Influentail means to have a considerable effect or influence on someone or something. It describes someone or something that has power or sway."
+}
+```
+2025-03-27 09:20:10.916 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'influential'?",
+  "options": [
+    "Having a significant influence or impact on others.",
+    "A small, decorative item used to add flair to a room.",
+    "A legal document outlining the terms of a contract.",
+    "Expressing a strong dislike or opposition to something."
+  ],
+  "correctAnswer": "Having a significant influence or impact on others.",
+  "explanation": "Influentail means to have a considerable effect or influence on someone or something. It describes someone or something that has power or sway."
+}
+2025-03-27 09:20:10.918 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'influential'. Returning as is.
+2025-03-27 09:20:10.919 +03:00 [INF] Generated question for word 'influential': {
+  "question": "Which of these best describes the word 'influential'?",
+  "options": [
+    "Having a significant influence or impact on others.",
+    "A small, decorative item used to add flair to a room.",
+    "A legal document outlining the terms of a contract.",
+    "Expressing a strong dislike or opposition to something."
+  ],
+  "correctAnswer": "Having a significant influence or impact on others.",
+  "explanation": "Influentail means to have a considerable effect or influence on someone or something. It describes someone or something that has power or sway."
+}
+2025-03-27 09:20:10.920 +03:00 [INF] Generating quiz question for word: 'like' at level: B1
+2025-03-27 09:20:10.921 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:10.923 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:18.862 +03:00 [INF] Received HTTP response headers after 14039.9399ms - 200
+2025-03-27 09:20:18.865 +03:00 [INF] End processing HTTP request after 14046.1257ms - 200
+2025-03-27 09:20:18.868 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'hamza'?",
+  "options": [
+    "A short, guttural sound, often used at the beginning of Arabic words to indicate a particular vowel sound.",
+    "He used hamza to express his disapproval of the decision.",
+    "A type of decorative knot commonly found in Celtic designs.",
+    "A large, domesticated sheep known for its wool."
+  ],
+  "correctAnswer": "A short, guttural sound, often used at the beginning of Arabic words to indicate a particular vowel sound.",
+  "explanation": "A ‘hamza’ is a consonant sound in Arabic, frequently written as a symbol and representing a specific vowel sound at the beginning of a word. It’s not a knot or a type of sheep."
+}
+```
+2025-03-27 09:20:18.870 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'hamza'?",
+  "options": [
+    "A short, guttural sound, often used at the beginning of Arabic words to indicate a particular vowel sound.",
+    "He used hamza to express his disapproval of the decision.",
+    "A type of decorative knot commonly found in Celtic designs.",
+    "A large, domesticated sheep known for its wool."
+  ],
+  "correctAnswer": "A short, guttural sound, often used at the beginning of Arabic words to indicate a particular vowel sound.",
+  "explanation": "A ‘hamza’ is a consonant sound in Arabic, frequently written as a symbol and representing a specific vowel sound at the beginning of a word. It’s not a knot or a type of sheep."
+}
+2025-03-27 09:20:18.872 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'hamza'. Returning as is.
+2025-03-27 09:20:18.873 +03:00 [INF] Generated question for word 'hamza': {
+  "question": "Which of these best describes the word 'hamza'?",
+  "options": [
+    "A short, guttural sound, often used at the beginning of Arabic words to indicate a particular vowel sound.",
+    "He used hamza to express his disapproval of the decision.",
+    "A type of decorative knot commonly found in Celtic designs.",
+    "A large, domesticated sheep known for its wool."
+  ],
+  "correctAnswer": "A short, guttural sound, often used at the beginning of Arabic words to indicate a particular vowel sound.",
+  "explanation": "A ‘hamza’ is a consonant sound in Arabic, frequently written as a symbol and representing a specific vowel sound at the beginning of a word. It’s not a knot or a type of sheep."
+}
+2025-03-27 09:20:18.874 +03:00 [INF] Generating quiz question for word: 'Interest' at level: B1
+2025-03-27 09:20:18.875 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:18.877 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:24.758 +03:00 [INF] Received HTTP response headers after 13834.1024ms - 200
+2025-03-27 09:20:24.763 +03:00 [INF] End processing HTTP request after 13841.4047ms - 200
+2025-03-27 09:20:24.764 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'like'?",
+  "options": [
+    "To feel or express preference for something or someone.",
+    "The word is commonly used to express similarity or resemblance.",
+    "To spend a period of time in a place, often for leisure.",
+    "A mathematical operation involving multiplication and division."
+  ],
+  "correctAnswer": "To feel or express preference for something or someone.",
+  "explanation": "The word 'like' most commonly indicates a fondness or preference. While it has other uses, this is its primary and most frequent meaning."
+}
+
+2025-03-27 09:20:24.766 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'like'?",
+  "options": [
+    "To feel or express preference for something or someone.",
+    "The word is commonly used to express similarity or resemblance.",
+    "To spend a period of time in a place, often for leisure.",
+    "A mathematical operation involving multiplication and division."
+  ],
+  "correctAnswer": "To feel or express preference for something or someone.",
+  "explanation": "The word 'like' most commonly indicates a fondness or preference. While it has other uses, this is its primary and most frequent meaning."
+}
+
+2025-03-27 09:20:24.768 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'like'. Returning as is.
+2025-03-27 09:20:24.768 +03:00 [INF] Generated question for word 'like': {
+  "question": "Which of these best describes the word 'like'?",
+  "options": [
+    "To feel or express preference for something or someone.",
+    "The word is commonly used to express similarity or resemblance.",
+    "To spend a period of time in a place, often for leisure.",
+    "A mathematical operation involving multiplication and division."
+  ],
+  "correctAnswer": "To feel or express preference for something or someone.",
+  "explanation": "The word 'like' most commonly indicates a fondness or preference. While it has other uses, this is its primary and most frequent meaning."
+}
+
+2025-03-27 09:20:24.770 +03:00 [INF] Generating quiz question for word: 'Welcome' at level: B1
+2025-03-27 09:20:24.771 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:24.773 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:30.834 +03:00 [INF] Received HTTP response headers after 11955.9646ms - 200
+2025-03-27 09:20:30.837 +03:00 [INF] End processing HTTP request after 11961.9558ms - 200
+2025-03-27 09:20:30.839 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "The feeling of wanting to know or learn about something",
+    "He expressed a strong interest in classical music.",
+    "A period of time someone spends working for a company.",
+    "To completely ignore or disregard a situation."
+  ],
+  "correctAnswer": "The feeling of wanting to know or learn about something",
+  "explanation": "Interest refers to a strong feeling of curiosity or attention towards a particular subject, activity, or person. It’s about having a desire to learn more."
+}
+```
+2025-03-27 09:20:30.841 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "The feeling of wanting to know or learn about something",
+    "He expressed a strong interest in classical music.",
+    "A period of time someone spends working for a company.",
+    "To completely ignore or disregard a situation."
+  ],
+  "correctAnswer": "The feeling of wanting to know or learn about something",
+  "explanation": "Interest refers to a strong feeling of curiosity or attention towards a particular subject, activity, or person. It’s about having a desire to learn more."
+}
+2025-03-27 09:20:30.843 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'Interest'. Returning as is.
+2025-03-27 09:20:30.844 +03:00 [INF] Generated question for word 'Interest': {
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "The feeling of wanting to know or learn about something",
+    "He expressed a strong interest in classical music.",
+    "A period of time someone spends working for a company.",
+    "To completely ignore or disregard a situation."
+  ],
+  "correctAnswer": "The feeling of wanting to know or learn about something",
+  "explanation": "Interest refers to a strong feeling of curiosity or attention towards a particular subject, activity, or person. It’s about having a desire to learn more."
+}
+2025-03-27 09:20:30.846 +03:00 [INF] Generating quiz question for word: 'name' at level: B1
+2025-03-27 09:20:30.847 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:30.849 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:36.503 +03:00 [INF] Received HTTP response headers after 11729.5613ms - 200
+2025-03-27 09:20:36.507 +03:00 [INF] End processing HTTP request after 11735.0426ms - 200
+2025-03-27 09:20:36.510 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'Welcome'?",
+  "options": [
+    "To greet someone upon their arrival or entry; to make them feel at ease.",
+    "The act of receiving a new client or customer.",
+    "A formal announcement of a new product launch.",
+    "To avoid or escape something unpleasant"
+  ],
+  "correctAnswer": "To greet someone upon their arrival or entry; to make them feel at ease.",
+  "explanation": "‘Welcome’ signifies offering a friendly greeting and making someone feel accepted or comfortable upon their arrival."
+}
+
+2025-03-27 09:20:36.511 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Welcome'?",
+  "options": [
+    "To greet someone upon their arrival or entry; to make them feel at ease.",
+    "The act of receiving a new client or customer.",
+    "A formal announcement of a new product launch.",
+    "To avoid or escape something unpleasant"
+  ],
+  "correctAnswer": "To greet someone upon their arrival or entry; to make them feel at ease.",
+  "explanation": "‘Welcome’ signifies offering a friendly greeting and making someone feel accepted or comfortable upon their arrival."
+}
+
+2025-03-27 09:20:36.512 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'Welcome'. Returning as is.
+2025-03-27 09:20:36.513 +03:00 [INF] Generated question for word 'Welcome': {
+  "question": "Which of these best describes the word 'Welcome'?",
+  "options": [
+    "To greet someone upon their arrival or entry; to make them feel at ease.",
+    "The act of receiving a new client or customer.",
+    "A formal announcement of a new product launch.",
+    "To avoid or escape something unpleasant"
+  ],
+  "correctAnswer": "To greet someone upon their arrival or entry; to make them feel at ease.",
+  "explanation": "‘Welcome’ signifies offering a friendly greeting and making someone feel accepted or comfortable upon their arrival."
+}
+
+2025-03-27 09:20:36.515 +03:00 [INF] Generating quiz question for word: 'language' at level: B1
+2025-03-27 09:20:36.516 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:36.517 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:42.673 +03:00 [INF] Received HTTP response headers after 11821.8092ms - 200
+2025-03-27 09:20:42.676 +03:00 [INF] End processing HTTP request after 11829.192ms - 200
+2025-03-27 09:20:42.679 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'name'?",
+  "options": [
+    "A unique identifier assigned to a person, place, or thing.",
+    "He gave her his name and contact information.",
+    "To rename something to give it a new identity.",
+    "A type of musical instrument played with a name."
+  ],
+  "correctAnswer": "A unique identifier assigned to a person, place, or thing.",
+  "explanation": "A 'name' is a label or identifier used to distinguish something from others. It’s a word or phrase given to identify an individual or object."
+}
+```
+2025-03-27 09:20:42.681 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'name'?",
+  "options": [
+    "A unique identifier assigned to a person, place, or thing.",
+    "He gave her his name and contact information.",
+    "To rename something to give it a new identity.",
+    "A type of musical instrument played with a name."
+  ],
+  "correctAnswer": "A unique identifier assigned to a person, place, or thing.",
+  "explanation": "A 'name' is a label or identifier used to distinguish something from others. It’s a word or phrase given to identify an individual or object."
+}
+2025-03-27 09:20:42.683 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'name'. Returning as is.
+2025-03-27 09:20:42.684 +03:00 [INF] Generated question for word 'name': {
+  "question": "Which of these best describes the word 'name'?",
+  "options": [
+    "A unique identifier assigned to a person, place, or thing.",
+    "He gave her his name and contact information.",
+    "To rename something to give it a new identity.",
+    "A type of musical instrument played with a name."
+  ],
+  "correctAnswer": "A unique identifier assigned to a person, place, or thing.",
+  "explanation": "A 'name' is a label or identifier used to distinguish something from others. It’s a word or phrase given to identify an individual or object."
+}
+2025-03-27 09:20:42.685 +03:00 [INF] Generating quiz question for word: 'learn' at level: B1
+2025-03-27 09:20:42.686 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:42.687 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:48.920 +03:00 [INF] Received HTTP response headers after 12402.2789ms - 200
+2025-03-27 09:20:48.925 +03:00 [INF] End processing HTTP request after 12409.2867ms - 200
+2025-03-27 09:20:48.927 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'language'?",
+  "options": [
+    "A system of communication using words, grammar, and pronunciation.",
+    "He struggled to learn a new language in a short period.",
+    "A type of musical instrument played with vocal cords.",
+    "The act of translating a document from one written form to another."
+  ],
+  "correctAnswer": "A system of communication using words, grammar, and pronunciation.",
+  "explanation": "Language refers to a method of conveying meaning through spoken or written words. It encompasses the rules and structures that govern how these words are used."
+}
+```
+2025-03-27 09:20:48.930 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'language'?",
+  "options": [
+    "A system of communication using words, grammar, and pronunciation.",
+    "He struggled to learn a new language in a short period.",
+    "A type of musical instrument played with vocal cords.",
+    "The act of translating a document from one written form to another."
+  ],
+  "correctAnswer": "A system of communication using words, grammar, and pronunciation.",
+  "explanation": "Language refers to a method of conveying meaning through spoken or written words. It encompasses the rules and structures that govern how these words are used."
+}
+2025-03-27 09:20:48.931 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'language'. Returning as is.
+2025-03-27 09:20:48.933 +03:00 [INF] Generated question for word 'language': {
+  "question": "Which of these best describes the word 'language'?",
+  "options": [
+    "A system of communication using words, grammar, and pronunciation.",
+    "He struggled to learn a new language in a short period.",
+    "A type of musical instrument played with vocal cords.",
+    "The act of translating a document from one written form to another."
+  ],
+  "correctAnswer": "A system of communication using words, grammar, and pronunciation.",
+  "explanation": "Language refers to a method of conveying meaning through spoken or written words. It encompasses the rules and structures that govern how these words are used."
+}
+2025-03-27 09:20:48.934 +03:00 [INF] Generating quiz question for word: 'hello' at level: B1
+2025-03-27 09:20:48.936 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:48.937 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:54.747 +03:00 [INF] Received HTTP response headers after 12058.4414ms - 200
+2025-03-27 09:20:54.751 +03:00 [INF] End processing HTTP request after 12065.3316ms - 200
+2025-03-27 09:20:54.754 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'learn'?",
+  "options": [
+    "To acquire knowledge or skill through study or experience.",
+    "She learned about the new policy from her colleague.",
+    "To quickly understand and forget a piece of information.",
+    "A type of educational institution offering various courses."
+  ],
+  "correctAnswer": "To acquire knowledge or skill through study or experience.",
+  "explanation": "‘Learn’ means to gain knowledge or skill through study, practice, or experience. It’s about developing understanding or competence."
+}
+```
+2025-03-27 09:20:54.756 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'learn'?",
+  "options": [
+    "To acquire knowledge or skill through study or experience.",
+    "She learned about the new policy from her colleague.",
+    "To quickly understand and forget a piece of information.",
+    "A type of educational institution offering various courses."
+  ],
+  "correctAnswer": "To acquire knowledge or skill through study or experience.",
+  "explanation": "‘Learn’ means to gain knowledge or skill through study, practice, or experience. It’s about developing understanding or competence."
+}
+2025-03-27 09:20:54.758 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'learn'. Returning as is.
+2025-03-27 09:20:54.758 +03:00 [INF] Generated question for word 'learn': {
+  "question": "Which of these best describes the word 'learn'?",
+  "options": [
+    "To acquire knowledge or skill through study or experience.",
+    "She learned about the new policy from her colleague.",
+    "To quickly understand and forget a piece of information.",
+    "A type of educational institution offering various courses."
+  ],
+  "correctAnswer": "To acquire knowledge or skill through study or experience.",
+  "explanation": "‘Learn’ means to gain knowledge or skill through study, practice, or experience. It’s about developing understanding or competence."
+}
+2025-03-27 09:20:54.760 +03:00 [INF] Generating quiz question for word: 'Study' at level: B1
+2025-03-27 09:20:54.761 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:20:54.762 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:21:01.399 +03:00 [INF] Received HTTP response headers after 12461.2294ms - 200
+2025-03-27 09:21:01.402 +03:00 [INF] End processing HTTP request after 12466.2096ms - 200
+2025-03-27 09:21:01.406 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'hello'?",
+  "options": [
+    "A greeting used to initiate a conversation or acknowledge someone's presence.",
+    "I said 'hello' to the stranger, hoping to start a friendly chat.",
+    "A type of musical instrument played with a bow.",
+    "To avoid a difficult situation by saying nothing."
+  ],
+  "correctAnswer": "A greeting used to initiate a conversation or acknowledge someone's presence.",
+  "explanation": "‘Hello’ is a standard expression used to greet someone when you meet them or begin a conversation. It’s a polite and common way to acknowledge another person."
+}
+```
+2025-03-27 09:21:01.408 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'hello'?",
+  "options": [
+    "A greeting used to initiate a conversation or acknowledge someone's presence.",
+    "I said 'hello' to the stranger, hoping to start a friendly chat.",
+    "A type of musical instrument played with a bow.",
+    "To avoid a difficult situation by saying nothing."
+  ],
+  "correctAnswer": "A greeting used to initiate a conversation or acknowledge someone's presence.",
+  "explanation": "‘Hello’ is a standard expression used to greet someone when you meet them or begin a conversation. It’s a polite and common way to acknowledge another person."
+}
+2025-03-27 09:21:01.410 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'hello'. Returning as is.
+2025-03-27 09:21:01.411 +03:00 [INF] Generated question for word 'hello': {
+  "question": "Which of these best describes the word 'hello'?",
+  "options": [
+    "A greeting used to initiate a conversation or acknowledge someone's presence.",
+    "I said 'hello' to the stranger, hoping to start a friendly chat.",
+    "A type of musical instrument played with a bow.",
+    "To avoid a difficult situation by saying nothing."
+  ],
+  "correctAnswer": "A greeting used to initiate a conversation or acknowledge someone's presence.",
+  "explanation": "‘Hello’ is a standard expression used to greet someone when you meet them or begin a conversation. It’s a polite and common way to acknowledge another person."
+}
+2025-03-27 09:21:01.412 +03:00 [INF] Generating quiz question for word: 'you' at level: B1
+2025-03-27 09:21:01.414 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:21:01.416 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:21:07.860 +03:00 [INF] Received HTTP response headers after 13095.9341ms - 200
+2025-03-27 09:21:07.863 +03:00 [INF] End processing HTTP request after 13101.9211ms - 200
+2025-03-27 09:21:07.865 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'Study'?",
+  "options": [
+    "To engage in learning or research systematically, often involving books and academic materials.",
+    "She decided to study the effects of climate change on coral reefs.",
+    "To examine something closely in order to understand it better.",
+    "To spend time relaxing or enjoying oneself, typically with friends."
+  ],
+  "correctAnswer": "To engage in learning or research systematically, often involving books and academic materials.",
+  "explanation": "The word 'study' primarily refers to the act of learning or researching something in a systematic and focused manner."
+}
+```
+2025-03-27 09:21:07.866 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Study'?",
+  "options": [
+    "To engage in learning or research systematically, often involving books and academic materials.",
+    "She decided to study the effects of climate change on coral reefs.",
+    "To examine something closely in order to understand it better.",
+    "To spend time relaxing or enjoying oneself, typically with friends."
+  ],
+  "correctAnswer": "To engage in learning or research systematically, often involving books and academic materials.",
+  "explanation": "The word 'study' primarily refers to the act of learning or researching something in a systematic and focused manner."
+}
+2025-03-27 09:21:07.867 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'Study'. Returning as is.
+2025-03-27 09:21:07.868 +03:00 [INF] Generated question for word 'Study': {
+  "question": "Which of these best describes the word 'Study'?",
+  "options": [
+    "To engage in learning or research systematically, often involving books and academic materials.",
+    "She decided to study the effects of climate change on coral reefs.",
+    "To examine something closely in order to understand it better.",
+    "To spend time relaxing or enjoying oneself, typically with friends."
+  ],
+  "correctAnswer": "To engage in learning or research systematically, often involving books and academic materials.",
+  "explanation": "The word 'study' primarily refers to the act of learning or researching something in a systematic and focused manner."
+}
+2025-03-27 09:21:07.869 +03:00 [INF] Successfully generated 10 questions for vocabulary quiz
+2025-03-27 09:21:07.870 +03:00 [INF] Generated 10 question data items
+2025-03-27 09:21:07.872 +03:00 [INF] Added question about 'want' to quiz
+2025-03-27 09:21:07.873 +03:00 [INF] Added question about 'practice' to quiz
+2025-03-27 09:21:07.874 +03:00 [INF] Added question about 'interested' to quiz
+2025-03-27 09:21:07.875 +03:00 [INF] Added question about 'new' to quiz
+2025-03-27 09:21:07.876 +03:00 [INF] Added question about 'Anyone' to quiz
+2025-03-27 09:21:07.876 +03:00 [INF] Added question about 'hamza' to quiz
+2025-03-27 09:21:07.877 +03:00 [INF] Added question about 'Interest' to quiz
+2025-03-27 09:21:07.878 +03:00 [INF] Added question about 'name' to quiz
+2025-03-27 09:21:07.879 +03:00 [INF] Added question about 'learn' to quiz
+2025-03-27 09:21:07.880 +03:00 [INF] Added question about 'Study' to quiz
+2025-03-27 09:21:08.038 +03:00 [INF] Quiz saved with ID 35
+2025-03-27 09:21:14.764 +03:00 [INF] Received HTTP response headers after 13346.8056ms - 200
+2025-03-27 09:21:14.767 +03:00 [INF] End processing HTTP request after 13352.9862ms - 200
+2025-03-27 09:21:14.769 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'you'?",
+  "options": [
+    "Used to refer to a person or people being addressed or spoken to.",
+    "I'm so tired; you wouldn't believe the day I've had.",
+    "A small, handheld device used for communication.",
+    "A type of musical instrument played with keys."
+  ],
+  "correctAnswer": "Used to refer to a person or people being addressed or spoken to.",
+  "explanation": "The word 'you' is a pronoun used to represent the person or people being spoken to directly. It's a form of address."
+}
+```
+2025-03-27 09:21:14.771 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'you'?",
+  "options": [
+    "Used to refer to a person or people being addressed or spoken to.",
+    "I'm so tired; you wouldn't believe the day I've had.",
+    "A small, handheld device used for communication.",
+    "A type of musical instrument played with keys."
+  ],
+  "correctAnswer": "Used to refer to a person or people being addressed or spoken to.",
+  "explanation": "The word 'you' is a pronoun used to represent the person or people being spoken to directly. It's a form of address."
+}
+2025-03-27 09:21:14.772 +03:00 [WRN] Some fields appear empty in LLM JSON for word 'you'. Returning as is.
+2025-03-27 09:21:14.773 +03:00 [INF] Generated question for word 'you': {
+  "question": "Which of these best describes the word 'you'?",
+  "options": [
+    "Used to refer to a person or people being addressed or spoken to.",
+    "I'm so tired; you wouldn't believe the day I've had.",
+    "A small, handheld device used for communication.",
+    "A type of musical instrument played with keys."
+  ],
+  "correctAnswer": "Used to refer to a person or people being addressed or spoken to.",
+  "explanation": "The word 'you' is a pronoun used to represent the person or people being spoken to directly. It's a form of address."
+}
+2025-03-27 09:21:14.774 +03:00 [INF] Successfully generated 10 questions for vocabulary quiz
+2025-03-27 09:21:14.775 +03:00 [INF] Generated 10 question data items
+2025-03-27 09:21:14.776 +03:00 [INF] Added question about 'Study' to quiz
+2025-03-27 09:21:14.777 +03:00 [INF] Added question about 'name' to quiz
+2025-03-27 09:21:14.778 +03:00 [INF] Added question about 'english' to quiz
+2025-03-27 09:21:14.778 +03:00 [INF] Added question about 'Interest' to quiz
+2025-03-27 09:21:14.779 +03:00 [INF] Added question about 'influential' to quiz
+2025-03-27 09:21:14.780 +03:00 [INF] Added question about 'like' to quiz
+2025-03-27 09:21:14.781 +03:00 [INF] Added question about 'Welcome' to quiz
+2025-03-27 09:21:14.781 +03:00 [INF] Added question about 'language' to quiz
+2025-03-27 09:21:14.782 +03:00 [INF] Added question about 'hello' to quiz
+2025-03-27 09:21:14.783 +03:00 [INF] Added question about 'you' to quiz
+2025-03-27 09:21:14.802 +03:00 [INF] Quiz saved with ID 36
+2025-03-27 09:23:07.470 +03:00 [INF] Application is shutting down...
+2025-03-27 09:23:35.373 +03:00 [INF] Starting Language Learning API
+2025-03-27 09:23:35.451 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-27 09:23:35.456 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-27 09:23:35.458 +03:00 [INF] Hosting environment: Development
+2025-03-27 09:23:35.459 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-27 09:24:14.541 +03:00 [INF] Starting to generate vocabulary quiz for user 1 at level B1
+2025-03-27 09:24:14.541 +03:00 [INF] Starting to generate vocabulary quiz for user 1 at level B1
+2025-03-27 09:24:14.757 +03:00 [INF] Selected 10 words for quiz generation
+2025-03-27 09:24:14.757 +03:00 [INF] Selected 10 words for quiz generation
+2025-03-27 09:24:14.759 +03:00 [INF] Generating vocabulary quiz with 10 words at level B1
+2025-03-27 09:24:14.759 +03:00 [INF] Generating vocabulary quiz with 10 words at level B1
+2025-03-27 09:24:14.760 +03:00 [INF] Generating quiz question for word: 'new' at level: B1
+2025-03-27 09:24:14.760 +03:00 [INF] Generating quiz question for word: 'Welcome' at level: B1
+2025-03-27 09:24:14.784 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:14.784 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:14.786 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:14.787 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:22.704 +03:00 [INF] Received HTTP response headers after 7915.4635ms - 200
+2025-03-27 09:24:22.708 +03:00 [INF] End processing HTTP request after 7927.9198ms - 200
+2025-03-27 09:24:22.715 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'Welcome'?",
+  "options": [
+    "To greet someone upon their arrival or entry",
+    "The act of extending hospitality and making someone feel comfortable",
+    "A formal announcement of a new product launch",
+    "To reject or turn away someone from a place"
+  ],
+  "correctAnswer": "To greet someone upon their arrival or entry",
+  "explanation": "‘Welcome’ means to greet someone when they arrive, offering a feeling of acceptance and hospitality."
+}
+
+2025-03-27 09:24:22.716 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Welcome'?",
+  "options": [
+    "To greet someone upon their arrival or entry",
+    "The act of extending hospitality and making someone feel comfortable",
+    "A formal announcement of a new product launch",
+    "To reject or turn away someone from a place"
+  ],
+  "correctAnswer": "To greet someone upon their arrival or entry",
+  "explanation": "‘Welcome’ means to greet someone when they arrive, offering a feeling of acceptance and hospitality."
+}
+
+2025-03-27 09:24:22.724 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:24:22.725 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:24:22.726 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:24:22.727 +03:00 [INF] Generated question for word 'Welcome': { 
+                "question": "Which of these best describes the word 'Welcome'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'Welcome' is a standard word in English vocabulary."
+            }
+2025-03-27 09:24:22.728 +03:00 [WRN] Invalid question data for word 'Welcome', using default format
+2025-03-27 09:24:22.728 +03:00 [INF] Generating quiz question for word: 'want' at level: B1
+2025-03-27 09:24:22.729 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:22.730 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:28.257 +03:00 [INF] Received HTTP response headers after 13469.2366ms - 200
+2025-03-27 09:24:28.260 +03:00 [INF] End processing HTTP request after 13480.0655ms - 200
+2025-03-27 09:24:28.265 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'new'?",
+  "options": [
+    "Something that is recently made, discovered, or experienced.",
+    "The company released a new product last month.",
+    "A feeling of nostalgia for the past.",
+    "To make a mistake or error."
+  ],
+  "correctAnswer": "Something that is recently made, discovered, or experienced.",
+  "explanation": "The word 'new' refers to something that has just come into existence or is recently introduced; it denotes something that is not old or familiar."
+}
+
+2025-03-27 09:24:28.266 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'new'?",
+  "options": [
+    "Something that is recently made, discovered, or experienced.",
+    "The company released a new product last month.",
+    "A feeling of nostalgia for the past.",
+    "To make a mistake or error."
+  ],
+  "correctAnswer": "Something that is recently made, discovered, or experienced.",
+  "explanation": "The word 'new' refers to something that has just come into existence or is recently introduced; it denotes something that is not old or familiar."
+}
+
+2025-03-27 09:24:28.268 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:24:28.269 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:24:28.270 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:24:28.271 +03:00 [INF] Generated question for word 'new': { 
+                "question": "Which of these best describes the word 'new'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'new' is a standard word in English vocabulary."
+            }
+2025-03-27 09:24:28.272 +03:00 [WRN] Invalid question data for word 'new', using default format
+2025-03-27 09:24:28.273 +03:00 [INF] Generating quiz question for word: 'language' at level: B1
+2025-03-27 09:24:28.274 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:28.275 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:33.879 +03:00 [INF] Received HTTP response headers after 11148.4788ms - 200
+2025-03-27 09:24:33.882 +03:00 [INF] End processing HTTP request after 11152.1976ms - 200
+2025-03-27 09:24:33.883 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'want'?",
+  "options": [
+    "To have a desire or need for something",
+    "I want a new car, but it’s too expensive.",
+    "To willingly give something to someone as a gift.",
+    "A state of being completely satisfied and content."
+  ],
+  "correctAnswer": "To have a desire or need for something",
+  "explanation": "‘Want’ expresses a feeling of needing or desiring something – a wish or craving for something you lack or desire."
+}
+
+2025-03-27 09:24:33.884 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'want'?",
+  "options": [
+    "To have a desire or need for something",
+    "I want a new car, but it’s too expensive.",
+    "To willingly give something to someone as a gift.",
+    "A state of being completely satisfied and content."
+  ],
+  "correctAnswer": "To have a desire or need for something",
+  "explanation": "‘Want’ expresses a feeling of needing or desiring something – a wish or craving for something you lack or desire."
+}
+
+2025-03-27 09:24:33.886 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:24:33.886 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:24:33.887 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:24:33.888 +03:00 [INF] Generated question for word 'want': { 
+                "question": "Which of these best describes the word 'want'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'want' is a standard word in English vocabulary."
+            }
+2025-03-27 09:24:33.889 +03:00 [WRN] Invalid question data for word 'want', using default format
+2025-03-27 09:24:33.889 +03:00 [INF] Generating quiz question for word: 'interested' at level: B1
+2025-03-27 09:24:33.891 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:33.892 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:39.695 +03:00 [INF] Received HTTP response headers after 11418.813ms - 200
+2025-03-27 09:24:39.699 +03:00 [INF] End processing HTTP request after 11425.2281ms - 200
+2025-03-27 09:24:39.701 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'language'?",
+  "options": [
+    "A system of communication used by a particular community or country",
+    "He struggled to learn a new language in just a few weeks.",
+    "A type of musical instrument used to create beautiful sounds.",
+    "The act of physically moving from one place to another"
+  ],
+  "correctAnswer": "A system of communication used by a particular community or country",
+  "explanation": "Language refers to the methods of communication, including spoken and written forms, used by a specific group of people."
+}
+
+2025-03-27 09:24:39.703 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'language'?",
+  "options": [
+    "A system of communication used by a particular community or country",
+    "He struggled to learn a new language in just a few weeks.",
+    "A type of musical instrument used to create beautiful sounds.",
+    "The act of physically moving from one place to another"
+  ],
+  "correctAnswer": "A system of communication used by a particular community or country",
+  "explanation": "Language refers to the methods of communication, including spoken and written forms, used by a specific group of people."
+}
+
+2025-03-27 09:24:39.704 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:24:39.705 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:24:39.706 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:24:39.707 +03:00 [INF] Generated question for word 'language': { 
+                "question": "Which of these best describes the word 'language'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'language' is a standard word in English vocabulary."
+            }
+2025-03-27 09:24:39.708 +03:00 [WRN] Invalid question data for word 'language', using default format
+2025-03-27 09:24:39.709 +03:00 [INF] Generating quiz question for word: 'hello' at level: B1
+2025-03-27 09:24:39.710 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:39.712 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:45.803 +03:00 [INF] Received HTTP response headers after 11910.1615ms - 200
+2025-03-27 09:24:45.805 +03:00 [INF] End processing HTTP request after 11914.1722ms - 200
+2025-03-27 09:24:45.807 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'interested'?",
+  "options": [
+    "Having or showing a desire or attention to something",
+    "She was interested in the outcome of the election.",
+    "To be completely unaware of something happening around you.",
+    "A period of time when someone is not working."
+  ],
+  "correctAnswer": "Having or showing a desire or attention to something",
+  "explanation": "‘Interested’ means having or showing a desire or attention to something. It indicates a feeling of curiosity or engagement."
+}
+
+2025-03-27 09:24:45.809 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'interested'?",
+  "options": [
+    "Having or showing a desire or attention to something",
+    "She was interested in the outcome of the election.",
+    "To be completely unaware of something happening around you.",
+    "A period of time when someone is not working."
+  ],
+  "correctAnswer": "Having or showing a desire or attention to something",
+  "explanation": "‘Interested’ means having or showing a desire or attention to something. It indicates a feeling of curiosity or engagement."
+}
+
+2025-03-27 09:24:45.811 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:24:45.812 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:24:45.813 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:24:45.814 +03:00 [INF] Generated question for word 'interested': { 
+                "question": "Which of these best describes the word 'interested'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'interested' is a standard word in English vocabulary."
+            }
+2025-03-27 09:24:45.815 +03:00 [WRN] Invalid question data for word 'interested', using default format
+2025-03-27 09:24:45.816 +03:00 [INF] Generating quiz question for word: 'practice' at level: B1
+2025-03-27 09:24:45.818 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:45.819 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:52.554 +03:00 [INF] Received HTTP response headers after 12840.3652ms - 200
+2025-03-27 09:24:52.555 +03:00 [INF] End processing HTTP request after 12844.9256ms - 200
+2025-03-27 09:24:52.557 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'hello'?",
+  "options": [
+    "A greeting used to acknowledge someone's presence or initiate a conversation.",
+    "Despite the rain, she waved hello to the passing cars.",
+    "A type of musical instrument played with strings.",
+    "To remain silent and avoid speaking."
+  ],
+  "correctAnswer": "A greeting used to acknowledge someone’s presence or initiate a conversation.",
+  "explanation": "‘Hello’ is a standard expression used to greet someone when you meet them or begin a conversation. It’s a polite way to acknowledge another person’s existence."
+}
+
+2025-03-27 09:24:52.558 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'hello'?",
+  "options": [
+    "A greeting used to acknowledge someone's presence or initiate a conversation.",
+    "Despite the rain, she waved hello to the passing cars.",
+    "A type of musical instrument played with strings.",
+    "To remain silent and avoid speaking."
+  ],
+  "correctAnswer": "A greeting used to acknowledge someone’s presence or initiate a conversation.",
+  "explanation": "‘Hello’ is a standard expression used to greet someone when you meet them or begin a conversation. It’s a polite way to acknowledge another person’s existence."
+}
+
+2025-03-27 09:24:52.559 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:24:52.561 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:24:52.562 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:24:52.563 +03:00 [INF] Generated question for word 'hello': { 
+                "question": "Which of these best describes the word 'hello'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'hello' is a standard word in English vocabulary."
+            }
+2025-03-27 09:24:52.564 +03:00 [WRN] Invalid question data for word 'hello', using default format
+2025-03-27 09:24:52.565 +03:00 [INF] Generating quiz question for word: 'hamza' at level: B1
+2025-03-27 09:24:52.566 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:52.567 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:58.980 +03:00 [INF] Received HTTP response headers after 13160.8269ms - 200
+2025-03-27 09:24:58.983 +03:00 [INF] End processing HTTP request after 13165.5845ms - 200
+2025-03-27 09:24:58.986 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'practice'?",
+  "options": [
+    "The habitual or regular performance of an activity for improvement or maintenance.",
+    "He practiced his piano piece diligently before the concert.",
+    "To consider something carefully before making a decision.",
+    "A type of musical instrument played with keys."
+  ],
+  "correctAnswer": "The habitual or regular performance of an activity for improvement or maintenance.",
+  "explanation": "‘Practice’ refers to the repeated performance of something, usually with the intention of improving skill or maintaining a skill."
+}
+2025-03-27 09:24:58.988 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'practice'?",
+  "options": [
+    "The habitual or regular performance of an activity for improvement or maintenance.",
+    "He practiced his piano piece diligently before the concert.",
+    "To consider something carefully before making a decision.",
+    "A type of musical instrument played with keys."
+  ],
+  "correctAnswer": "The habitual or regular performance of an activity for improvement or maintenance.",
+  "explanation": "‘Practice’ refers to the repeated performance of something, usually with the intention of improving skill or maintaining a skill."
+}
+2025-03-27 09:24:58.989 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:24:58.991 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:24:58.993 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:24:58.994 +03:00 [INF] Generated question for word 'practice': { 
+                "question": "Which of these best describes the word 'practice'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'practice' is a standard word in English vocabulary."
+            }
+2025-03-27 09:24:58.996 +03:00 [WRN] Invalid question data for word 'practice', using default format
+2025-03-27 09:24:58.997 +03:00 [INF] Generating quiz question for word: 'learn' at level: B1
+2025-03-27 09:24:58.998 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:24:58.999 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:06.989 +03:00 [INF] Received HTTP response headers after 14420.717ms - 200
+2025-03-27 09:25:06.992 +03:00 [INF] End processing HTTP request after 14425.9907ms - 200
+2025-03-27 09:25:06.995 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'hamza'?",
+  "options": [
+    "A short, emphatic interjection, often expressing surprise or frustration.",
+    "The act of carefully examining a piece of evidence to uncover hidden details.",
+    "A type of decorative knot used in embroidery.",
+    "A musical instrument resembling a small lute."
+  ],
+  "correctAnswer": "A short, emphatic interjection, often expressing surprise or frustration.",
+  "explanation": "‘Hamza’ (pronounced ‘ham-zah’) is an Arabic interjection, frequently used to express surprise, annoyance, or protest. It’s a common exclamation in Arabic-speaking cultures."
+}
+```
+2025-03-27 09:25:06.998 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'hamza'?",
+  "options": [
+    "A short, emphatic interjection, often expressing surprise or frustration.",
+    "The act of carefully examining a piece of evidence to uncover hidden details.",
+    "A type of decorative knot used in embroidery.",
+    "A musical instrument resembling a small lute."
+  ],
+  "correctAnswer": "A short, emphatic interjection, often expressing surprise or frustration.",
+  "explanation": "‘Hamza’ (pronounced ‘ham-zah’) is an Arabic interjection, frequently used to express surprise, annoyance, or protest. It’s a common exclamation in Arabic-speaking cultures."
+}
+2025-03-27 09:25:07.000 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:25:07.001 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:25:07.003 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:25:07.004 +03:00 [INF] Generated question for word 'hamza': { 
+                "question": "Which of these best describes the word 'hamza'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'hamza' is a standard word in English vocabulary."
+            }
+2025-03-27 09:25:07.005 +03:00 [WRN] Invalid question data for word 'hamza', using default format
+2025-03-27 09:25:07.006 +03:00 [INF] Generating quiz question for word: 'Simply' at level: B1
+2025-03-27 09:25:07.007 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:07.008 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:13.166 +03:00 [INF] Received HTTP response headers after 14165.0532ms - 200
+2025-03-27 09:25:13.170 +03:00 [INF] End processing HTTP request after 14172.0623ms - 200
+2025-03-27 09:25:13.174 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'learn'?",
+  "options": [
+    "To acquire knowledge or skill through study or experience.",
+    "I learned that she was moving to a new city.",
+    "To quickly memorize a fact for a test.",
+    "A type of shoe worn for educational purposes."
+  ],
+  "correctAnswer": "To acquire knowledge or skill through study or experience.",
+  "explanation": "‘Learn’ means to gain knowledge or develop a skill through study, practice, or experience. It’s about the process of acquiring information or competence."
+}
+2025-03-27 09:25:13.176 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'learn'?",
+  "options": [
+    "To acquire knowledge or skill through study or experience.",
+    "I learned that she was moving to a new city.",
+    "To quickly memorize a fact for a test.",
+    "A type of shoe worn for educational purposes."
+  ],
+  "correctAnswer": "To acquire knowledge or skill through study or experience.",
+  "explanation": "‘Learn’ means to gain knowledge or develop a skill through study, practice, or experience. It’s about the process of acquiring information or competence."
+}
+2025-03-27 09:25:13.179 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:25:13.180 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:25:13.182 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:25:13.183 +03:00 [INF] Generated question for word 'learn': { 
+                "question": "Which of these best describes the word 'learn'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'learn' is a standard word in English vocabulary."
+            }
+2025-03-27 09:25:13.185 +03:00 [WRN] Invalid question data for word 'learn', using default format
+2025-03-27 09:25:13.186 +03:00 [INF] Generating quiz question for word: 'Interest' at level: B1
+2025-03-27 09:25:13.187 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:13.189 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:19.672 +03:00 [INF] Received HTTP response headers after 12662.1538ms - 200
+2025-03-27 09:25:19.675 +03:00 [INF] End processing HTTP request after 12667.7706ms - 200
+2025-03-27 09:25:19.677 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'Simply'?",
+  "options": [
+    "Expressing something in a straightforward and uncomplicated manner.",
+    "To make a small, insignificant purchase.",
+    "A complicated legal process involving multiple parties.",
+    "To create a detailed and elaborate work of art."
+  ],
+  "correctAnswer": "Expressing something in a straightforward and uncomplicated manner.",
+  "explanation": "The word 'simply' means in a straightforward, uncomplicated, or basic way. It’s about removing complexity and stating things clearly."
+}
+
+2025-03-27 09:25:19.678 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Simply'?",
+  "options": [
+    "Expressing something in a straightforward and uncomplicated manner.",
+    "To make a small, insignificant purchase.",
+    "A complicated legal process involving multiple parties.",
+    "To create a detailed and elaborate work of art."
+  ],
+  "correctAnswer": "Expressing something in a straightforward and uncomplicated manner.",
+  "explanation": "The word 'simply' means in a straightforward, uncomplicated, or basic way. It’s about removing complexity and stating things clearly."
+}
+
+2025-03-27 09:25:19.680 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:25:19.681 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:25:19.682 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:25:19.682 +03:00 [INF] Generated question for word 'Simply': { 
+                "question": "Which of these best describes the word 'Simply'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'Simply' is a standard word in English vocabulary."
+            }
+2025-03-27 09:25:19.684 +03:00 [WRN] Invalid question data for word 'Simply', using default format
+2025-03-27 09:25:19.685 +03:00 [INF] Generating quiz question for word: 'learn' at level: B1
+2025-03-27 09:25:19.685 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:19.687 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:26.240 +03:00 [INF] Received HTTP response headers after 13050.1294ms - 200
+2025-03-27 09:25:26.243 +03:00 [INF] End processing HTTP request after 13055.8624ms - 200
+2025-03-27 09:25:26.245 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "The feeling of wanting to know or learn about something",
+    "He showed a particular interest in ancient Roman history.",
+    "A small sum of money given to someone who has borrowed it.",
+    "To become completely absorbed in a difficult task."
+  ],
+  "correctAnswer": "The feeling of wanting to know or learn about something",
+  "explanation": "Interest refers to a strong desire or curiosity about a subject or activity. It’s a mental state of wanting to learn more."
+}
+
+2025-03-27 09:25:26.247 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "The feeling of wanting to know or learn about something",
+    "He showed a particular interest in ancient Roman history.",
+    "A small sum of money given to someone who has borrowed it.",
+    "To become completely absorbed in a difficult task."
+  ],
+  "correctAnswer": "The feeling of wanting to know or learn about something",
+  "explanation": "Interest refers to a strong desire or curiosity about a subject or activity. It’s a mental state of wanting to learn more."
+}
+
+2025-03-27 09:25:26.248 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:25:26.249 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:25:26.250 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:25:26.251 +03:00 [INF] Generated question for word 'Interest': { 
+                "question": "Which of these best describes the word 'Interest'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'Interest' is a standard word in English vocabulary."
+            }
+2025-03-27 09:25:26.252 +03:00 [WRN] Invalid question data for word 'Interest', using default format
+2025-03-27 09:25:26.253 +03:00 [INF] Generating quiz question for word: 'language' at level: B1
+2025-03-27 09:25:26.254 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:26.256 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:31.482 +03:00 [INF] Received HTTP response headers after 11794.7549ms - 200
+2025-03-27 09:25:31.486 +03:00 [INF] End processing HTTP request after 11800.6976ms - 200
+2025-03-27 09:25:31.489 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'learn'?",
+  "options": [
+    "To acquire knowledge or skill through study or experience.",
+    "The teacher instructed the students to learn their multiplication tables.",
+    "To quickly discover a hidden treasure.",
+    "A type of musical instrument played with your hands."
+  ],
+  "correctAnswer": "To acquire knowledge or skill through study or experience.",
+  "explanation": "‘Learn’ means to gain knowledge or skill, typically by studying or experiencing something."
+}
+2025-03-27 09:25:31.491 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'learn'?",
+  "options": [
+    "To acquire knowledge or skill through study or experience.",
+    "The teacher instructed the students to learn their multiplication tables.",
+    "To quickly discover a hidden treasure.",
+    "A type of musical instrument played with your hands."
+  ],
+  "correctAnswer": "To acquire knowledge or skill through study or experience.",
+  "explanation": "‘Learn’ means to gain knowledge or skill, typically by studying or experiencing something."
+}
+2025-03-27 09:25:31.493 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:25:31.494 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:25:31.496 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:25:31.497 +03:00 [INF] Generated question for word 'learn': { 
+                "question": "Which of these best describes the word 'learn'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'learn' is a standard word in English vocabulary."
+            }
+2025-03-27 09:25:31.498 +03:00 [WRN] Invalid question data for word 'learn', using default format
+2025-03-27 09:25:31.499 +03:00 [INF] Generating quiz question for word: 'practice' at level: B1
+2025-03-27 09:25:31.500 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:31.501 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:37.810 +03:00 [INF] Received HTTP response headers after 11553.7954ms - 200
+2025-03-27 09:25:37.813 +03:00 [INF] End processing HTTP request after 11558.8917ms - 200
+2025-03-27 09:25:37.816 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'language'?",
+  "options": [
+    "A system of communication using words, grammar, and pronunciation.",
+    "He studied French language at university.",
+    "A type of tool used for cutting wood.",
+    "A period of time lasting one hour."
+  ],
+  "correctAnswer": "A system of communication using words, grammar, and pronunciation.",
+  "explanation": "Language refers to a method of conveying meaning through spoken or written words. It encompasses the rules and structures that govern how these words are used."
+}
+
+2025-03-27 09:25:37.817 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'language'?",
+  "options": [
+    "A system of communication using words, grammar, and pronunciation.",
+    "He studied French language at university.",
+    "A type of tool used for cutting wood.",
+    "A period of time lasting one hour."
+  ],
+  "correctAnswer": "A system of communication using words, grammar, and pronunciation.",
+  "explanation": "Language refers to a method of conveying meaning through spoken or written words. It encompasses the rules and structures that govern how these words are used."
+}
+
+2025-03-27 09:25:37.819 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:25:37.820 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:25:37.821 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:25:37.823 +03:00 [INF] Generated question for word 'language': { 
+                "question": "Which of these best describes the word 'language'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'language' is a standard word in English vocabulary."
+            }
+2025-03-27 09:25:37.824 +03:00 [WRN] Invalid question data for word 'language', using default format
+2025-03-27 09:25:37.825 +03:00 [INF] Generating quiz question for word: 'new' at level: B1
+2025-03-27 09:25:37.826 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:37.827 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:43.774 +03:00 [INF] Received HTTP response headers after 12270.9658ms - 200
+2025-03-27 09:25:43.775 +03:00 [INF] End processing HTTP request after 12275.3045ms - 200
+2025-03-27 09:25:43.777 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'practice'?",
+  "options": [
+    "The act of repeatedly doing something to improve or maintain skill",
+    "To observe something carefully, often with the intention of learning",
+    "A type of musical instrument used in traditional ceremonies",
+    "To avoid a situation or person"
+  ],
+  "correctAnswer": "The act of repeatedly doing something to improve or maintain skill",
+  "explanation": "‘Practice’ refers to the repeated performance of an activity to improve ability or technique. It’s about honing a skill through repetition."
+}
+
+2025-03-27 09:25:43.778 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'practice'?",
+  "options": [
+    "The act of repeatedly doing something to improve or maintain skill",
+    "To observe something carefully, often with the intention of learning",
+    "A type of musical instrument used in traditional ceremonies",
+    "To avoid a situation or person"
+  ],
+  "correctAnswer": "The act of repeatedly doing something to improve or maintain skill",
+  "explanation": "‘Practice’ refers to the repeated performance of an activity to improve ability or technique. It’s about honing a skill through repetition."
+}
+
+2025-03-27 09:25:43.779 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:25:43.779 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:25:43.780 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:25:43.781 +03:00 [INF] Generated question for word 'practice': { 
+                "question": "Which of these best describes the word 'practice'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'practice' is a standard word in English vocabulary."
+            }
+2025-03-27 09:25:43.782 +03:00 [WRN] Invalid question data for word 'practice', using default format
+2025-03-27 09:25:43.783 +03:00 [INF] Generating quiz question for word: 'name' at level: B1
+2025-03-27 09:25:43.784 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:43.785 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:49.736 +03:00 [INF] Received HTTP response headers after 11907.1222ms - 200
+2025-03-27 09:25:49.738 +03:00 [INF] End processing HTTP request after 11911.8392ms - 200
+2025-03-27 09:25:49.739 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'new'?",
+  "options": [
+    "Something recently made, discovered, or experienced; not existing before.",
+    "The company released a new product last week.",
+    "A period of time that has passed.",
+    "To make a mistake or error."
+  ],
+  "correctAnswer": "Something recently made, discovered, or experienced; not existing before.",
+  "explanation": "The word 'new' refers to something that is recently created, found, or experienced, and therefore not previously known or existing."
+}
+
+2025-03-27 09:25:49.740 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'new'?",
+  "options": [
+    "Something recently made, discovered, or experienced; not existing before.",
+    "The company released a new product last week.",
+    "A period of time that has passed.",
+    "To make a mistake or error."
+  ],
+  "correctAnswer": "Something recently made, discovered, or experienced; not existing before.",
+  "explanation": "The word 'new' refers to something that is recently created, found, or experienced, and therefore not previously known or existing."
+}
+
+2025-03-27 09:25:49.741 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:25:49.742 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:25:49.744 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:25:49.745 +03:00 [INF] Generated question for word 'new': { 
+                "question": "Which of these best describes the word 'new'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'new' is a standard word in English vocabulary."
+            }
+2025-03-27 09:25:49.746 +03:00 [WRN] Invalid question data for word 'new', using default format
+2025-03-27 09:25:49.746 +03:00 [INF] Generating quiz question for word: 'you' at level: B1
+2025-03-27 09:25:49.747 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:49.748 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:56.023 +03:00 [INF] Received HTTP response headers after 12237.8124ms - 200
+2025-03-27 09:25:56.025 +03:00 [INF] End processing HTTP request after 12241.1831ms - 200
+2025-03-27 09:25:56.026 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'name'?",
+  "options": [
+    "A designation or label given to an individual or thing.",
+    "He gave his son the name Samuel.",
+    "A period of time during which something exists.",
+    "To rename something to something else."
+  ],
+  "correctAnswer": "A designation or label given to an individual or thing.",
+  "explanation": "The word 'name' refers to a label or identifier used to recognize and distinguish something or someone. It’s the word or phrase used to identify a person or object."
+}
+
+2025-03-27 09:25:56.027 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'name'?",
+  "options": [
+    "A designation or label given to an individual or thing.",
+    "He gave his son the name Samuel.",
+    "A period of time during which something exists.",
+    "To rename something to something else."
+  ],
+  "correctAnswer": "A designation or label given to an individual or thing.",
+  "explanation": "The word 'name' refers to a label or identifier used to recognize and distinguish something or someone. It’s the word or phrase used to identify a person or object."
+}
+
+2025-03-27 09:25:56.028 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:25:56.028 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:25:56.029 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:25:56.031 +03:00 [INF] Generated question for word 'name': { 
+                "question": "Which of these best describes the word 'name'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'name' is a standard word in English vocabulary."
+            }
+2025-03-27 09:25:56.032 +03:00 [WRN] Invalid question data for word 'name', using default format
+2025-03-27 09:25:56.033 +03:00 [INF] Generating quiz question for word: 'Anyone' at level: B1
+2025-03-27 09:25:56.033 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:25:56.035 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:26:01.678 +03:00 [INF] Received HTTP response headers after 11929.0847ms - 200
+2025-03-27 09:26:01.680 +03:00 [INF] End processing HTTP request after 11932.4183ms - 200
+2025-03-27 09:26:01.681 +03:00 [INF] Quiz question raw response: ```json
+{
+  "question": "Which of these best describes the word 'you'?",
+  "options": [
+    "Used to refer to a person or people being addressed",
+    "A type of mathematical equation involving variables",
+    "A feeling of extreme sadness or disappointment",
+    "A small, handheld device used for communication"
+  ],
+  "correctAnswer": "Used to refer to a person or people being addressed",
+  "explanation": "The word 'you' is a pronoun used to indicate the person or people being spoken to or about."
+}
+```
+2025-03-27 09:26:01.682 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'you'?",
+  "options": [
+    "Used to refer to a person or people being addressed",
+    "A type of mathematical equation involving variables",
+    "A feeling of extreme sadness or disappointment",
+    "A small, handheld device used for communication"
+  ],
+  "correctAnswer": "Used to refer to a person or people being addressed",
+  "explanation": "The word 'you' is a pronoun used to indicate the person or people being spoken to or about."
+}
+2025-03-27 09:26:01.683 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:26:01.683 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:26:01.684 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:26:01.685 +03:00 [INF] Generated question for word 'you': { 
+                "question": "Which of these best describes the word 'you'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'you' is a standard word in English vocabulary."
+            }
+2025-03-27 09:26:01.686 +03:00 [WRN] Invalid question data for word 'you', using default format
+2025-03-27 09:26:01.687 +03:00 [INF] Generating quiz question for word: 'Anyone' at level: B1
+2025-03-27 09:26:01.688 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:26:01.689 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:26:07.656 +03:00 [INF] Received HTTP response headers after 11620.3437ms - 200
+2025-03-27 09:26:07.657 +03:00 [INF] End processing HTTP request after 11623.9162ms - 200
+2025-03-27 09:26:07.659 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'Anyone'?",
+  "options": [
+    "Any person or people, regardless of their identity or characteristics.",
+    "She asked anyone if they had seen her lost dog.",
+    "A type of formal invitation sent to a large group of people.",
+    "To intentionally avoid or ignore someone"
+  ],
+  "correctAnswer": "Any person or people, regardless of their identity or characteristics.",
+  "explanation": "‘Anyone’ is an indefinite pronoun that refers to an unspecified person or people. It doesn’t require a specific identity or details."
+}
+
+2025-03-27 09:26:07.660 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Anyone'?",
+  "options": [
+    "Any person or people, regardless of their identity or characteristics.",
+    "She asked anyone if they had seen her lost dog.",
+    "A type of formal invitation sent to a large group of people.",
+    "To intentionally avoid or ignore someone"
+  ],
+  "correctAnswer": "Any person or people, regardless of their identity or characteristics.",
+  "explanation": "‘Anyone’ is an indefinite pronoun that refers to an unspecified person or people. It doesn’t require a specific identity or details."
+}
+
+2025-03-27 09:26:07.662 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:26:07.663 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:26:07.665 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:26:07.666 +03:00 [INF] Generated question for word 'Anyone': { 
+                "question": "Which of these best describes the word 'Anyone'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'Anyone' is a standard word in English vocabulary."
+            }
+2025-03-27 09:26:07.668 +03:00 [WRN] Invalid question data for word 'Anyone', using default format
+2025-03-27 09:26:07.668 +03:00 [INF] Generating quiz question for word: 'sound' at level: B1
+2025-03-27 09:26:07.669 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:26:07.672 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:26:14.148 +03:00 [INF] Received HTTP response headers after 12457.7793ms - 200
+2025-03-27 09:26:14.149 +03:00 [INF] End processing HTTP request after 12461.3072ms - 200
+2025-03-27 09:26:14.150 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'Anyone'?",
+  "options": [
+    "Any person or people, regardless of identity or specific selection.",
+    "I asked anyone if they had seen my keys.",
+    "A specific individual chosen from a group.",
+    "To express strong disapproval or criticism of something."
+  ],
+  "correctAnswer": "Any person or people, regardless of identity or specific selection.",
+  "explanation": "‘Anyone’ is an indefinite pronoun that refers to a person or people without specifying who they are. It’s used when you don’t know or don’t care about the identity of the person you’re talking about."
+}
+2025-03-27 09:26:14.151 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Anyone'?",
+  "options": [
+    "Any person or people, regardless of identity or specific selection.",
+    "I asked anyone if they had seen my keys.",
+    "A specific individual chosen from a group.",
+    "To express strong disapproval or criticism of something."
+  ],
+  "correctAnswer": "Any person or people, regardless of identity or specific selection.",
+  "explanation": "‘Anyone’ is an indefinite pronoun that refers to a person or people without specifying who they are. It’s used when you don’t know or don’t care about the identity of the person you’re talking about."
+}
+2025-03-27 09:26:14.152 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:26:14.153 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:26:14.154 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:26:14.155 +03:00 [INF] Generated question for word 'Anyone': { 
+                "question": "Which of these best describes the word 'Anyone'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'Anyone' is a standard word in English vocabulary."
+            }
+2025-03-27 09:26:14.156 +03:00 [WRN] Invalid question data for word 'Anyone', using default format
+2025-03-27 09:26:14.157 +03:00 [INF] Successfully generated 10 questions for vocabulary quiz
+2025-03-27 09:26:14.157 +03:00 [INF] Generated 10 question data items
+2025-03-27 09:26:14.159 +03:00 [INF] Added question about 'Welcome' to quiz
+2025-03-27 09:26:14.160 +03:00 [INF] Added question about 'want' to quiz
+2025-03-27 09:26:14.160 +03:00 [INF] Added question about 'interested' to quiz
+2025-03-27 09:26:14.161 +03:00 [INF] Added question about 'practice' to quiz
+2025-03-27 09:26:14.161 +03:00 [INF] Added question about 'learn' to quiz
+2025-03-27 09:26:14.162 +03:00 [INF] Added question about 'Interest' to quiz
+2025-03-27 09:26:14.162 +03:00 [INF] Added question about 'language' to quiz
+2025-03-27 09:26:14.163 +03:00 [INF] Added question about 'new' to quiz
+2025-03-27 09:26:14.163 +03:00 [INF] Added question about 'you' to quiz
+2025-03-27 09:26:14.164 +03:00 [INF] Added question about 'Anyone' to quiz
+2025-03-27 09:26:14.333 +03:00 [INF] Quiz saved with ID 37
+2025-03-27 09:26:20.579 +03:00 [INF] Received HTTP response headers after 12904.9988ms - 200
+2025-03-27 09:26:20.581 +03:00 [INF] End processing HTTP request after 12912.0332ms - 200
+2025-03-27 09:26:20.583 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'sound'?",
+  "options": [
+    "A quality or power of making a distinct musical or inaudible 'noise'.",
+    "The radio played a beautiful sound of classical music.",
+    "A physical object that makes a noise.",
+    "To be silent or quiet."
+  ],
+  "correctAnswer": "A quality or power of making a distinct musical or inaudible 'noise'.",
+  "explanation": "The word 'sound' refers to the quality of a noise, whether it's musical or not. It describes the characteristic of a noise itself."
+}
+
+2025-03-27 09:26:20.584 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'sound'?",
+  "options": [
+    "A quality or power of making a distinct musical or inaudible 'noise'.",
+    "The radio played a beautiful sound of classical music.",
+    "A physical object that makes a noise.",
+    "To be silent or quiet."
+  ],
+  "correctAnswer": "A quality or power of making a distinct musical or inaudible 'noise'.",
+  "explanation": "The word 'sound' refers to the quality of a noise, whether it's musical or not. It describes the characteristic of a noise itself."
+}
+
+2025-03-27 09:26:20.584 +03:00 [WRN] JSON validation failed for quiz question
+2025-03-27 09:26:20.585 +03:00 [WRN] LLM returned invalid JSON response for quiz generation: Required fields missing from quiz question JSON
+2025-03-27 09:26:20.586 +03:00 [WRN] Attempting to provide default question format
+2025-03-27 09:26:20.586 +03:00 [INF] Generated question for word 'sound': { 
+                "question": "Which of these best describes the word 'sound'?", 
+                "options": ["A common English word", "A rare technical term", "A fictional concept", "A mathematical formula"], 
+                "correctAnswer": "A common English word", 
+                "explanation": "'sound' is a standard word in English vocabulary."
+            }
+2025-03-27 09:26:20.587 +03:00 [WRN] Invalid question data for word 'sound', using default format
+2025-03-27 09:26:20.588 +03:00 [INF] Successfully generated 10 questions for vocabulary quiz
+2025-03-27 09:26:20.589 +03:00 [INF] Generated 10 question data items
+2025-03-27 09:26:20.589 +03:00 [INF] Added question about 'new' to quiz
+2025-03-27 09:26:20.590 +03:00 [INF] Added question about 'language' to quiz
+2025-03-27 09:26:20.590 +03:00 [INF] Added question about 'hello' to quiz
+2025-03-27 09:26:20.591 +03:00 [INF] Added question about 'hamza' to quiz
+2025-03-27 09:26:20.591 +03:00 [INF] Added question about 'Simply' to quiz
+2025-03-27 09:26:20.592 +03:00 [INF] Added question about 'learn' to quiz
+2025-03-27 09:26:20.592 +03:00 [INF] Added question about 'practice' to quiz
+2025-03-27 09:26:20.593 +03:00 [INF] Added question about 'name' to quiz
+2025-03-27 09:26:20.593 +03:00 [INF] Added question about 'Anyone' to quiz
+2025-03-27 09:26:20.594 +03:00 [INF] Added question about 'sound' to quiz
+2025-03-27 09:26:20.614 +03:00 [INF] Quiz saved with ID 38
+2025-03-27 09:27:15.366 +03:00 [INF] Application is shutting down...
+2025-03-27 09:28:15.372 +03:00 [INF] Starting Language Learning API
+2025-03-27 09:28:15.444 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-27 09:28:15.449 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-27 09:28:15.450 +03:00 [INF] Hosting environment: Development
+2025-03-27 09:28:15.451 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-27 09:28:42.334 +03:00 [INF] Starting to generate vocabulary quiz for user 1 at level B1
+2025-03-27 09:28:42.334 +03:00 [INF] Starting to generate vocabulary quiz for user 1 at level B1
+2025-03-27 09:28:42.601 +03:00 [INF] Selected 3 words for quiz generation
+2025-03-27 09:28:42.601 +03:00 [INF] Selected 3 words for quiz generation
+2025-03-27 09:28:42.604 +03:00 [INF] Generating vocabulary quiz with 3 words at level B1
+2025-03-27 09:28:42.604 +03:00 [INF] Generating vocabulary quiz with 3 words at level B1
+2025-03-27 09:28:42.607 +03:00 [INF] Generating quiz question for word: 'influential' at level: B1
+2025-03-27 09:28:42.608 +03:00 [INF] Generating quiz question for word: 'Skills' at level: B1
+2025-03-27 09:28:42.646 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:28:42.646 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:28:42.652 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:28:42.654 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:28:50.817 +03:00 [INF] Received HTTP response headers after 8160.1389ms - 200
+2025-03-27 09:28:50.822 +03:00 [INF] End processing HTTP request after 8181.1258ms - 200
+2025-03-27 09:28:50.829 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'influential'?",
+  "options": [
+    "Having a significant influence or effect on others.",
+    "A small, decorative item used to enhance a room's appearance.",
+    "A legal term referring to a formal agreement between two parties.",
+    "Relating to the study of ancient civilizations."
+  ],
+  "correctAnswer": "Having a significant influence or effect on others.",
+  "explanation": "‘Influentual’ means having a powerful or considerable impact; it describes someone or something that exerts a strong influence."
+}
+
+2025-03-27 09:28:50.831 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'influential'?",
+  "options": [
+    "Having a significant influence or effect on others.",
+    "A small, decorative item used to enhance a room's appearance.",
+    "A legal term referring to a formal agreement between two parties.",
+    "Relating to the study of ancient civilizations."
+  ],
+  "correctAnswer": "Having a significant influence or effect on others.",
+  "explanation": "‘Influentual’ means having a powerful or considerable impact; it describes someone or something that exerts a strong influence."
+}
+
+2025-03-27 09:28:50.838 +03:00 [INF] Quiz question generated with valid JSON format (no strict field checks). Returning as is.
+2025-03-27 09:28:50.840 +03:00 [INF] Generated question for word 'influential': {
+  "question": "Which of these best describes the word 'influential'?",
+  "options": [
+    "Having a significant influence or effect on others.",
+    "A small, decorative item used to enhance a room's appearance.",
+    "A legal term referring to a formal agreement between two parties.",
+    "Relating to the study of ancient civilizations."
+  ],
+  "correctAnswer": "Having a significant influence or effect on others.",
+  "explanation": "‘Influentual’ means having a powerful or considerable impact; it describes someone or something that exerts a strong influence."
+}
+
+2025-03-27 09:28:50.841 +03:00 [WRN] Invalid question data for word 'influential', using default format
+2025-03-27 09:28:50.842 +03:00 [INF] Generating quiz question for word: 'you' at level: B1
+2025-03-27 09:28:50.843 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:28:50.845 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:28:56.379 +03:00 [INF] Received HTTP response headers after 13721.8457ms - 200
+2025-03-27 09:28:56.384 +03:00 [INF] End processing HTTP request after 13742.9436ms - 200
+2025-03-27 09:28:56.386 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'Skills'?",
+  "options": [
+    "The ability to do something well, often developed through practice and training.",
+    "He skillfully painted a portrait of his wife.",
+    "A formal agreement to provide assistance in a difficult situation.",
+    "A type of small, handheld electronic device"
+  ],
+  "correctAnswer": "The ability to do something well, often developed through practice and training.",
+  "explanation": "Skills refer to the learned abilities or talents that enable someone to perform a task or activity effectively."
+}
+
+2025-03-27 09:28:56.388 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Skills'?",
+  "options": [
+    "The ability to do something well, often developed through practice and training.",
+    "He skillfully painted a portrait of his wife.",
+    "A formal agreement to provide assistance in a difficult situation.",
+    "A type of small, handheld electronic device"
+  ],
+  "correctAnswer": "The ability to do something well, often developed through practice and training.",
+  "explanation": "Skills refer to the learned abilities or talents that enable someone to perform a task or activity effectively."
+}
+
+2025-03-27 09:28:56.390 +03:00 [INF] Quiz question generated with valid JSON format (no strict field checks). Returning as is.
+2025-03-27 09:28:56.391 +03:00 [INF] Generated question for word 'Skills': {
+  "question": "Which of these best describes the word 'Skills'?",
+  "options": [
+    "The ability to do something well, often developed through practice and training.",
+    "He skillfully painted a portrait of his wife.",
+    "A formal agreement to provide assistance in a difficult situation.",
+    "A type of small, handheld electronic device"
+  ],
+  "correctAnswer": "The ability to do something well, often developed through practice and training.",
+  "explanation": "Skills refer to the learned abilities or talents that enable someone to perform a task or activity effectively."
+}
+
+2025-03-27 09:28:56.393 +03:00 [WRN] Invalid question data for word 'Skills', using default format
+2025-03-27 09:28:56.394 +03:00 [INF] Generating quiz question for word: 'Study' at level: B1
+2025-03-27 09:28:56.395 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:28:56.397 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:29:01.566 +03:00 [INF] Received HTTP response headers after 10719.9053ms - 200
+2025-03-27 09:29:01.569 +03:00 [INF] End processing HTTP request after 10725.592ms - 200
+2025-03-27 09:29:01.571 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'you'?",
+  "options": [
+    "Used to refer to a person or people being addressed",
+    "A type of shoe worn for formal occasions",
+    "A complex mathematical equation involving variables",
+    "The act of forgetting something"
+  ],
+  "correctAnswer": "Used to refer to a person or people being addressed",
+  "explanation": "The word 'you' is a pronoun used to refer to the person or people being spoken to or written about."
+}
+
+2025-03-27 09:29:01.572 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'you'?",
+  "options": [
+    "Used to refer to a person or people being addressed",
+    "A type of shoe worn for formal occasions",
+    "A complex mathematical equation involving variables",
+    "The act of forgetting something"
+  ],
+  "correctAnswer": "Used to refer to a person or people being addressed",
+  "explanation": "The word 'you' is a pronoun used to refer to the person or people being spoken to or written about."
+}
+
+2025-03-27 09:29:01.574 +03:00 [INF] Quiz question generated with valid JSON format (no strict field checks). Returning as is.
+2025-03-27 09:29:01.575 +03:00 [INF] Generated question for word 'you': {
+  "question": "Which of these best describes the word 'you'?",
+  "options": [
+    "Used to refer to a person or people being addressed",
+    "A type of shoe worn for formal occasions",
+    "A complex mathematical equation involving variables",
+    "The act of forgetting something"
+  ],
+  "correctAnswer": "Used to refer to a person or people being addressed",
+  "explanation": "The word 'you' is a pronoun used to refer to the person or people being spoken to or written about."
+}
+
+2025-03-27 09:29:01.576 +03:00 [WRN] Invalid question data for word 'you', using default format
+2025-03-27 09:29:01.577 +03:00 [INF] Generating quiz question for word: 'Interest' at level: B1
+2025-03-27 09:29:01.578 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:29:01.580 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:29:07.215 +03:00 [INF] Received HTTP response headers after 10817.1927ms - 200
+2025-03-27 09:29:07.218 +03:00 [INF] End processing HTTP request after 10822.7234ms - 200
+2025-03-27 09:29:07.220 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'Study'?",
+  "options": [
+    "To engage in learning or research systematically, often involving books and materials.",
+    "To examine something carefully in order to understand it better.",
+    "A period of time when schools are closed for holidays.",
+    "To quickly consider a problem without careful thought."
+  ],
+  "correctAnswer": "To engage in learning or research systematically, often involving books and materials.",
+  "explanation": "‘Study’ refers to the act of learning through focused investigation and research, typically involving academic materials."
+}
+
+2025-03-27 09:29:07.222 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Study'?",
+  "options": [
+    "To engage in learning or research systematically, often involving books and materials.",
+    "To examine something carefully in order to understand it better.",
+    "A period of time when schools are closed for holidays.",
+    "To quickly consider a problem without careful thought."
+  ],
+  "correctAnswer": "To engage in learning or research systematically, often involving books and materials.",
+  "explanation": "‘Study’ refers to the act of learning through focused investigation and research, typically involving academic materials."
+}
+
+2025-03-27 09:29:07.224 +03:00 [INF] Quiz question generated with valid JSON format (no strict field checks). Returning as is.
+2025-03-27 09:29:07.225 +03:00 [INF] Generated question for word 'Study': {
+  "question": "Which of these best describes the word 'Study'?",
+  "options": [
+    "To engage in learning or research systematically, often involving books and materials.",
+    "To examine something carefully in order to understand it better.",
+    "A period of time when schools are closed for holidays.",
+    "To quickly consider a problem without careful thought."
+  ],
+  "correctAnswer": "To engage in learning or research systematically, often involving books and materials.",
+  "explanation": "‘Study’ refers to the act of learning through focused investigation and research, typically involving academic materials."
+}
+
+2025-03-27 09:29:07.226 +03:00 [WRN] Invalid question data for word 'Study', using default format
+2025-03-27 09:29:07.227 +03:00 [INF] Generating quiz question for word: 'you' at level: B1
+2025-03-27 09:29:07.228 +03:00 [INF] Start processing HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:29:07.229 +03:00 [INF] Sending HTTP request POST http://localhost:11434/api/generate
+2025-03-27 09:29:13.559 +03:00 [INF] Received HTTP response headers after 11977.0271ms - 200
+2025-03-27 09:29:13.561 +03:00 [INF] End processing HTTP request after 11982.6188ms - 200
+2025-03-27 09:29:13.563 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "The feeling of wanting to know or learn about something",
+    "He showed a great interest in the history of the city.",
+    "A period of time during which a bank holds a sum of money.",
+    "To become involved in a difficult or complicated situation."
+  ],
+  "correctAnswer": "The feeling of wanting to know or learn about something",
+  "explanation": "Interest refers to a feeling of curiosity or attention given to something that you find important or appealing. It’s a desire to learn more about a subject or activity."
+}
+
+2025-03-27 09:29:13.564 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "The feeling of wanting to know or learn about something",
+    "He showed a great interest in the history of the city.",
+    "A period of time during which a bank holds a sum of money.",
+    "To become involved in a difficult or complicated situation."
+  ],
+  "correctAnswer": "The feeling of wanting to know or learn about something",
+  "explanation": "Interest refers to a feeling of curiosity or attention given to something that you find important or appealing. It’s a desire to learn more about a subject or activity."
+}
+
+2025-03-27 09:29:13.566 +03:00 [INF] Quiz question generated with valid JSON format (no strict field checks). Returning as is.
+2025-03-27 09:29:13.568 +03:00 [INF] Generated question for word 'Interest': {
+  "question": "Which of these best describes the word 'Interest'?",
+  "options": [
+    "The feeling of wanting to know or learn about something",
+    "He showed a great interest in the history of the city.",
+    "A period of time during which a bank holds a sum of money.",
+    "To become involved in a difficult or complicated situation."
+  ],
+  "correctAnswer": "The feeling of wanting to know or learn about something",
+  "explanation": "Interest refers to a feeling of curiosity or attention given to something that you find important or appealing. It’s a desire to learn more about a subject or activity."
+}
+
+2025-03-27 09:29:13.570 +03:00 [WRN] Invalid question data for word 'Interest', using default format
+2025-03-27 09:29:13.571 +03:00 [INF] Successfully generated 3 questions for vocabulary quiz
+2025-03-27 09:29:13.572 +03:00 [INF] Generated 3 question data items
+2025-03-27 09:29:13.575 +03:00 [INF] Added question about 'influential' to quiz
+2025-03-27 09:29:13.577 +03:00 [INF] Added question about 'you' to quiz
+2025-03-27 09:29:13.579 +03:00 [INF] Added question about 'Interest' to quiz
+2025-03-27 09:29:13.750 +03:00 [INF] Quiz saved with ID 39
+2025-03-27 09:29:19.895 +03:00 [INF] Received HTTP response headers after 12664.5645ms - 200
+2025-03-27 09:29:19.898 +03:00 [INF] End processing HTTP request after 12670.292ms - 200
+2025-03-27 09:29:19.901 +03:00 [INF] Quiz question raw response: {
+  "question": "Which of these best describes the word 'you'?",
+  "options": [
+    "The pronoun used to refer to the person being addressed or spoken to.",
+    "Despite the rain, she enjoyed spending time with you.",
+    "A type of complex mathematical equation.",
+    "A small, decorative item used for embellishment"
+  ],
+  "correctAnswer": "The pronoun used to refer to the person being addressed or spoken to.",
+  "explanation": "The word 'you' is a pronoun used to represent the person with whom the speaker is having a conversation or to whom they are directing a statement."
+}
+
+2025-03-27 09:29:19.903 +03:00 [INF] Cleaned response: {
+  "question": "Which of these best describes the word 'you'?",
+  "options": [
+    "The pronoun used to refer to the person being addressed or spoken to.",
+    "Despite the rain, she enjoyed spending time with you.",
+    "A type of complex mathematical equation.",
+    "A small, decorative item used for embellishment"
+  ],
+  "correctAnswer": "The pronoun used to refer to the person being addressed or spoken to.",
+  "explanation": "The word 'you' is a pronoun used to represent the person with whom the speaker is having a conversation or to whom they are directing a statement."
+}
+
+2025-03-27 09:29:19.905 +03:00 [INF] Quiz question generated with valid JSON format (no strict field checks). Returning as is.
+2025-03-27 09:29:19.907 +03:00 [INF] Generated question for word 'you': {
+  "question": "Which of these best describes the word 'you'?",
+  "options": [
+    "The pronoun used to refer to the person being addressed or spoken to.",
+    "Despite the rain, she enjoyed spending time with you.",
+    "A type of complex mathematical equation.",
+    "A small, decorative item used for embellishment"
+  ],
+  "correctAnswer": "The pronoun used to refer to the person being addressed or spoken to.",
+  "explanation": "The word 'you' is a pronoun used to represent the person with whom the speaker is having a conversation or to whom they are directing a statement."
+}
+
+2025-03-27 09:29:19.908 +03:00 [WRN] Invalid question data for word 'you', using default format
+2025-03-27 09:29:19.910 +03:00 [INF] Successfully generated 3 questions for vocabulary quiz
+2025-03-27 09:29:19.911 +03:00 [INF] Generated 3 question data items
+2025-03-27 09:29:19.913 +03:00 [INF] Added question about 'Skills' to quiz
+2025-03-27 09:29:19.914 +03:00 [INF] Added question about 'Study' to quiz
+2025-03-27 09:29:19.915 +03:00 [INF] Added question about 'you' to quiz
+2025-03-27 09:29:19.942 +03:00 [INF] Quiz saved with ID 40
+2025-03-27 09:30:20.777 +03:00 [INF] Application is shutting down...
