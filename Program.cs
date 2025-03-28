@@ -157,7 +157,9 @@ if (app.Environment.IsDevelopment())
         logger.LogError(ex, "An error occurred during migration");
     }
 }
-
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+var url = $"http://0.0.0.0:{port}";
+app.Urls.Add(url);
 try
 {
     Log.Information("Starting Language Learning API");

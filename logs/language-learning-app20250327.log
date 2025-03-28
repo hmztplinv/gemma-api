@@ -7178,3 +7178,9 @@ System.Collections.Generic.KeyNotFoundException: The given key was not present i
 2025-03-27 16:08:42.365 +03:00 [INF] Hosting environment: Development
 2025-03-27 16:08:42.365 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
 2025-03-27 16:11:11.647 +03:00 [INF] Application is shutting down...
+2025-03-27 16:14:24.386 +03:00 [INF] Starting Language Learning API
+2025-03-27 16:14:24.452 +03:00 [INF] Now listening on: http://localhost:5130
+2025-03-27 16:14:24.455 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-03-27 16:14:24.456 +03:00 [INF] Hosting environment: Development
+2025-03-27 16:14:24.457 +03:00 [INF] Content root path: C:\Users\hmztp\Desktop\LanguageLearningApp.API
+2025-03-27 16:46:14.144 +03:00 [INF] Application is shutting down...

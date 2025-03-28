@@ -1,25 +1,18 @@
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+WORKDIR /app
+EXPOSE 80
+
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-
-# Copy csproj and restore dependencies
 COPY ["LanguageLearningApp.API.csproj", "./"]
 RUN dotnet restore "LanguageLearningApp.API.csproj"
-
-# Copy everything else and build
 COPY . .
+RUN dotnet build "LanguageLearningApp.API.csproj" -c Release -o /app/build
+
+FROM build AS publish
 RUN dotnet publish "LanguageLearningApp.API.csproj" -c Release -o /app/publish
 
-# Build runtime image
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
+FROM base AS final
 WORKDIR /app
-COPY --from=build /app/publish .
-
-# Expose port
-EXPOSE 80
-EXPOSE 443
-
-# Set environment variables
-ENV ASPNETCORE_URLS=http://+:80
-ENV ASPNETCORE_ENVIRONMENT=Production
-
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "LanguageLearningApp.API.dll"]
