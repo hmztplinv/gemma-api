@@ -1,5 +1,9 @@
 FROM ollama/ollama:latest
 
+# Modeli preload et
+RUN ollama serve & sleep 5 && ollama pull gemma3:4b
+
+# RUN ollama pull gemma3:4b
 # Ollama'nın doğru arayüzde dinlemesini sağlayın
 ENV OLLAMA_HOST=0.0.0.0:11434
 
